@@ -1,50 +1,10 @@
-% Macros for Scientific Word and Scientific WorkPlace 5.5 documents saved with the LaTeX filter.
-% Copyright (C) 2005 Mackichan Software, Inc.
-
-\typeout{TCILATEX Macros for Scientific Word and Scientific WorkPlace 5.5 <06 Oct 2005>.}
+% Macros for Scientific Word 2.5 documents saved with the LaTeX filter.
+%Copyright (C) 1994-95 TCI Software Research, Inc.
+\typeout{TCILATEX Macros for Scientific Word 2.5 <22 Dec 95>.}
 \typeout{NOTICE:  This macro file is NOT proprietary and may be 
 freely copied and distributed.}
 %
 \makeatletter
-
-%%%%%%%%%%%%%%%%%%%%%
-% pdfTeX related.
-\ifx\pdfoutput\relax\let\pdfoutput=\undefined\fi
-\newcount\msipdfoutput
-\ifx\pdfoutput\undefined
-\else
- \ifcase\pdfoutput
- \else 
-    \msipdfoutput=1
-    \ifx\paperwidth\undefined
-    \else
-      \ifdim\paperheight=0pt\relax
-      \else
-        \pdfpageheight\paperheight
-      \fi
-      \ifdim\paperwidth=0pt\relax
-      \else
-        \pdfpagewidth\paperwidth
-      \fi
-    \fi
-  \fi  
-\fi
-
-%%%%%%%%%%%%%%%%%%%%%
-% FMTeXButton
-% This is used for putting TeXButtons in the 
-% frontmatter of a document. Add a line like
-% \QTagDef{FMTeXButton}{101}{} to the filter 
-% section of the cst being used. Also add a
-% new section containing:
-%     [f_101]
-%     ALIAS=FMTexButton
-%     TAG_TYPE=FIELD
-%     TAG_LEADIN=TeX Button:
-%
-% It also works to put \defs in the preamble after 
-% the \input tcilatex
-\def\FMTeXButton#1{#1}
 %
 %%%%%%%%%%%%%%%%%%%%%%
 % macros for time
@@ -58,35 +18,8 @@ freely copied and distributed.}
   }}%
 
 %%%%%%%%%%%%%%%%%%%%%%
-% macro for hyperref and msihyperref
-%\@ifundefined{hyperref}{\def\hyperref#1#2#3#4{#2\ref{#4}#3}}{}
-
-\def\x@hyperref#1#2#3{%
-   % Turn off various catcodes before reading parameter 4
-   \catcode`\~ = 12
-   \catcode`\$ = 12
-   \catcode`\_ = 12
-   \catcode`\# = 12
-   \catcode`\& = 12
-   \catcode`\% = 12
-   \y@hyperref{#1}{#2}{#3}%
-}
-
-\def\y@hyperref#1#2#3#4{%
-   #2\ref{#4}#3
-   \catcode`\~ = 13
-   \catcode`\$ = 3
-   \catcode`\_ = 8
-   \catcode`\# = 6
-   \catcode`\& = 4
-   \catcode`\% = 14
-}
-
-\@ifundefined{hyperref}{\let\hyperref\x@hyperref}{}
-\@ifundefined{msihyperref}{\let\msihyperref\x@hyperref}{}
-
-
-
+% macro for hyperref
+\@ifundefined{hyperref}{\def\hyperref#1#2#3#4{#2\ref{#4}#3}}{}
 
 % macro for external program call
 \@ifundefined{qExtProgCall}{\def\qExtProgCall#1#2#3#4#5#6{\relax}}{}
@@ -109,16 +42,16 @@ freely copied and distributed.}
     \QCTOpt}{\QCTNOpt}
 }
 \def\QCBOpt[#1]#2{%
-  \def\QCBOptB{#1}%
-  \def\QCBOptA{#2}%
+  \def\QCBOptB{#1}
+  \def\QCBOptA{#2}
 }
 \def\QCBNOpt#1{%
-  \def\QCBOptA{#1}%
+  \def\QCBOptA{#1}
   \let\QCBOptB\empty
 }
 \def\Qcb{%
   \@ifnextchar[{%
-    \QCBOpt}{\QCBNOpt}%
+    \QCBOpt}{\QCBNOpt}
 }
 \def\PrepCapArgs{%
   \ifx\QCBOptA\empty
@@ -164,7 +97,6 @@ freely copied and distributed.}
 %          { contentswidth (scalar)  }               %#2
 %          { contentsheight (scalar) }               %#3
 %          { vertical shift when in-line (scalar) }  %#4
-
 \def\graffile#1#2#3#4{%
 %%% \ifnum\GRAPHICSTYPE=\tw@
 %%%  %Following if using psfig
@@ -173,13 +105,9 @@ freely copied and distributed.}
 %%% \else
   %Following for all others
   % JCS - added BOXTHEFRAME, see below
-    \bgroup
-	   \@inlabelfalse
-       \leavevmode
-       \@ifundefined{bbl@deactivate}{\def~{\string~}}{\activesoff}%
-        \raise -#4 \BOXTHEFRAME{%
-           \hbox to #2{\raise #3\hbox to #2{\null #1\hfil}}}%
-    \egroup
+    \leavevmode
+    \raise -#4 \BOXTHEFRAME{%
+        \hbox to #2{\raise #3\hbox to #2{\null #1\hfil}}}%
 }%
 %
 % A box for drafts
@@ -191,9 +119,9 @@ freely copied and distributed.}
  }%
 }%
 %
-\newcount\@msidraft
-\@msidraft=\z@
-\let\nographics=\@msidraft
+\newcount\draft
+\draft=\z@
+\let\nographics=\draft
 \newif\ifwasdraft
 \wasdraftfalse
 
@@ -203,10 +131,10 @@ freely copied and distributed.}
 %          { contentsheight (scalar) }               %#4
 %          { vertical shift when in-line (scalar) }  %#5
 \def\GRAPHIC#1#2#3#4#5{%
-   \ifnum\@msidraft=\@ne\draftbox{#2}{#3}{#4}{#5}%
-   \else\graffile{#1}{#3}{#4}{#5}%
-   \fi
-}
+ \ifnum\draft=\@ne\draftbox{#2}{#3}{#4}{#5}%
+  \else\graffile{#1}{#3}{#4}{#5}%
+  \fi
+ }%
 %
 \def\addtoLaTeXparams#1{%
     \edef\LaTeXparams{\LaTeXparams #1}}%
@@ -246,8 +174,8 @@ freely copied and distributed.}
   \ifx#1O\OverFrametrue\fi
   \ifx#1U\UnderFrametrue\fi
   \ifx#1w
-    \ifnum\@msidraft=1\wasdrafttrue\else\wasdraftfalse\fi
-    \@msidraft=\@ne
+    \ifnum\draft=1\wasdrafttrue\else\wasdraftfalse\fi
+    \draft=\@ne
   \fi
   \let\next=\readFRAMEparams
   \fi
@@ -270,11 +198,11 @@ freely copied and distributed.}
       \let\QCBOptA\empty
       \let\QCBOptB\empty
       #6%
-      \parindent=0pt
+      \parindent=0pt%
       \leftskip=0pt
       \rightskip=0pt
-      \setbox0=\hbox{\QCBOptA}%
-      \@tempdima=#1\relax
+      \setbox0 = \hbox{\QCBOptA}%
+      \@tempdima = #1\relax
       \ifOverFrame
           % Do this later
           \typeout{This is not implemented yet}%
@@ -283,9 +211,10 @@ freely copied and distributed.}
          \ifdim\wd0>\@tempdima
             \advance\@tempdima by \@tempdima
             \ifdim\wd0 >\@tempdima
+               \textwidth=\@tempdima
                \setbox1 =\vbox{%
-                  \unskip\hbox to \@tempdima{\hfill\GRAPHIC{#5}{#4}{#1}{#2}{#3}\hfill}%
-                  \unskip\hbox to \@tempdima{\parbox[b]{\@tempdima}{\QCBOptA}}%
+                  \noindent\hbox to \@tempdima{\hfill\GRAPHIC{#5}{#4}{#1}{#2}{#3}\hfill}\\%
+                  \noindent\hbox to \@tempdima{\parbox[b]{\@tempdima}{\QCBOptA}}%
                }%
                \wd1=\@tempdima
             \else
@@ -297,9 +226,10 @@ freely copied and distributed.}
                \wd1=\wd0
             \fi
          \else
+            %\show\BBB
             \ifdim\wd0>0pt
               \hsize=\@tempdima
-              \setbox1=\vbox{%
+              \setbox1 =\vbox{%
                 \unskip\GRAPHIC{#5}{#4}{#1}{#2}{0pt}%
                 \break
                 \unskip\hbox to \@tempdima{\hfill \QCBOptA\hfill}%
@@ -307,16 +237,16 @@ freely copied and distributed.}
               \wd1=\@tempdima
            \else
               \hsize=\@tempdima
-              \setbox1=\vbox{%
+              \setbox1 =\vbox{%
                 \unskip\GRAPHIC{#5}{#4}{#1}{#2}{0pt}%
               }%
               \wd1=\@tempdima
            \fi
          \fi
          \@tempdimb=\ht1
-         %\advance\@tempdimb by \dp1
-         \advance\@tempdimb by -#2
-         \advance\@tempdimb by #3
+         \advance\@tempdimb by \dp1
+         \advance\@tempdimb by -#2%
+         \advance\@tempdimb by #3%
          \leavevmode
          \raise -\@tempdimb \hbox{\box1}%
       \fi
@@ -330,30 +260,20 @@ freely copied and distributed.}
 %          { name }                                  %#4
 %          { caption}                                %#5
 \def\DFRAME#1#2#3#4#5{%
-  \vspace\topsep
-  \hfil\break
-  \bgroup
-     \leftskip\@flushglue
-	 \rightskip\@flushglue
-	 \parindent\z@
-	 \parfillskip\z@skip
+ \begin{center}
      \let\QCTOptA\empty
      \let\QCTOptB\empty
      \let\QCBOptA\empty
      \let\QCBOptB\empty
-	 \vbox\bgroup
-        \ifOverFrame 
-           #5\QCTOptA\par
-        \fi
-        \GRAPHIC{#4}{#3}{#1}{#2}{\z@}%
-        \ifUnderFrame 
-           \break#5\QCBOptA
-        \fi
-	 \egroup
-  \egroup
-  \vspace\topsep
-  \break
-}%
+     \ifOverFrame 
+        #5\QCTOptA\par
+     \fi
+     \GRAPHIC{#4}{#3}{#1}{#2}{\z@}
+     \ifUnderFrame 
+        \nobreak\par #5\QCBOptA
+     \fi
+ \end{center}%
+ }%
 %
 %Macro for Floating graphic object
 %   \FFRAME{ framedata f|i tbph x F|T }              %#1
@@ -364,18 +284,7 @@ freely copied and distributed.}
 %          { draft name }                            %#6
 %          { body }                                  %#7
 \def\FFRAME#1#2#3#4#5#6#7{%
- %If float.sty loaded and float option is 'h', change to 'H'  (gp) 1998/09/05
-  \@ifundefined{floatstyle}
-    {%floatstyle undefined (and float.sty not present), no change
-     \begin{figure}[#1]%
-    }
-    {%floatstyle DEFINED
-	 \ifx#1h%Only the h parameter, change to H
-      \begin{figure}[H]%
-	 \else
-      \begin{figure}[#1]%
-	 \fi
-	}
+ \begin{figure}[#1]%
   \let\QCTOptA\empty
   \let\QCTOptB\empty
   \let\QCBOptA\empty
@@ -446,11 +355,11 @@ freely copied and distributed.}
 \bgroup
    \makeactives
    \gdef\activesoff{%
-      \def"{\string"}%
-      \def;{\string;}%
-      \def:{\string:}%
-      \def'{\string'}%
-      \def~{\string~}%
+      \def"{\string"}
+      \def;{\string;}
+      \def:{\string:}
+      \def'{\string'}
+      \def~{\string~}
       %\bbl@deactivate{"}%
       %\bbl@deactivate{;}%
       %\bbl@deactivate{:}%
@@ -460,7 +369,8 @@ freely copied and distributed.}
 
 \def\FRAME#1#2#3#4#5#6#7#8{%
  \bgroup
- \ifnum\@msidraft=\@ne
+ \@ifundefined{bbl@deactivate}{}{\activesoff}
+ \ifnum\draft=\@ne
    \wasdrafttrue
  \else
    \wasdraftfalse%
@@ -477,7 +387,7 @@ freely copied and distributed.}
     \fi
    \fi
   \fi
-  \ifwasdraft\@msidraft=1\else\@msidraft=0\fi{}%
+  \ifwasdraft\draft=1\else\draft=0\fi{}%
   \egroup
  }%
 %
@@ -496,28 +406,26 @@ freely copied and distributed.}
 %
 %
 % macros for user - defined functions
+\def\func#1{\mathop{\rm #1}}%
 \def\limfunc#1{\mathop{\rm #1}}%
-\def\func#1{\mathop{\rm #1}\nolimits}%
-% macro for unit names
-\def\unit#1{\mathord{\thinspace\rm #1}}%
 
 %
 % miscellaneous 
+%\long\def\QQQ#1#2{}%
 \long\def\QQQ#1#2{%
      \long\expandafter\def\csname#1\endcsname{#2}}%
+%\def\QTP#1{}% JCS - this was changed becuase style editor will define QTP
 \@ifundefined{QTP}{\def\QTP#1{}}{}
 \@ifundefined{QEXCLUDE}{\def\QEXCLUDE#1{}}{}
+%\@ifundefined{Qcb}{\def\Qcb#1{#1}}{}
+%\@ifundefined{Qct}{\def\Qct#1{#1}}{}
 \@ifundefined{Qlb}{\def\Qlb#1{#1}}{}
 \@ifundefined{Qlt}{\def\Qlt#1{#1}}{}
 \def\QWE{}%
 \long\def\QQA#1#2{}%
-\def\QTR#1#2{{\csname#1\endcsname {#2}}}%
-  %	Add aliases for the ulem package
-  \let\QQQuline\uline
-  \let\QQQsout\sout
-  \let\QQQuuline\uuline
-  \let\QQQuwave\uwave
-  \let\QQQxout\xout
+%\def\QTR#1#2{{\em #2}}% Always \em!!!
+%\def\QTR#1#2{\mbox{\begin{#1}#2\end{#1}}}%cb%%%
+\def\QTR#1#2{{\csname#1\endcsname #2}}%(gp) Is this the best?
 \long\def\TeXButton#1#2{#2}%
 \long\def\QSubDoc#1#2{#2}%
 \def\EXPAND#1[#2]#3{}%
@@ -527,24 +435,6 @@ freely copied and distributed.}
 \def\ChildStyles#1{}%
 \def\ChildDefaults#1{}%
 \def\QTagDef#1#2#3{}%
-
-% Constructs added with Scientific Notebook
-\@ifundefined{correctchoice}{\def\correctchoice{\relax}}{}
-\@ifundefined{HTML}{\def\HTML#1{\relax}}{}
-\@ifundefined{TCIIcon}{\def\TCIIcon#1#2#3#4{\relax}}{}
-\if@compatibility
-  \typeout{Not defining UNICODE  U or CustomNote commands for LaTeX 2.09.}
-\else
-  \providecommand{\UNICODE}[2][]{\protect\rule{.1in}{.1in}}
-  \providecommand{\U}[1]{\protect\rule{.1in}{.1in}}
-  \providecommand{\CustomNote}[3][]{\marginpar{#3}}
-\fi
-
-\@ifundefined{lambdabar}{
-      \def\lambdabar{\errmessage{You have used the lambdabar symbol. 
-                      This is available for typesetting only in RevTeX styles.}}
-   }{}
-
 %
 % Macros for style editor docs
 \@ifundefined{StyleEditBeginDoc}{\def\StyleEditBeginDoc{\relax}}{}
@@ -554,8 +444,18 @@ freely copied and distributed.}
 \def\QQfntext#1#2{\addtocounter{footnote}{#1}\footnotetext{#2}}
 %
 % Macros for indexing.
+\def\MAKEINDEX{\makeatletter\input gnuindex.sty\makeatother\makeindex}%	
+\@ifundefined{INDEX}{\def\INDEX#1#2{}{}}{}%
+\@ifundefined{SUBINDEX}{\def\SUBINDEX#1#2#3{}{}{}}{}%
+\@ifundefined{initial}%  
+   {\def\initial#1{\bigbreak{\raggedright\large\bf #1}\kern 2\p@\penalty3000}}%
+   {}%
+\@ifundefined{entry}{\def\entry#1#2{\item {#1}, #2}}{}%
+\@ifundefined{primary}{\def\primary#1{\item {#1}}}{}%
+\@ifundefined{secondary}{\def\secondary#1#2{\subitem {#1}, #2}}{}%
 %
-\@ifundefined{TCIMAKEINDEX}{}{\makeindex}%
+%
+\@ifundefined{ZZZ}{}{\MAKEINDEX\makeatletter}%
 %
 % Attempts to avoid problems with other styles
 \@ifundefined{abstract}{%
@@ -609,7 +509,7 @@ freely copied and distributed.}
 %
 % macros for T3TeX files
 \newdimen\theight
-\@ifundefined{Column}{\def\Column{%
+\def\Column{%
  \vadjust{\setbox\z@=\hbox{\scriptsize\quad\quad tcol}%
   \theight=\ht\z@\advance\theight by \dp\z@\advance\theight by \lineskip
   \kern -\theight \vbox to \theight{%
@@ -617,38 +517,42 @@ freely copied and distributed.}
    \vss
    }%
   }%
- }}{}%
+ }%
 %
-\@ifundefined{qed}{\def\qed{%
+\def\qed{%
  \ifhmode\unskip\nobreak\fi\ifmmode\ifinner\else\hskip5\p@\fi\fi
  \hbox{\hskip5\p@\vrule width4\p@ height6\p@ depth1.5\p@\hskip\p@}%
- }}{}%
+ }%
 %
-\@ifundefined{cents}{\def\cents{\hbox{\rm\rlap c/}}}{}%
-\@ifundefined{tciLaplace}{\def\tciLaplace{\ensuremath{\mathcal{L}}}}{}%
-\@ifundefined{tciFourier}{\def\tciFourier{\ensuremath{\mathcal{F}}}}{}%
-\@ifundefined{textcurrency}{\def\textcurrency{\hbox{\rm\rlap xo}}}{}%
-\@ifundefined{texteuro}{\def\texteuro{\hbox{\rm\rlap C=}}}{}%
-\@ifundefined{euro}{\def\euro{\hbox{\rm\rlap C=}}}{}%
-\@ifundefined{textfranc}{\def\textfranc{\hbox{\rm\rlap-F}}}{}%
-\@ifundefined{textlira}{\def\textlira{\hbox{\rm\rlap L=}}}{}%
-\@ifundefined{textpeseta}{\def\textpeseta{\hbox{\rm P\negthinspace s}}}{}%
+\def\cents{\hbox{\rm\rlap/c}}%
+\def\miss{\hbox{\vrule height2\p@ width 2\p@ depth\z@}}%
+%\def\miss{\hbox{.}}%        %another possibility 
 %
-\@ifundefined{miss}{\def\miss{\hbox{\vrule height2\p@ width 2\p@ depth\z@}}}{}%
+\def\vvert{\Vert}%           %always translated to \left| or \right|
 %
-\@ifundefined{vvert}{\def\vvert{\Vert}}{}%  %always translated to \left| or \right|
+\def\tcol#1{{\baselineskip=6\p@ \vcenter{#1}} \Column}  %
 %
-\@ifundefined{tcol}{\def\tcol#1{{\baselineskip=6\p@ \vcenter{#1}} \Column}}{}%
+\def\dB{\hbox{{}}}%                 %dummy entry in column 
+\def\mB#1{\hbox{$#1$}}%             %column entry
+\def\nB#1{\hbox{#1}}%               %column entry (not math)
 %
-\@ifundefined{dB}{\def\dB{\hbox{{}}}}{}%        %dummy entry in column 
-\@ifundefined{mB}{\def\mB#1{\hbox{$#1$}}}{}%   %column entry
-\@ifundefined{nB}{\def\nB#1{\hbox{#1}}}{}%     %column entry (not math)
+%\newcount\notenumber
+%\def\clearnotenumber{\notenumber=0}
+%\def\note{\global\advance\notenumber by 1
+% \footnote{$^{\the\notenumber}$}}
+%\def\note{\global\advance\notenumber by 1
+\def\note{$^{\dag}}%
 %
-\@ifundefined{note}{\def\note{$^{\dag}}}{}%
 %
+
 \def\newfmtname{LaTeX2e}
-% No longer load latexsym.  This is now handled by SWP, which uses amsfonts if necessary
-%
+\def\chkcompat{%
+   \if@compatibility
+   \else
+     \usepackage{latexsym}
+   \fi
+}
+
 \ifx\fmtname\newfmtname
   \DeclareOldFontCommand{\rm}{\normalfont\rmfamily}{\mathrm}
   \DeclareOldFontCommand{\sf}{\normalfont\sffamily}{\mathsf}
@@ -657,6 +561,7 @@ freely copied and distributed.}
   \DeclareOldFontCommand{\it}{\normalfont\itshape}{\mathit}
   \DeclareOldFontCommand{\sl}{\normalfont\slshape}{\@nomath\sl}
   \DeclareOldFontCommand{\sc}{\normalfont\scshape}{\@nomath\sc}
+  \chkcompat
 \fi
 
 %
@@ -665,37 +570,37 @@ freely copied and distributed.}
 % which might be bolded	 - there are 
 % probably others to add to this list
 
-\def\alpha{{\Greekmath 010B}}%
-\def\beta{{\Greekmath 010C}}%
-\def\gamma{{\Greekmath 010D}}%
-\def\delta{{\Greekmath 010E}}%
-\def\epsilon{{\Greekmath 010F}}%
-\def\zeta{{\Greekmath 0110}}%
-\def\eta{{\Greekmath 0111}}%
-\def\theta{{\Greekmath 0112}}%
-\def\iota{{\Greekmath 0113}}%
-\def\kappa{{\Greekmath 0114}}%
-\def\lambda{{\Greekmath 0115}}%
-\def\mu{{\Greekmath 0116}}%
-\def\nu{{\Greekmath 0117}}%
-\def\xi{{\Greekmath 0118}}%
-\def\pi{{\Greekmath 0119}}%
-\def\rho{{\Greekmath 011A}}%
-\def\sigma{{\Greekmath 011B}}%
-\def\tau{{\Greekmath 011C}}%
-\def\upsilon{{\Greekmath 011D}}%
-\def\phi{{\Greekmath 011E}}%
-\def\chi{{\Greekmath 011F}}%
-\def\psi{{\Greekmath 0120}}%
-\def\omega{{\Greekmath 0121}}%
-\def\varepsilon{{\Greekmath 0122}}%
-\def\vartheta{{\Greekmath 0123}}%
-\def\varpi{{\Greekmath 0124}}%
-\def\varrho{{\Greekmath 0125}}%
-\def\varsigma{{\Greekmath 0126}}%
-\def\varphi{{\Greekmath 0127}}%
+\def\alpha{\Greekmath 010B }%
+\def\beta{\Greekmath 010C }%
+\def\gamma{\Greekmath 010D }%
+\def\delta{\Greekmath 010E }%
+\def\epsilon{\Greekmath 010F }%
+\def\zeta{\Greekmath 0110 }%
+\def\eta{\Greekmath 0111 }%
+\def\theta{\Greekmath 0112 }%
+\def\iota{\Greekmath 0113 }%
+\def\kappa{\Greekmath 0114 }%
+\def\lambda{\Greekmath 0115 }%
+\def\mu{\Greekmath 0116 }%
+\def\nu{\Greekmath 0117 }%
+\def\xi{\Greekmath 0118 }%
+\def\pi{\Greekmath 0119 }%
+\def\rho{\Greekmath 011A }%
+\def\sigma{\Greekmath 011B }%
+\def\tau{\Greekmath 011C }%
+\def\upsilon{\Greekmath 011D }%
+\def\phi{\Greekmath 011E }%
+\def\chi{\Greekmath 011F }%
+\def\psi{\Greekmath 0120 }%
+\def\omega{\Greekmath 0121 }%
+\def\varepsilon{\Greekmath 0122 }%
+\def\vartheta{\Greekmath 0123 }%
+\def\varpi{\Greekmath 0124 }%
+\def\varrho{\Greekmath 0125 }%
+\def\varsigma{\Greekmath 0126 }%
+\def\varphi{\Greekmath 0127 }%
 
-\def\nabla{{\Greekmath 0272}}
+\def\nabla{\Greekmath 0272 }
 \def\FindBoldGroup{%
    {\setbox0=\hbox{$\mathbf{x\global\edef\theboldgroup{\the\mathgroup}}$}}%
 }
@@ -764,196 +669,26 @@ freely copied and distributed.}
 \@ifundefined{AmSTeX}{\def\AmSTeX{\protect\AmS-\protect\TeX\@}}{}%
 %
 
-% This macro is a fix to eqnarray
-\def\@@eqncr{\let\@tempa\relax
-    \ifcase\@eqcnt \def\@tempa{& & &}\or \def\@tempa{& &}%
-      \else \def\@tempa{&}\fi
-     \@tempa
-     \if@eqnsw
-        \iftag@
-           \@taggnum
-        \else
-           \@eqnnum\stepcounter{equation}%
-        \fi
-     \fi
-     \global\tag@false
-     \global\@eqnswtrue
-     \global\@eqcnt\z@\cr}
-
-
-\def\TCItag{\@ifnextchar*{\@TCItagstar}{\@TCItag}}
-\def\@TCItag#1{%
-    \global\tag@true
-    \global\def\@taggnum{(#1)}%
-    \global\def\@currentlabel{#1}}
-\def\@TCItagstar*#1{%
-    \global\tag@true
-    \global\def\@taggnum{#1}%
-    \global\def\@currentlabel{#1}}
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-\def\QATOP#1#2{{#1 \atop #2}}%
-\def\QTATOP#1#2{{\textstyle {#1 \atop #2}}}%
-\def\QDATOP#1#2{{\displaystyle {#1 \atop #2}}}%
-\def\QABOVE#1#2#3{{#2 \above#1 #3}}%
-\def\QTABOVE#1#2#3{{\textstyle {#2 \above#1 #3}}}%
-\def\QDABOVE#1#2#3{{\displaystyle {#2 \above#1 #3}}}%
-\def\QOVERD#1#2#3#4{{#3 \overwithdelims#1#2 #4}}%
-\def\QTOVERD#1#2#3#4{{\textstyle {#3 \overwithdelims#1#2 #4}}}%
-\def\QDOVERD#1#2#3#4{{\displaystyle {#3 \overwithdelims#1#2 #4}}}%
-\def\QATOPD#1#2#3#4{{#3 \atopwithdelims#1#2 #4}}%
-\def\QTATOPD#1#2#3#4{{\textstyle {#3 \atopwithdelims#1#2 #4}}}%
-\def\QDATOPD#1#2#3#4{{\displaystyle {#3 \atopwithdelims#1#2 #4}}}%
-\def\QABOVED#1#2#3#4#5{{#4 \abovewithdelims#1#2#3 #5}}%
-\def\QTABOVED#1#2#3#4#5{{\textstyle 
-   {#4 \abovewithdelims#1#2#3 #5}}}%
-\def\QDABOVED#1#2#3#4#5{{\displaystyle 
-   {#4 \abovewithdelims#1#2#3 #5}}}%
-%
-% Macros for text size operators:
-%
-
-\def\tint{\msi@int\textstyle\int}%
-\def\tiint{\msi@int\textstyle\iint}%
-\def\tiiint{\msi@int\textstyle\iiint}%
-\def\tiiiint{\msi@int\textstyle\iiiint}%
-\def\tidotsint{\msi@int\textstyle\idotsint}%
-\def\toint{\msi@int\textstyle\oint}%
-
-
-\def\tsum{\mathop{\textstyle \sum }}%
-\def\tprod{\mathop{\textstyle \prod }}%
-\def\tbigcap{\mathop{\textstyle \bigcap }}%
-\def\tbigwedge{\mathop{\textstyle \bigwedge }}%
-\def\tbigoplus{\mathop{\textstyle \bigoplus }}%
-\def\tbigodot{\mathop{\textstyle \bigodot }}%
-\def\tbigsqcup{\mathop{\textstyle \bigsqcup }}%
-\def\tcoprod{\mathop{\textstyle \coprod }}%
-\def\tbigcup{\mathop{\textstyle \bigcup }}%
-\def\tbigvee{\mathop{\textstyle \bigvee }}%
-\def\tbigotimes{\mathop{\textstyle \bigotimes }}%
-\def\tbiguplus{\mathop{\textstyle \biguplus }}%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% NOTE: The rest of this file is read only if amstex has not been
+% loaded.  This section is used to define amstex constructs in the
+% event they have not been defined.
 %
 %
-%Macros for display size operators:
-%
-
-\newtoks\temptoksa
-\newtoks\temptoksb
-\newtoks\temptoksc
-
-
-\def\msi@int#1#2{%
- \def\@temp{{#1#2\the\temptoksc_{\the\temptoksa}^{\the\temptoksb}}}%   
- \futurelet\@nextcs
- \@int
-}
-
-\def\@int{%
-   \ifx\@nextcs\limits
-      \typeout{Found limits}%
-      \temptoksc={\limits}%
-	  \let\@next\@intgobble%
-   \else\ifx\@nextcs\nolimits
-      \typeout{Found nolimits}%
-      \temptoksc={\nolimits}%
-	  \let\@next\@intgobble%
-   \else
-      \typeout{Did not find limits or no limits}%
-      \temptoksc={}%
-      \let\@next\msi@limits%
-   \fi\fi
-   \@next   
-}%
-
-\def\@intgobble#1{%
-   \typeout{arg is #1}%
-   \msi@limits
-}
-
-
-\def\msi@limits{%
-   \temptoksa={}%
-   \temptoksb={}%
-   \@ifnextchar_{\@limitsa}{\@limitsb}%
-}
-
-\def\@limitsa_#1{%
-   \temptoksa={#1}%
-   \@ifnextchar^{\@limitsc}{\@temp}%
-}
-
-\def\@limitsb{%
-   \@ifnextchar^{\@limitsc}{\@temp}%
-}
-
-\def\@limitsc^#1{%
-   \temptoksb={#1}%
-   \@ifnextchar_{\@limitsd}{\@temp}%   
-}
-
-\def\@limitsd_#1{%
-   \temptoksa={#1}%
-   \@temp
-}
-
-
-
-\def\dint{\msi@int\displaystyle\int}%
-\def\diint{\msi@int\displaystyle\iint}%
-\def\diiint{\msi@int\displaystyle\iiint}%
-\def\diiiint{\msi@int\displaystyle\iiiint}%
-\def\didotsint{\msi@int\displaystyle\idotsint}%
-\def\doint{\msi@int\displaystyle\oint}%
-
-\def\dsum{\mathop{\displaystyle \sum }}%
-\def\dprod{\mathop{\displaystyle \prod }}%
-\def\dbigcap{\mathop{\displaystyle \bigcap }}%
-\def\dbigwedge{\mathop{\displaystyle \bigwedge }}%
-\def\dbigoplus{\mathop{\displaystyle \bigoplus }}%
-\def\dbigodot{\mathop{\displaystyle \bigodot }}%
-\def\dbigsqcup{\mathop{\displaystyle \bigsqcup }}%
-\def\dcoprod{\mathop{\displaystyle \coprod }}%
-\def\dbigcup{\mathop{\displaystyle \bigcup }}%
-\def\dbigvee{\mathop{\displaystyle \bigvee }}%
-\def\dbigotimes{\mathop{\displaystyle \bigotimes }}%
-\def\dbiguplus{\mathop{\displaystyle \biguplus }}%
-
-\if@compatibility\else
-  % Always load amsmath in LaTeX2e mode
-  \RequirePackage{amsmath}
-\fi
-
-\def\ExitTCILatex{\makeatother\endinput}
-
-\bgroup
 \ifx\ds@amstex\relax
-   \message{amstex already loaded}\aftergroup\ExitTCILatex
+   \message{amstex already loaded}\makeatother\endinput% 2.09 compatability
 \else
-   \@ifpackageloaded{amsmath}%
-      {\if@compatibility\message{amsmath already loaded}\fi\aftergroup\ExitTCILatex}
-      {}
    \@ifpackageloaded{amstex}%
-      {\if@compatibility\message{amstex already loaded}\fi\aftergroup\ExitTCILatex}
+      {\message{amstex already loaded}\makeatother\endinput}
       {}
    \@ifpackageloaded{amsgen}%
-      {\if@compatibility\message{amsgen already loaded}\fi\aftergroup\ExitTCILatex}
+      {\message{amsgen already loaded}\makeatother\endinput}
       {}
 \fi
-\egroup
-
-%Exit if any of the AMS macros are already loaded.
-%This is always the case for LaTeX2e mode.
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% NOTE: The rest of this file is read only if in LaTeX 2.09 compatibility
-% mode. This section is used to define AMS-like constructs in the
-% event they have not been defined.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\typeout{TCILATEX defining AMS-like constructs in LaTeX 2.09 COMPATIBILITY MODE}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%
+%
 %  Macros to define some AMS LaTeX constructs when 
 %  AMS LaTeX has not been loaded
 % 
@@ -1023,6 +758,39 @@ freely copied and distributed.}
 \newif\iffirstchoice@
 \firstchoice@true
 %
+%    Old Scheme for \text
+%
+%\def\rmfam{\z@}%
+%\newif\iffirstchoice@
+%\firstchoice@true
+%\def\textfonti{\the\textfont\@ne}%
+%\def\textfontii{\the\textfont\tw@}%
+%\def\text{\RIfM@\expandafter\text@\else\expandafter\text@@\fi}%
+%\def\text@@#1{\leavevmode\hbox{#1}}%
+%\def\text@#1{\mathchoice
+% {\hbox{\everymath{\displaystyle}\def\textfonti{\the\textfont\@ne}%
+%  \def\textfontii{\the\textfont\tw@}\textdef@@ T#1}}%
+% {\hbox{\firstchoice@false
+%  \everymath{\textstyle}\def\textfonti{\the\textfont\@ne}%
+%  \def\textfontii{\the\textfont\tw@}\textdef@@ T#1}}%
+% {\hbox{\firstchoice@false
+%  \everymath{\scriptstyle}\def\textfonti{\the\scriptfont\@ne}%
+%  \def\textfontii{\the\scriptfont\tw@}\textdef@@ S\rm#1}}%
+% {\hbox{\firstchoice@false
+%  \everymath{\scriptscriptstyle}\def\textfonti
+%  {\the\scriptscriptfont\@ne}%
+%  \def\textfontii{\the\scriptscriptfont\tw@}\textdef@@ s\rm#1}}}%
+%\def\textdef@@#1{\textdef@#1\rm\textdef@#1\bf\textdef@#1\sl
+%    \textdef@#1\it}%
+%\def\DN@{\def\next@}%
+%\def\eat@#1{}%
+%\def\textdef@#1#2{%
+% \DN@{\csname\expandafter\eat@\string#2fam\endcsname}%
+% \if S#1\edef#2{\the\scriptfont\next@\relax}%
+% \else\if s#1\edef#2{\the\scriptscriptfont\next@\relax}%
+% \else\edef#2{\the\textfont\next@\relax}\fi\fi}%
+%
+%
 %These are the AMS constructs for multiline limits.
 %
 \def\Let@{\relax\iffalse{\fi\let\\=\cr\iffalse}\fi}%
@@ -1076,6 +844,8 @@ freely copied and distributed.}
  \noalign{\nointerlineskip}\leftrightarrowfill@#1\crcr}}}%
 %%%%%%%%%%%%%%%%%%%%%
 
+% 94.0815 by Jon:
+
 \def\qopnamewl@#1{\mathop{\operator@font#1}\nlimits@}
 \let\nlimits@\displaylimits
 \def\setboxz@h{\setbox\z@\hbox}
@@ -1107,6 +877,77 @@ freely copied and distributed.}
 \def\varlimsup@#1{\mathop{\overline
   {\hbox{$#1\m@th\operator@font lim$}}}}
 
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\def\tfrac#1#2{{\textstyle {#1 \over #2}}}%
+\def\dfrac#1#2{{\displaystyle {#1 \over #2}}}%
+\def\binom#1#2{{#1 \choose #2}}%
+\def\tbinom#1#2{{\textstyle {#1 \choose #2}}}%
+\def\dbinom#1#2{{\displaystyle {#1 \choose #2}}}%
+\def\QATOP#1#2{{#1 \atop #2}}%
+\def\QTATOP#1#2{{\textstyle {#1 \atop #2}}}%
+\def\QDATOP#1#2{{\displaystyle {#1 \atop #2}}}%
+\def\QABOVE#1#2#3{{#2 \above#1 #3}}%
+\def\QTABOVE#1#2#3{{\textstyle {#2 \above#1 #3}}}%
+\def\QDABOVE#1#2#3{{\displaystyle {#2 \above#1 #3}}}%
+\def\QOVERD#1#2#3#4{{#3 \overwithdelims#1#2 #4}}%
+\def\QTOVERD#1#2#3#4{{\textstyle {#3 \overwithdelims#1#2 #4}}}%
+\def\QDOVERD#1#2#3#4{{\displaystyle {#3 \overwithdelims#1#2 #4}}}%
+\def\QATOPD#1#2#3#4{{#3 \atopwithdelims#1#2 #4}}%
+\def\QTATOPD#1#2#3#4{{\textstyle {#3 \atopwithdelims#1#2 #4}}}%
+\def\QDATOPD#1#2#3#4{{\displaystyle {#3 \atopwithdelims#1#2 #4}}}%
+\def\QABOVED#1#2#3#4#5{{#4 \abovewithdelims#1#2#3 #5}}%
+\def\QTABOVED#1#2#3#4#5{{\textstyle 
+   {#4 \abovewithdelims#1#2#3 #5}}}%
+\def\QDABOVED#1#2#3#4#5{{\displaystyle 
+   {#4 \abovewithdelims#1#2#3 #5}}}%
+%
+% Macros for text size operators:
+
+%JCS - added braces and \mathop around \displaystyle\int, etc.
+%
+\def\tint{\mathop{\textstyle \int}}%
+\def\tiint{\mathop{\textstyle \iint }}%
+\def\tiiint{\mathop{\textstyle \iiint }}%
+\def\tiiiint{\mathop{\textstyle \iiiint }}%
+\def\tidotsint{\mathop{\textstyle \idotsint }}%
+\def\toint{\mathop{\textstyle \oint}}%
+\def\tsum{\mathop{\textstyle \sum }}%
+\def\tprod{\mathop{\textstyle \prod }}%
+\def\tbigcap{\mathop{\textstyle \bigcap }}%
+\def\tbigwedge{\mathop{\textstyle \bigwedge }}%
+\def\tbigoplus{\mathop{\textstyle \bigoplus }}%
+\def\tbigodot{\mathop{\textstyle \bigodot }}%
+\def\tbigsqcup{\mathop{\textstyle \bigsqcup }}%
+\def\tcoprod{\mathop{\textstyle \coprod }}%
+\def\tbigcup{\mathop{\textstyle \bigcup }}%
+\def\tbigvee{\mathop{\textstyle \bigvee }}%
+\def\tbigotimes{\mathop{\textstyle \bigotimes }}%
+\def\tbiguplus{\mathop{\textstyle \biguplus }}%
+%
+%
+%Macros for display size operators:
+%
+
+\def\dint{\mathop{\displaystyle \int}}%
+\def\diint{\mathop{\displaystyle \iint }}%
+\def\diiint{\mathop{\displaystyle \iiint }}%
+\def\diiiint{\mathop{\displaystyle \iiiint }}%
+\def\didotsint{\mathop{\displaystyle \idotsint }}%
+\def\doint{\mathop{\displaystyle \oint}}%
+\def\dsum{\mathop{\displaystyle \sum }}%
+\def\dprod{\mathop{\displaystyle \prod }}%
+\def\dbigcap{\mathop{\displaystyle \bigcap }}%
+\def\dbigwedge{\mathop{\displaystyle \bigwedge }}%
+\def\dbigoplus{\mathop{\displaystyle \bigoplus }}%
+\def\dbigodot{\mathop{\displaystyle \bigodot }}%
+\def\dbigsqcup{\mathop{\displaystyle \bigsqcup }}%
+\def\dcoprod{\mathop{\displaystyle \coprod }}%
+\def\dbigcup{\mathop{\displaystyle \bigcup }}%
+\def\dbigvee{\mathop{\displaystyle \bigvee }}%
+\def\dbigotimes{\mathop{\displaystyle \bigotimes }}%
+\def\dbiguplus{\mathop{\displaystyle \biguplus }}%
 %
 %Companion to stackrel
 \def\stackunder#1#2{\mathrel{\mathop{#2}\limits_{#1}}}%
@@ -1221,6 +1062,23 @@ You are using a type of "tabular*" construct that is only allowed in AmS-LaTeX.}
 % macro to simulate ams tag construct
 
 
+% This macro is a fix to eqnarray
+\def\@@eqncr{\let\@tempa\relax
+    \ifcase\@eqcnt \def\@tempa{& & &}\or \def\@tempa{& &}%
+      \else \def\@tempa{&}\fi
+     \@tempa
+     \if@eqnsw
+        \iftag@
+           \@taggnum
+        \else
+           \@eqnnum\stepcounter{equation}%
+        \fi
+     \fi
+     \global\tag@false
+     \global\@eqnswtrue
+     \global\@eqcnt\z@\cr}
+
+
 % This macro is a fix to the equation environment
  \def\endequation{%
      \ifmmode\ifinner % FLEQN hack
@@ -1251,34 +1109,20 @@ You are using a type of "tabular*" construct that is only allowed in AmS-LaTeX.}
 
  \newif\iftag@ \tag@false
  
- \def\TCItag{\@ifnextchar*{\@TCItagstar}{\@TCItag}}
- \def\@TCItag#1{%
+ \def\tag{\@ifnextchar*{\@tagstar}{\@tag}}
+ \def\@tag#1{%
      \global\tag@true
-     \global\def\@taggnum{(#1)}%
-     \global\def\@currentlabel{#1}}
- \def\@TCItagstar*#1{%
+     \global\def\@taggnum{(#1)}}
+ \def\@tagstar*#1{%
      \global\tag@true
-     \global\def\@taggnum{#1}%
-     \global\def\@currentlabel{#1}}
-
-  \@ifundefined{tag}{
-     \def\tag{\@ifnextchar*{\@tagstar}{\@tag}}
-     \def\@tag#1{%
-         \global\tag@true
-         \global\def\@taggnum{(#1)}}
-     \def\@tagstar*#1{%
-         \global\tag@true
-         \global\def\@taggnum{#1}}
-  }{}
-
-\def\tfrac#1#2{{\textstyle {#1 \over #2}}}%
-\def\dfrac#1#2{{\displaystyle {#1 \over #2}}}%
-\def\binom#1#2{{#1 \choose #2}}%
-\def\tbinom#1#2{{\textstyle {#1 \choose #2}}}%
-\def\dbinom#1#2{{\displaystyle {#1 \choose #2}}}%
+     \global\def\@taggnum{#1}%  
+}
 
 % Do not add anything to the end of this file.  
 % The last section of the file is loaded only if 
 % amstex has not been.
+
+
+
 \makeatother
 \endinput
