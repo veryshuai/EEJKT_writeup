@@ -1,5 +1,4 @@
 %2multibyte Version: 5.50.0.2960 CodePage: 936
-%\usepackage{natbib}
 %\setlength{\bibsep}{6pt}
 %\input{tcilatex}
 %\graphicspath{{C:\Users\jxt32\Dropbox\home-work stuff\EEJKT\figures}} 
@@ -32,6 +31,7 @@
 \usepackage[flushleft]{threeparttable}
 \usepackage{amsmath}
 \usepackage[section]{placeins}
+\usepackage{natbib}
 
 \setcounter{MaxMatrixCols}{10}
 %TCIDATA{OutputFilter=LATEX.DLL}
@@ -247,7 +247,7 @@ differences in the way exporters' names and addresses are recorded as they
 pass through customs, and shipments from the same exporter can appear to
 originate from distinct Colombian firms. To gauge the importance of this
 problem, we have conducted various checks on the matches that are based on
-this variable; these are explained in Appendix 2.
+this variable; these are explained in Appendix \ref{sec:data_check}.
 
 We limit our analysis to transactions between non-affiliated trade partners,
 and we consider only imports of manufactured goods. The latter restriction
@@ -286,7 +286,7 @@ manufactured goods to the United States. It is based on observed evolution
 patterns among cohorts of firms that entered the market each year between
 1993 and 1999, and it exploits U.S. customs records from 1992 through 2009.
 
-To interpret the figures in this Table, imagine for a moment that they
+To interpret the figures in this table, imagine for a moment that they
 describe a particular cohort, say, those firms that first entered the U.S.
 market in 1993. Then the second row of the Table would imply that only 29
 percent of these firms continued exporting though 1994 (column 1), yet these
@@ -300,7 +300,7 @@ The actual interpretation for Table \ref{tab:Brooks} differs from this one
 only in that it is an average of all of the cohort-specific tables we can
 construct using cohorts observed for at least 10 years.\footnote{%
 Similar tables for Colombian exports of all goods and to all destinations
-appear in Eaton, et al, 2008.\medskip \medskip} Taking averages saves space
+appear in Eaton, et al (2008).\medskip \medskip} Taking averages saves space
 but does not affect the basic message, since maturation patterns vary little
 across cohorts (Appendix tables A.1-A.3). 
 \begin{table}[tbp]
@@ -328,18 +328,14 @@ Cohort age & Exporters & Total Exports & Average Exports \\ \hline
 }
 \par
 {\endcenter
-\begin{tablenotes}$\bigskip $
+\begin{tablenotes}
 %\bigskip
-\begin{singlespace*}
-\begin{flushleft}
-\textbf{Notes:} Figures for cohorts aged 2-10 are expressed relative to corresponding figures for one-year-old cohorts.
-\end{flushleft}
-\end{singlespace*}
+\item \textbf{Notes:} Figures for cohorts aged 2-10 are expressed relative to corresponding figures for one-year-old cohorts. 
 \end{tablenotes}
 }
 \end{table}
 
-What are the messages? First, column 1 of Table \ref{tab:Brooks} shows the
+Column 1 of Table \ref{tab:Brooks} shows the
 rate of decline in cohort membership is especially high between the first
 and second year, with more than 70 percent of firms dropping out. But
 conditional on making it to the second year, the survival probability is
@@ -350,9 +346,9 @@ more than 15 years of market tenure are rare. For example, firms that were
 exporting to the United States in 1992 account for less than five percent of
 the firms exporting to the United States towards the end of the sample.
 
-Second, column 2 shows that the rapid initial decline in its membership is
+Column 2 shows that the rapid initial decline in its membership is
 not accompanied by a similar collapse in total cohort sales. The relative
-stablility of total sales means, of course, that sales per firm are growing
+stability of total sales means that sales per firm are growing
 substantially. Indeed, as can been seen in column 3, sales per surviving
 exporter more than triple from the first to the second year, increase again
 in the cohort's third year, and show no strong tendency to grow further or
@@ -367,7 +363,7 @@ place during 1992-2009.
 
 The number of Colombian exporters appearing in our sample grew from 2,232 in
 1992 to 3,300 in 2009, a growth of 2 percent per annum, while the number of
-U.S. importing firms grew by 3 percent per annum (Appendix 1, Table \ref%
+U.S. importing firms grew by 3 percent per annum (Appendix \ref{sec:data_tables}, Table \ref%
 {tab:ex_im_by_year}). The number of Colombian exporter-U.S. importer pairs
 (representing at least one transaction between them in a year) also grew at
 an annual rate of 2 percent. Roughly 80 percent of matches are monogamous in
@@ -387,7 +383,7 @@ those that made it into the next year, almost 50 percent made it into the
 next year. Similarly, of the relationships that existed in 2005, 57 percent
 started that year but of those that started before, 37 percent had been
 around at least three years before. Of the 3,210 matches identified in 1992,
-less than 25 endure (are present every year) throughout the period.
+less than 25 are present every year throughout the period.
 
 \begin{table}[bph]
 \caption{\textbf{Transition Probabilities, Number of Clients}}
@@ -513,20 +509,15 @@ start small and survive, but no such tendency among matches that start in
 the largest quartile. Finally, looking across matches with different life
 spans, those that survive more years tend to have higher sales in all (full)
 years than matches that fail relatively quickly. This pattern is robust
-across matches in the different quartiles for initial sales.\FRAME{ftbpF}{%
-5.2607in}{3.4523in}{0pt}{}{}{Figure}{\special{language "Scientific
-Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file
-"T";width 5.2607in;height 3.4523in;depth 0pt;original-width
-9.5925in;original-height 6.2785in;cropleft "0";croptop "1";cropright
-"1";cropbottom "0";tempfilename 'Q96X4400.bmp';tempfile-properties "XPR";}}
+across matches in the different quartiles for initial sales.
 
-%\begin{center}
-%\begin{figure}[tbp]
-%\includegraphics[width=\textwidth]{Figure-1-quadrants-v2}
-%\caption{\textbf{Average annual sales per match, by initial size quartile}}
-%\label{fig:match_maturation}
-%\end{figure}
-%\end{center}
+\begin{center}
+\begin{figure}[tbp]
+\includegraphics[width=\textwidth]{figures/Figure_1_quadrants_v2.png}
+\caption{\textbf{Average annual sales per match, by initial size quartile}}
+\label{fig:match_maturation}
+\end{figure}
+\end{center}
 
 \section{A\ Model of Exporting at the Transactions Level}
 
@@ -828,7 +819,7 @@ visit potential clients on their own; attending trade fairs; paying a
 researcher to search the web for foreign firms that purchase products
 similar to their own; paying browsers to ensure that their site appear near
 the top of a search for their product type; maintaining a web site in
-English.\medskip\ Interviewees also reported that relatively low-cost
+English.  Interviewees also reported that relatively low-cost
 activities, such as traveling to trade fairs, or translating their websites
 to English, led to relationships with one or two clients every few years.
 Establishing a larger network of clients required much more costly
@@ -901,8 +892,7 @@ the expected value of the information generated.
 Now consider the home market. Since we assume sellers have already learned
 their true success rates at home, $\theta _{j}^{h},$ new encounters do not
 influence expectations, and we need not condition the value function or the
-expected success rate on search histories$.$ \textbf{[JT: I put an }$a$%
-\textbf{\ argument in V()]} Again suppressing market superscripts, the
+expected success rate on search histories$.$  Again suppressing market superscripts, the
 Bellman equation collapses to:%
 \begin{eqnarray}
 V_{\varphi }(x,a) &=&\max_{s}\frac{1}{\rho +\lambda _{x}^{X}}\left[
@@ -1193,7 +1183,7 @@ little sensitivity to success rates, but it strongly increases with
 cumulative successes.
 
 \textbf{Separation policy. }Equation ($ii$) captures a second basic feature
-of firms' exporting behavior: their match termination policies. Here the
+of firms' exporting behavior: match termination policies. Here the
 unit of observation is seller $j$'s $i^{th}$ match in year $t$, and the
 dependent variable $D^{exit\text{ }match}$ takes a value of unity when this
 match is in its final year.\footnote{%
@@ -1207,7 +1197,7 @@ expressed in logs and, given the patterns revealed by Table \ref%
 {tab:sep_rates}, we allow firms in their first year of exporting ($D^{new%
 \text{ }to\text{ }mkt}=1$) to experience particularly high failure rates.%
 \footnote{%
-Note, however, that in Table 7, matches that die after a single shipment are
+Note, however, that in Table \ref{tab:client_dist}, matches that die after a single shipment are
 treated as having existed for less than one year, while our model-based
 estimates treat these cases of single shipments as unsuccessful meetings
 that did not lead to business relationships.}
@@ -1218,8 +1208,8 @@ more likely to survive when fixed costs are low. Failure rates are also
 affected by the volatility of $z_{ijt},$ which is governed by the jump size, 
 $\lambda _{y}.$
 
-Not surpisingly, estimates of equation ($ii$) reflect the same patterns that
-we noted in connection with Table 7. Matches in their first year are
+Not surprisingly, estimates of equation ($ii$) reflect the same patterns that
+we noted in connection with Table \ref{tab:client_dist}. Matches in their first year are
 relatively likely to fail, as are matches that start with relatively small
 sales volumes. The results also show that exporters with more experience in
 foreign markets tend to have longer-lived relationships, a feature of the
@@ -1260,7 +1250,7 @@ captured by the parameter $\gamma $ determine how much of a search cost
 discount large (big $a$) firms enjoy, and thus the "fatness" of the
 right-hand tail of the client distribution $\Phi (\cdot ).$
 
-Equation ($vi$), the other regression in \ref{tab:client_dist}, simply
+Equation ($vi$), the other regression in Table \ref{tab:client_dist}, simply
 establishes the mean log number of shipments per year per continuing match.
 It serves as a target for the shipment arrival hazard and obviously helps to
 identify $\lambda _{b}.$
@@ -1284,7 +1274,7 @@ The last four equations in Table \ref{tab:hf_sales} involve domestic sales.
 Since we don't observe firms' individual matches in the domestic market,
 these regressions describe establishment-level panel data merged with
 Colombian customs records.\footnote{%
-More precisely, regressions $viii$ through $x$ in Table XXc are done using a
+    More precisely, regressions ($viii$) through ($x$) in Table \ref{tab:hf_sales} are done using a
 combination of the Colombian Annual Manufacturing Survey (AMS) and Colombian
 administrative records of exports transactions. The data used cover
 1993-2007. Exports are merged into the AMS using firm identifiers. This is
@@ -1410,11 +1400,7 @@ observations (rounded) & 38,500 & 23,500 & 35,800 & 35,800 \\ \hline
 }\endcenter
 \par
 \begin{tablenotes}
-\begin{singlespace*}
-\begin{flushleft}
-\textbf{Notes:} Unit of observation, columns $i$,  $iii$ and $iv$: seller $ j$'s $i^{th}$ match. Unit of observation, column $ii$: seller $ j$'s $i^{th}$ match in its $t^{th}$ year. $\lambda_{ij}=$ inverse of time interval between commencement of match $i$ and commencement of the next one for exporter $j$ $D_{ijt}^{exit match}=1$ if exporter $j^{\prime }s$ $i^{th}$ match dies in year $t$. $a_{ij} $ = cumulative number of successes for exporter $j$ at time of match $i$. $D_{ijt}^{new to mkt}=1$ if exporter $j^{\prime }s$ $i^{th}$ match is in its first year. $\ln A_{ijt}=$ log age of exporter $j^{\prime }s$ $i^{th}$  match. $\ln \Delta_{jt} =$ log age of exporter $j$ in year $t$. $X_{ijt}^{f}$ $=$ foreign sales volume generated by exporter $j^{\prime }s$ $i^{th}$ match.
-\end{flushleft}
-\end{singlespace*}
+\item \textbf{Notes:} Unit of observation, columns $i$,  $iii$ and $iv$: seller $ j$'s $i^{th}$ match. Unit of observation, column $ii$: seller $ j$'s $i^{th}$ match in its $t^{th}$ year. $\lambda_{ij}=$ inverse of time interval between commencement of match $i$ and commencement of the next one for exporter $j$ $D_{ijt}^{exit match}=1$ if exporter $j^{\prime }s$ $i^{th}$ match dies in year $t$. $a_{ij} $ = cumulative number of successes for exporter $j$ at time of match $i$. $D_{ijt}^{new to mkt}=1$ if exporter $j^{\prime }s$ $i^{th}$ match is in its first year. $\ln A_{ijt}=$ log age of exporter $j^{\prime }s$ $i^{th}$  match. $\ln \Delta_{jt} =$ log age of exporter $j$ in year $t$. $X_{ijt}^{f}$ $=$ foreign sales volume generated by exporter $j^{\prime }s$ $i^{th}$ match.
 \end{tablenotes}
 \end{table}
 
@@ -1454,15 +1440,9 @@ $ & - \\ \hline
 sample restrictions & $\ell >0$ & $s_{ijt}>0$ \\ \hline
 \end{tabular}
 } \endcenter%
-\begin{tablenotes}$\bigskip $
-
-\bigskip
-\begin{singlespace*}
-\begin{flushleft}
-\textbf{Notes:} $\ell$: number of active clients;  $\Phi ( ) = $ cumulative distribution of exporters in terms of  $\ell$;
+\begin{tablenotes}
+\item \textbf{Notes:} $\ell$: number of active clients;  $\Phi ( ) = $ cumulative distribution of exporters in terms of  $\ell$;
 $s_{ijt}=$ number of shipments per year to client $i$ by exporter $j$ in year $t$
-\end{singlespace*}
-\end{flushleft}
 \end{tablenotes}
 \end{table}
 
@@ -1539,15 +1519,9 @@ X_{jt}^{h},X_{jt-1}^{h}>0$ & $X_{jt}^{f},X_{jt}^{h}>0$ & $X_{jt}^{h}>0$ & $%
 X_{jt}^{f},X_{jt}^{h}>0$ \\ \hline
 \end{tabular}
 } \endcenter%
-\begin{tablenotes}$\bigskip $
-
-\bigskip
-\begin{singlespace*}
-\begin{flushleft}
-\textbf{Notes:} $R_{ijt}=1$ if exporter $j^{\prime }s$ $i^{th}$ match is in its first
+\begin{tablenotes}
+\item \textbf{Notes:} $R_{ijt}=1$ if exporter $j^{\prime }s$ $i^{th}$ match is in its first
 year. $\ln \Delta{jt} =$ log age of exporter $j$. $X_{ijt}^{f}$ $=$ foreign sales volume generated by exporter $j^{\prime }s$ $i^{th}$ match. $X_{jt}^{f}$ $=$ total foreign sales volume generated by firm $j$. $X_{jt}^{h}$ $=$ total home sales volume generated by firm $j$. $D_{jt}^{f}$ $=$ 1 if firm $j$ is an exporter.
-\end{singlespace*}
-\end{flushleft}
 \end{tablenotes}
 \end{table}
 
@@ -1570,8 +1544,7 @@ m(\Lambda )\right] }{\partial \Lambda ^{\prime }}$ is the Jacobian for the
 vector of simulated moments. "Intuitively, this matrix is a local
 approximation to the mapping from moments to estimated parameters."
 (Andrews, et al., 2017, p. 1555) Evaluated at our benchmark estimates (to be
-discussed), we obtain the results reported in Appendix 3. They are discussed
-therein in detail; here we summarize the patterns that emerge.
+discussed), we obtain the results reported in detail in Appendix \ref{sec:sensitivity}. Here we summarize the patterns that emerge.
 
 First, most parameters respond to many moments rather than one or several.
 Limiting our attention to elasticities with absolute value greater than 0.1,
@@ -1592,7 +1565,7 @@ all hazards are normalized so that the unit of time is one year. Thus, for
 example, our estimate of $\delta $ implies that on average, matches last
 roughly 4 months (one-third of a year) before separating for exogenous
 reasons. Most parameter estimates are similar for both models, though the
-benchmark model fits the data better. [Report non-nested test here?] We
+benchmark model fits the data better. \textbf{[Report non-nested test here?]} We
 therefore focus our discussion on the results for this model, turning later
 to the main distinguishing features of the no-learning results.
 
@@ -1617,7 +1590,7 @@ their performance. This is consequence of the short expected life span of
 matches, and the fact that buyers' demands change an average of $\lambda
 _{y}=4$ times per year.
 
-These figures may seem small, but for several reasons they are consistent
+These figures may seem small, but they are consistent
 with the data. First, the productivity distribution for exporting firms come
 from the right-hand tail of the unconditional productivity distribution.
 Thus those firms with productivity 1.9 standard deviations above the mean
@@ -1739,7 +1712,7 @@ remainder of the paper.
 
 \subsection{Model fit}
 
-Appendix 3 juxtaposes the data-based moments, $\bar{m},$ with their
+Appendix \ref{sec:model_fit} juxtaposes the data-based moments, $\bar{m},$ with their
 simulated counterparts, $m(\Lambda )$. Generally, the patterns in the data
 are replicated by our model, though not all of the model-based equation
 estimates correspond closely to their data-based counterparts. In
@@ -1747,14 +1720,14 @@ particular, average exporting rates, match-specific sales dynamics, and the
 client distribution are well-captured by the model, as are most mean values
 of dependent variables. However the model fails to generate the association
 between success rates and firms' search intensities that we observe in the
-data. A more detailed summary of the fit can be found in Appendix 3.
+data. A more detailed summary of the fit can be found in Appendix \ref{sec:model_fit}.
 
-Since we have not targeted the patterns described in section 1 when
-estimating our model, it is instructive to check how well they are
+Since we have not targeted the patterns described in Section \ref{sec:data} when
+estimating, it is instructive to check how well they are
 replicated by our model. Tables \ref{tab:brooks_compare}, \ref%
 {tab:match_exit_compare} and \ref{tab:client_dist_compare}\ below provide
 answers. In the top panel of table \ref{tab:brooks_compare}, the information
-in tables 1-3 is collapsed by averaging across exporting cohorts for which
+in Tables \ref{tab:Brooks}-\ref{tab:erg_cli_dist} is collapsed by averaging across exporting cohorts for which
 we observe at least 10 years of data. (These cohorts were born in the years
 1997 through 2002.) Values of each aggregate for 2-year olds, 3-year olds,
 and so on are expressed as fractions of the corresponding values for 1-year
@@ -1765,7 +1738,7 @@ year t+9. \ Likewise, among Colombian exporters that survive in the U.S.
 market for 10 years, average exporters per firm are 6.58 times as large as
 they are among exporters that are in their first year of exporting.
 
-The bottom panel of table \ref{tab:brooks_compare} shows corresponding
+The bottom panel of Table \ref{tab:brooks_compare} shows corresponding
 figures based on model-simulated data. Qualitatively, the patterns in the
 actual and the simulated data match up. For both data sets, the largest
 drops in the number of exporters occur during the first two years,
@@ -1784,9 +1757,7 @@ Specifically, since the data-based series count single-shipment buyer-seller
 encounters as matches, these series inflate the one-year-old firm and total
 export counts, while depressing mean exports among one-year olds. And the
 one-year old figures appear in the denominator of the ratios for all other
-years. It would of course be possible to generate model-based figures that
-include single-shipment buyer-seller meetings in the match counts. We plan
-to do this for the next draft of this paper.}
+years.}
 
 \begin{table}[tbp]
 \caption{\textbf{Cohort evolutions: data vs. model}}
@@ -1828,13 +1799,9 @@ Cohort age & Exporters & Total Exports & Average Exports \\ \hline
 }
 \par
 {\endcenter
-\begin{tablenotes}$\bigskip $
+\begin{tablenotes}
 %\bigskip
-\begin{singlespace*}
-\begin{flushleft}
-\textbf{Notes:} Figures for cohorts aged 2-10 are expressed relative to corresponding figures for one-year-old cohorts.
-\end{flushleft}
-\end{singlespace*}
+\item \textbf{Notes:} Figures for cohorts aged 2-10 are expressed relative to corresponding figures for one-year-old cohorts.
 \end{tablenotes}
 }
 \end{table}
@@ -1868,13 +1835,9 @@ Match age & Quartile 1 & Quartile 2 & Quartile 3 & Quartile 4 \\ \hline
 }
 \par
 {\endcenter
-\begin{tablenotes}$\bigskip $
+\begin{tablenotes}
 %\bigskip
-\begin{singlespace*}
-\begin{flushleft}
-\textbf{Notes:} Figrues are percentages of the exporters in each age-initial size category that do not export during the following year.
-\end{flushleft}
-\end{singlespace*}
+\item \textbf{Notes:} Figrues are percentages of the exporters in each age-initial size category that do not export during the following year.
 \end{tablenotes}
 }
 \end{table}
@@ -1904,14 +1867,8 @@ Number of buyers & actual data & simulated data \\ \hline
 }
 \par
 {\endcenter
-\begin{tablenotes}$\bigskip $
-
-\bigskip
-\begin{singlespace*}
-\begin{flushleft}
-\textbf{Notes:} Blah blah blah 
-\end{flushleft}
-\end{singlespace*}
+\begin{tablenotes}
+\item \textbf{Notes:} Blah blah blah 
 \end{tablenotes}
 } %\end{table}
 \end{table}
@@ -2014,7 +1971,7 @@ As described above, we also estimate a version of the model in which there is no
     \label{fig:success_order}
 \end{figure}
 
-We can also examine how match arrival times depend on successes and failures in the learning and no-learning models.  Since in the no-learning model, firms know their success probabilities, we cannot directly reproduce an analogue of Figure \ref{fig:success_beliefs}.  Instead, Figure \ref{fig:success_order} plots the expected time to ten meetings, when five consecutive meetings are successful and the others failures.  We show how the placement of the successes meetings changes the expected amount of time it takes to get to ten meetings.  In Figure X, the x-axis is the meeting number of the first successful meeting.  If it is one, then the first five meetings are successes, and the next five failures.  If it is 6, then the first five meetings are failures, and the last five meetings successes.  The plots are for a firm in the 90th percentile of productivity in exporters, and, in the case of the no-learning model, with a success probability of 43\%.
+We can also examine how match arrival times depend on successes and failures in the learning and no-learning models.  Since in the no-learning model, firms know their success probabilities, we cannot directly reproduce an analogue of Figure \ref{fig:success_beliefs}.  Instead, Figure \ref{fig:success_order} plots the expected time to ten meetings, when five consecutive meetings are successful and the others failures.  We show how the placement of the successes meetings changes the expected amount of time it takes to get to ten meetings.  In Figure \ref{fig:success_order}, the x-axis is the meeting number of the first successful meeting.  If it is one, then the first five meetings are successes, and the next five failures.  If it is 6, then the first five meetings are failures, and the last five meetings successes.  The plots are for a firm in the 90th percentile of productivity in exporters, and, in the case of the no-learning model, with a success probability of 43\%.
 
 In panel (a) of Figure \ref{fig:success_order}, we see that time to ten meetings in the baseline model depends heavily on the placement of the successes.  If the successes come at the beginning of the ten meetings, it takes 12 years for this type of firm to reach ten meetings.  If the failures come first, it takes 45 years.  This is the same story told by Figure \ref{fig:success_beliefs}.  For the no-learning version of the model in panel (b), however, time to ten meetings depends much less on the placement of successes.  If the successes come first, it takes 27 years to reach ten meetings.  If they come last, it takes 32 years.\footnote{The reason it takes so long is that this type of firm expects that only around half of its meetings will be successes.  This corresponds to the ultimate 50\% success rate we are simulating, but it also means that the firms are not searching very hard.  If we were to make the firm believe that it has a close to 100\% success rate, it would only take a few years to reach 10 meetings.}  The only reason it depends on the placement at all in the no-learning model is that if the successes come first, the firm benefits from the network effects sooner.
 
@@ -2390,11 +2347,10 @@ Approximation to Univariate and Vector Autoregressions,\textquotedblright\
 
 \appendix
 
-\label{sec:data_tables}
 
-\begin{center}
-{\Large Appendix 1: data tables}
-\end{center}
+\section{data tables}
+
+\label{sec:data_tables}
 
 \begin{sidewaystable}[bph]
 \centering
@@ -2517,9 +2473,7 @@ Year & Colombian Sellers & U.S. Importers & Pairs \\ \hline
 
 \pagebreak
 
-\begin{center}
-{\Large Appendix 2: data checks}
-\end{center}
+\section{Data checks}
 
 \label{sec:data_check}
 
@@ -2603,9 +2557,8 @@ on average. It does not appear that our results are sensitive to a modest
 reduction in data entry errors.\newline
 \pagebreak \bigskip 
 
-\begin{center}
-{\Large Appendix 3: Identification}
-\end{center}
+\section{Identification}
+\label{sec:sensitivity}
 
 \begin{table}[tbp]
 \caption{\textbf{Sensitivity matrix} }%
@@ -2740,9 +2693,8 @@ $\frac{\#exporters}{\#firms}$ & 0.118 & 0.572 & -1.517 & 0.048 & -0.282 &
 }
 \end{table}
 
-\begin{center}
-{\Large Appendix 4: Model Fit}
-\end{center}
+\section{Model Fit}
+\label{sec:model_fit}
 
 Each table in this appendix reports model-based based moments below their
 data-based counterparts, which are repeated from Tables \ref{tab:haz_reg}, %
@@ -2903,11 +2855,7 @@ $ & \textsc{\ \ \ \ \ \ --} & \textsc{\ \ \ \ \ \ --} \\ \hline
 \par
 {\endcenter%
 \begin{tablenotes}
-\begin{singlespace*}
-\begin{flushleft}
-\textbf{Notes:} Unit of observation, columns $i$,  $iii$ and $iv$: seller $ j$'s $i^{th}$ match. Unit of observation, column $ii$: seller $ j$'s $i^{th}$ match in its $t^{th}$ year. $\lambda_{ij}=$ inverse of time interval between commencement of match $i$ and commencement of the next one for exporter $j$ $D_{ijt}^{exit match}=1$ if exporter $j^{\prime }s$ $i^{th}$ match dies in year $t$. $a_{ij} $ = cumulative number of successes for exporter $j$ at time of match $i$. $D_{ijt}^{new to mkt}=1$ if exporter $j^{\prime }s$ $i^{th}$ match is in its first year. $\ln A_{ijt}=$ log age of exporter $j^{\prime }s$ $i^{th}$  match. $\ln \Delta_{jt} =$ log age of exporter $j$ in year $t$. $X_{ijt}^{f}$ $=$ foreign sales volume generated by exporter $j^{\prime }s$ $i^{th}$ match.
-\end{flushleft}
-\end{singlespace*}
+\item \textbf{Notes:} Unit of observation, columns $i$,  $iii$ and $iv$: seller $ j$'s $i^{th}$ match. Unit of observation, column $ii$: seller $ j$'s $i^{th}$ match in its $t^{th}$ year. $\lambda_{ij}=$ inverse of time interval between commencement of match $i$ and commencement of the next one for exporter $j$ $D_{ijt}^{exit match}=1$ if exporter $j^{\prime }s$ $i^{th}$ match dies in year $t$. $a_{ij} $ = cumulative number of successes for exporter $j$ at time of match $i$. $D_{ijt}^{new to mkt}=1$ if exporter $j^{\prime }s$ $i^{th}$ match is in its first year. $\ln A_{ijt}=$ log age of exporter $j^{\prime }s$ $i^{th}$  match. $\ln \Delta_{jt} =$ log age of exporter $j$ in year $t$. $X_{ijt}^{f}$ $=$ foreign sales volume generated by exporter $j^{\prime }s$ $i^{th}$ match.
 \end{tablenotes}}
 \end{table}
 
@@ -2948,12 +2896,8 @@ sample restrictions & $\ell >0$ & $\lambda _{b}>0$ \\ \hline
 \end{tabular}
 } \endcenter%
 \begin{tablenotes}
-\begin{singlespace*}
-\begin{flushleft}
-\textbf{Notes:} $\ell$: number of active clients;  $\Phi ( ) = $ cumulative distribution of exporters in terms of  $\ell$;
+\item \textbf{Notes:} $\ell$: number of active clients;  $\Phi ( ) = $ cumulative distribution of exporters in terms of  $\ell$;
 $s_{ijt}=$ number of shipments per year to client $i$ by exporter $j$ in year $t$
-\end{singlespace*}
-\end{flushleft}
 \end{tablenotes}
 \end{table}
 
@@ -3041,12 +2985,8 @@ $ & $X_{jt}^{h}>0$ & $X_{jt}^{f},X_{jt}^{h}>0$ \\ \hline
 \end{tabular}
 }\endcenter%
 \begin{tablenotes}
-\begin{singlespace*}
-\begin{flushleft}
-\textbf{Notes:} $R_{ijt}=1$ if exporter $j^{\prime }s$ $i^{th}$ match is in its first
+\item \textbf{Notes:} $R_{ijt}=1$ if exporter $j^{\prime }s$ $i^{th}$ match is in its first
 year. $\ln \Delta{jt} =$ log age of exporter $j$. $X_{ijt}^{f}$ $=$ foreign sales volume generated by exporter $j^{\prime }s$ $i^{th}$ match. $X_{jt}^{f}$ $=$ total foreign sales volume generated by firm $j$. $X_{jt}^{h}$ $=$ total home sales volume generated by firm $j$. $D_{jt}^{f}$ $=$ 1 if firm $j$ is an exporter.
-\end{singlespace*}
-\end{flushleft}
 \end{tablenotes}
 \end{table}
 
