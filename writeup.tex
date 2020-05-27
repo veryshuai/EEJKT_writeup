@@ -1,11 +1,3 @@
-%2multibyte Version: 5.50.0.2960 CodePage: 936
-%\setlength{\bibsep}{6pt}
-%\input{tcilatex}
-%\graphicspath{{C:\Users\jxt32\Dropbox\home-work stuff\EEJKT\figures}} 
-%\graphicspath{{./figures/}} 
-%\graphicspath{{C:/Users/jxt32/Dropbox/home-work stuff/EEJKT/figures/}} 
-
-
 \documentclass[12pt]{article}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{eurosym}
@@ -1956,13 +1948,13 @@ also means that two firms, \textit{ex ante} identical, may have very
 different long term experiences in export markets, depending upon whether
 their early matches happened to yield successful business relationships.
 
-%\begin{figure}
-%    \centering
-%    \includegraphics[scale=0.5]{figures/val_f_three_types}
-%    \caption{Log continuation value of firms conditional on match history}
-%    \label{fig:val_three_types}
-%    \caption*{Notes: Continuation value trajectories for firms with productivity in the 10th, 50th, and 90th percentiles of the simulated productivity distribution of exporters.  For each productivity type, we plot values for all successful matches, alternating success and failure, and all failures.}
-%\end{figure}
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.5]{figures/val_f_three_types}
+    \caption{Log continuation value of firms conditional on match history}
+    \label{fig:val_three_types}
+    \caption*{Notes: Continuation value trajectories for firms with productivity in the 10th, 50th, and 90th percentiles of the simulated productivity distribution of exporters.  For each productivity type, we plot values for all successful matches, alternating success and failure, and all failures.}
+\end{figure}
 
 To get some sense for the combined importance of the network effect and the
 learning effect, Figure \ref{fig:val_three_types} shows the perceived change
@@ -1999,13 +1991,13 @@ erase firm value. The continuation value of the median productivity firm
 with four successful matches is almost the same as the value of the high
 productivity firm with four failed matches, at US\$ 5,669.
 
-%\begin{figure}
-%    \centering
-%    \includegraphics[scale=0.5]{figures/success_beliefs}
-%    \caption{Evolution of success probability belief}
-%    \label{fig:success_beliefs}
-%    \caption*{\small{Notes: Beliefs of a firm with productivity in the 90th percentile of exporters over success probability.  Top line is five success followed by five failures.  Bottom line is five failures followed by five successes.}}
-%\end{figure}
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.5]{figures/success_beliefs}
+    \caption{Evolution of success probability belief}
+    \label{fig:success_beliefs}
+    \caption*{\small{Notes: Beliefs of a firm with productivity in the 90th percentile of exporters over success probability.  Top line is five success followed by five failures.  Bottom line is five failures followed by five successes.}}
+\end{figure}
 
 In addition to continuation values, match histories affect the intensity
 with which firms search for new clients. We explore this dependence in
@@ -2028,13 +2020,13 @@ searches far less intensively along the way.
 
 \subsubsection{Comparison with no-learning}
 
-%\begin{figure}
-%    \centering
-%    \includegraphics[scale=0.5]{figures/val_f_three_types_nl}
-%    \caption{Log continuation value of firms conditional on match history, no learning}
-%    \label{fig:val_three_types_nl}
-%    \caption*{Notes: Continuation value trajectories for firms with productivity in the 10th, 50th, and 90th percentiles of the simulated productivity distribution of exporters in the learning version of the model.  For each productivity type, we plot values for all successful matches, alternating success and failure, and all failures.}
-%\end{figure}
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.5]{figures/val_f_three_types_nl}
+    \caption{Log continuation value of firms conditional on match history, no learning}
+    \label{fig:val_three_types_nl}
+    \caption*{Notes: Continuation value trajectories for firms with productivity in the 10th, 50th, and 90th percentiles of the simulated productivity distribution of exporters in the learning version of the model.  For each productivity type, we plot values for all successful matches, alternating success and failure, and all failures.}
+\end{figure}
 
 The patterns we have depicted thus far reflect both the network effect and
 the learning effect. To gauge their relative importance, we now redo Figure %
@@ -2056,22 +2048,22 @@ bit when firms make successful matches because these matches make is easier
 to meet additional buyers (the "network effect"). However, unsuccessful
 matches now have no effect on these values.
 
-%\begin{figure}
-%    \centering
-%    \begin{subfigure}[b]{0.5\textwidth}
-%        \centering
-%        \includegraphics[width=\textwidth]{figures/success_order}
-%        \caption{Baseline}
-%    \end{subfigure}%
-%    ~
-%    \begin{subfigure}[b]{0.5\textwidth}
-%        \centering
-%        \includegraphics[width=\textwidth]{figures/success_order_nl}
-%        \caption{No-learning}
-%    \end{subfigure}
-%    \caption{Time to ten meetings by placement of five consecutive successes}
-%    \label{fig:success_order}
-%\end{figure}
+\begin{figure}
+    \centering
+    \begin{subfigure}[b]{0.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/success_order}
+        \caption{Baseline}
+    \end{subfigure}%
+    ~
+    \begin{subfigure}[b]{0.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/success_order_nl}
+        \caption{No-learning}
+    \end{subfigure}
+    \caption{Time to ten meetings by placement of five consecutive successes}
+    \label{fig:success_order}
+\end{figure}
 
 We can also examine how match arrival times depend on successes and failures
 in the no-learning model. Since firms know their success probabilities in
@@ -2107,34 +2099,6 @@ it has a close to 100\% success rate, it would only take a few years to
 reach 10 meetings.} So here again we see that learning effects and network
 effects both matter, but the former are more important.
 
-% \begin{center}
-% \FRAME{ftbpF}{3.8891in}{3.0718in}{0pt}{}{}{marg_val_f.png}{\special{language
-% "Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
-% "USEDEF";valid_file "F";width 3.8891in;height 3.0718in;depth
-% 0pt;original-width 5.9404in;original-height 4.6864in;cropleft "0";croptop
-% "1";cropright "1";cropbottom "0";filename
-% '../figures/marg_val_f.png';file-properties "XNPEU";}}
-% \end{center}
-% 
-% \FRAME{ftbpF}{3.8821in}{3.0675in}{0pt}{}{}{val_f.png}{\special{language
-% "Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
-% "USEDEF";valid_file "F";width 3.8821in;height 3.0675in;depth
-% 0pt;original-width 5.9404in;original-height 4.6864in;cropleft "0";croptop
-% "1";cropright "1";cropbottom "0";filename
-% '../figures/val_f.png';file-properties "XNPEU";}}\FRAME{ftbpF}{3.7222in}{%
-% 2.9404in}{0pt}{}{}{val_f_three_types.png}{\special{language "Scientific
-% Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file
-% "F";width 3.7222in;height 2.9404in;depth 0pt;original-width
-% 5.9404in;original-height 4.6864in;cropleft "0";croptop "1";cropright
-% "1";cropbottom "0";filename
-% '../figures/val_f_three_types.png';file-properties "XNPEU";}}Since profits
-% are scaled by the factor $\varphi ^{\eta -1}$ (equation \ref{profit2}), the
-% marginal value of new matches varies across the productivity distribution.
-% Figure XX shows how trajectories for continuation values among firms with
-% productivity levels in the top ?? differ from the trajectories for firms in
-% the ?? and in the ??. Qualitatively, the patterns for look quite similar, .
-% . . \textbf{[[JT: what's with the units here?] }
-
 \subsection{Macroeconomic adjustment dynamics}
 
 If there were no sources of friction in our model, and if the effects of
@@ -2158,89 +2122,89 @@ idiosyncratic and market-wide shocks. \textbf{[JT: I'm not sure I am
 describing this correctly. The previous draft said: "we shut down both
 foreign market aggregate shocks as well as ideosyncratic buyer shocks"] }
 
-%\begin{figure}
-%    \centering
-%    \begin{subfigure}[b]{0.5\textwidth}
-%        \centering
-%        \includegraphics[width=\textwidth]{figures/total_sales_l}
-%        \caption{Total sales}
-%    \end{subfigure}%
-%    ~
-%    \begin{subfigure}[b]{0.5\textwidth}
-%        \centering
-%        \includegraphics[width=\textwidth]{figures/total_sales_nl}
-%        \caption{Total sales}
-%    \end{subfigure} \\
-%    ~
-%    \begin{subfigure}[b]{0.5\textwidth}
-%        \centering
-%        \includegraphics[width=\textwidth]{figures/total_matches_l}
-%        \caption{Total active matches}
-%    \end{subfigure}%
-%    ~
-%    \begin{subfigure}[b]{0.5\textwidth}
-%        \centering
-%        \includegraphics[width=\textwidth]{figures/total_matches_nl}
-%        \caption{Total active matches}
-%    \end{subfigure} \\
-%    ~
-%    \begin{subfigure}[b]{0.5\textwidth}
-%        \centering
-%        \includegraphics[width=\textwidth]{figures/total_firms_l}
-%        \caption{Total active firms}
-%    \end{subfigure}%
-%    ~
-%    \begin{subfigure}[b]{0.5\textwidth}
-%        \centering
-%        \includegraphics[width=\textwidth]{figures/total_firms_nl}
-%        \caption{Total active firms}
-%    \end{subfigure}
-%    \caption{Response to a 20\% depreciation of Colombian Peso: Market level outcomes}
-%    \label{fig:export_dynamics_macro}
-%
-%\end{figure}
+\begin{figure}
+    \centering
+    \begin{subfigure}[b]{0.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/total_sales_l}
+        \caption{Total sales}
+    \end{subfigure}%
+    ~
+    \begin{subfigure}[b]{0.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/total_sales_nl}
+        \caption{Total sales}
+    \end{subfigure} \\
+    ~
+    \begin{subfigure}[b]{0.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/total_matches_l}
+        \caption{Total active matches}
+    \end{subfigure}%
+    ~
+    \begin{subfigure}[b]{0.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/total_matches_nl}
+        \caption{Total active matches}
+    \end{subfigure} \\
+    ~
+    \begin{subfigure}[b]{0.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/total_firms_l}
+        \caption{Total active firms}
+    \end{subfigure}%
+    ~
+    \begin{subfigure}[b]{0.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/total_firms_nl}
+        \caption{Total active firms}
+    \end{subfigure}
+    \caption{Response to a 20\% depreciation of Colombian Peso: Market level outcomes}
+    \label{fig:export_dynamics_macro}
 
-%\begin{figure}
-%    \centering
-%    \begin{subfigure}[b]{0.5\textwidth}
-%        \centering
-%        \includegraphics[width=\textwidth]{figures/sales_per_firm_l}
-%        \caption{Sales per firm}
-%    \end{subfigure}%
-%    ~
-%    \begin{subfigure}[b]{0.5\textwidth}
-%        \centering
-%        \includegraphics[width=\textwidth]{figures/sales_per_firm_nl}
-%        \caption{Sales per firm}
-%    \end{subfigure} \\
-%    ~
-%    \begin{subfigure}[b]{0.5\textwidth}
-%        \centering
-%        \includegraphics[width=\textwidth]{figures/sales_per_match_l}
-%        \caption{Sales per match}
-%    \end{subfigure}%
-%    ~
-%    \begin{subfigure}[b]{0.5\textwidth}
-%        \centering
-%        \includegraphics[width=\textwidth]{figures/sales_per_match_nl}
-%        \caption{Sales per match}
-%    \end{subfigure} \\
-%    ~
-%    \begin{subfigure}[b]{0.5\textwidth}
-%        \centering
-%        \includegraphics[width=\textwidth]{figures/matches_per_firm_l}
-%        \caption{Matches per firm}
-%    \end{subfigure}%
-%    ~
-%    \begin{subfigure}[b]{0.5\textwidth}
-%        \centering
-%        \includegraphics[width=\textwidth]{figures/matches_per_firm_nl}
-%        \caption{Matches per firm}
-%    \end{subfigure}
-%    \caption{Response to a 20\% depreciation of Colombian Peso: Average outcomes}
-%    \label{fig:export_dynamics_average}
-%
-%\end{figure}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \begin{subfigure}[b]{0.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/sales_per_firm_l}
+        \caption{Sales per firm}
+    \end{subfigure}%
+    ~
+    \begin{subfigure}[b]{0.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/sales_per_firm_nl}
+        \caption{Sales per firm}
+    \end{subfigure} \\
+    ~
+    \begin{subfigure}[b]{0.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/sales_per_match_l}
+        \caption{Sales per match}
+    \end{subfigure}%
+    ~
+    \begin{subfigure}[b]{0.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/sales_per_match_nl}
+        \caption{Sales per match}
+    \end{subfigure} \\
+    ~
+    \begin{subfigure}[b]{0.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/matches_per_firm_l}
+        \caption{Matches per firm}
+    \end{subfigure}%
+    ~
+    \begin{subfigure}[b]{0.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/matches_per_firm_nl}
+        \caption{Matches per firm}
+    \end{subfigure}
+    \caption{Response to a 20\% depreciation of Colombian Peso: Average outcomes}
+    \label{fig:export_dynamics_average}
+
+\end{figure}
 
 Figures \ref{fig:export_dynamics_macro} and \ref{fig:export_dynamics_average}
 summarize the results of these experiments, normalizing each export series
@@ -2290,58 +2254,7 @@ shock. These results obtain because the relevant extensive margin here is
 the match, not the firm. This means that adjustment on that margin matters
 for dominant exporters and fringe players alike.
 
-% \begin{figure}[tbp]
-% \centering\includegraphics[width=\textwidth]{figure3-eps-converted-to.pdf}
-% \caption{\textbf{Time Series Effects of Search Cost Reduction}}
-% \label{fig:search_dec_subplot}
-% \end{figure}
-% \newpage
-% 
-% \begin{figure}[tbp]
-% \centering
-% \includegraphics[width=\textwidth]{figure4-eps-converted-to.pdf}
-% \caption{\textbf{Time Series Effects of Fixed Cost Reduction}}
-% \label{fig:cost_dec_subplot}
-% \end{figure}
-% \newpage
-% 
-% \begin{figure}[tbp]
-% \centering
-% \includegraphics[width=\textwidth]{figure5-eps-converted-to.pdf}
-% \caption{\textbf{Time Series Effects of Positive Market-wide Shock}}
-% \label{fig:mac_bump_subplot}
-% \end{figure}
-
-\pagebreak % \begin{center}
-% \textbf{Figure 4: Time Series Effects of Search Cost Reduction}\FRAME{ftbpF}{%
-% 5.3298in}{4.1364in}{0pt}{}{}{search_dec_subplot.eps}{\special{language
-% "Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
-% "USEDEF";valid_file "F";width 5.3298in;height 4.1364in;depth
-% 0pt;original-width 6.89in;original-height 5.3411in;cropleft "0";croptop
-% "1";cropright "1";cropbottom "0";filename
-% './search_dec_subplot.eps';file-properties "XNPEU";}}\pagebreak
-%
-% \textbf{Figure 5: Time series effects of Fixed Cost Reduction}
-% 
-% \FRAME{ftbpF}{5.4803in}{4.3076in}{0pt}{}{}{cost_dec_subplot.eps}{\special%
-% {language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
-% TRUE;display "USEDEF";valid_file "F";width 5.4803in;height 4.3076in;depth
-% 0pt;original-width 6.8044in;original-height 5.3411in;cropleft "0";croptop
-% "1";cropright "1";cropbottom "0";filename
-% './cost_dec_subplot.eps';file-properties "XNPEU";}}\pagebreak
-% 
-% \begin{center}
-% \textbf{Figure 6: Time Series Effects of Positive Market-wide Shock}
-% \end{center}
-% 
-% \FRAME{ftbpF}{5.5011in}{4.3223in}{0pt}{}{}{mac_bump_subplot.eps}{\special%
-% {language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
-% TRUE;display "USEDEF";valid_file "F";width 5.5011in;height 4.3223in;depth
-% 0pt;original-width 6.8044in;original-height 5.3411in;cropleft "0";croptop
-% "1";cropright "1";cropbottom "0";filename
-% './mac_bump_subplot.eps';file-properties "XNPEU";}}
-
-% \pagebreak
+\pagebreak 
 
 \section{Summary}
 
