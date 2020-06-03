@@ -2009,8 +2009,7 @@ the plot, both containing five successes and five failures. The only
 difference is that in the top line, the successes come first, while in the
 bottom line the failures come first. Before any meetings, the beliefs are
 the same, and after all 10 meetings they are the same as well because at
-this point both histories contain 5 successes.\textbf{\ [JT:\ this doesn't
-seem to be true in the graph]}
+this point both histories contain 5 successes.
 
 The key message of Figure \ref{fig:success_beliefs} is that if the successes
 come first, it takes 10.5 years to get 10 matches. But if the failures come
@@ -2038,7 +2037,7 @@ estimates of the "no learning" policy function (see Table \ref%
 {fig:val_three_types} we consider three alternative match histories: only
 successes, only failures, and alternating successes and failures. Also,
 since true success rates now affect behavior, we give all firms a success
-probability of $\theta ^{f}=0.43$. \textbf{[JT: how was this number chosen?]}
+probability of $\theta ^{f}=0.43$.  This number corresponds to the 65th percentile of success probabilities among active exporters in our simulated data.  We chose this particular value because it is close to 50\%, and it is one of the discritized points on the grid we use for estimation.
 
 The results appear in Figure \ref{fig:val_three_types_nl}. Overall,
 continuation values move much less as firms acquire experience, implying
@@ -2104,7 +2103,7 @@ effects both matter, but the former are more important.
 If there were no sources of friction in our model, and if the effects of
 idioynscratic shocks were ignorable by the law of large numbers, aggregate
 exports would be static functions of the aggegate shocks that affect all
-firms' export revenues ($x$). We conclude our analysis by asking how much
+firms' export revenues ($x^f$). We conclude our analysis by asking how much
 our model's predictions for aggregate export trajectories deviate from this
 hypothetical norm, and why.\footnote{%
 Since we are using a single-agent model, we caution that these simulations
@@ -2114,19 +2113,22 @@ country shipping to a large one, where its products constitute a small
 fraction of total supply.}
 
 To do so, we simulate a permanent (but unanticipated) 20 percent Colombian
-peso devaluation on total export trajectories under several alternative
-scenarios. These include our benchmark model, the no-learning model, the
-model with no network effect ($\gamma =0$), and the model with neither
-learning nor network effects. For all simulations, we use the same set of
-idiosyncratic and market-wide shocks. \textbf{[JT: I'm not sure I am
-describing this correctly. The previous draft said: "we shut down both
-foreign market aggregate shocks as well as ideosyncratic buyer shocks"] }
+peso devaluation on total export trajectories under two alternative
+scenarios: our benchmark model, and the no-learning model.  For both simulations, we use the same set of
+market-wide shocks.  Specifically, we use a series of randomly-generated aggregate rate shocks to simulate the model, and then simulate the model again with the same shocks, but increasing their values by 20\% after a particular date.  The shock progression is graphed in Figure \ref{fig:exch_shk_cmp}, with the shock arriving at time zero.  As with the rest of the series in this section, in the figure the shocks are normalized to one at the time of impact.
+
+ \begin{figure}
+    \centering
+    \includegraphics[scale = 0.5]{figures/exch_rate_series_compare}
+    \caption{Series of Peso to Dollar Exchange Rate Shocks, Baseline and with 20\% Peso Devaluation}
+    \label{fig:exch_shk_cmp}
+\end{figure}
 
 \begin{figure}
     \centering
     \begin{subfigure}[b]{0.5\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{figures/total_sales_l}
+        \includegraphics[width=\textwidth]{figures/total_sales}
         \caption{Total sales}
     \end{subfigure}%
     ~
@@ -2138,7 +2140,7 @@ foreign market aggregate shocks as well as ideosyncratic buyer shocks"] }
     ~
     \begin{subfigure}[b]{0.5\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{figures/total_matches_l}
+        \includegraphics[width=\textwidth]{figures/total_matches}
         \caption{Total active matches}
     \end{subfigure}%
     ~
@@ -2150,7 +2152,7 @@ foreign market aggregate shocks as well as ideosyncratic buyer shocks"] }
     ~
     \begin{subfigure}[b]{0.5\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{figures/total_firms_l}
+        \includegraphics[width=\textwidth]{figures/total_firms}
         \caption{Total active firms}
     \end{subfigure}%
     ~
@@ -2164,66 +2166,56 @@ foreign market aggregate shocks as well as ideosyncratic buyer shocks"] }
 
 \end{figure}
 
-\begin{figure}
-    \centering
-    \begin{subfigure}[b]{0.5\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{figures/sales_per_firm_l}
-        \caption{Sales per firm}
-    \end{subfigure}%
-    ~
-    \begin{subfigure}[b]{0.5\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{figures/sales_per_firm_nl}
-        \caption{Sales per firm}
-    \end{subfigure} \\
-    ~
-    \begin{subfigure}[b]{0.5\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{figures/sales_per_match_l}
-        \caption{Sales per match}
-    \end{subfigure}%
-    ~
-    \begin{subfigure}[b]{0.5\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{figures/sales_per_match_nl}
-        \caption{Sales per match}
-    \end{subfigure} \\
-    ~
-    \begin{subfigure}[b]{0.5\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{figures/matches_per_firm_l}
-        \caption{Matches per firm}
-    \end{subfigure}%
-    ~
-    \begin{subfigure}[b]{0.5\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{figures/matches_per_firm_nl}
-        \caption{Matches per firm}
-    \end{subfigure}
-    \caption{Response to a 20\% depreciation of Colombian Peso: Average outcomes}
-    \label{fig:export_dynamics_average}
+% \begin{figure}
+%     \centering
+%     \begin{subfigure}[b]{0.5\textwidth}
+%         \centering
+%         \includegraphics[width=\textwidth]{figures/sales_per_firm_l}
+%         \caption{Sales per firm}
+%     \end{subfigure}%
+%     ~
+%     \begin{subfigure}[b]{0.5\textwidth}
+%         \centering
+%         \includegraphics[width=\textwidth]{figures/sales_per_firm_nl}
+%         \caption{Sales per firm}
+%     \end{subfigure} \\
+%     ~
+%     \begin{subfigure}[b]{0.5\textwidth}
+%         \centering
+%         \includegraphics[width=\textwidth]{figures/sales_per_match_l}
+%         \caption{Sales per match}
+%     \end{subfigure}%
+%     ~
+%     \begin{subfigure}[b]{0.5\textwidth}
+%         \centering
+%         \includegraphics[width=\textwidth]{figures/sales_per_match_nl}
+%         \caption{Sales per match}
+%     \end{subfigure} \\
+%     ~
+%     \begin{subfigure}[b]{0.5\textwidth}
+%         \centering
+%         \includegraphics[width=\textwidth]{figures/matches_per_firm_l}
+%         \caption{Matches per firm}
+%     \end{subfigure}%
+%     ~
+%     \begin{subfigure}[b]{0.5\textwidth}
+%         \centering
+%         \includegraphics[width=\textwidth]{figures/matches_per_firm_nl}
+%         \caption{Matches per firm}
+%     \end{subfigure}
+%     \caption{Response to a 20\% depreciation of Colombian Peso: Average outcomes}
+%     \label{fig:export_dynamics_average}
+% 
+% \end{figure}
 
-\end{figure}
-
-Figures \ref{fig:export_dynamics_macro} and \ref{fig:export_dynamics_average}
-summarize the results of these experiments, normalizing each export series
-to unity in the year when the shock hits (year 0). Consider first Panel (a)
+Figures \ref{fig:export_dynamics_macro} summarizes the results of these experiments, normalizing each export series to unity in the year before the shock hits (year -1). Consider Panel (a)
 and Panel (b) of Figure \ref{fig:export_dynamics_macro}, which plot total
-export sales over a 30 year period bisected by the shock. In all versions of
+export sales over a 30 year period bisected by the shock. In both versions of
 the model, the immediate effect of the depreciation is to increase the
 peso-denominated revenue flow from existing clients by 20 percent. And
 because other margins of adjustment are sluggish, this valuation effect
 accounts for almost all of the movement in aggregate exports during the
-first post-shock year. Nontheless, the post-shock growth of aggregate
-exports differs somewhat across the four model versions we consider. The
-baseline time series shows growth over the 7 year post-shock period, peaking
-at about 135 percent of its period 0 level. But the other three aggregates
-grow more rapidly during these early years and peak at more than 140 percent
-of their period 0 values. The "no-network" series does not differ much from
-the baseline, but those series that shut down learning deviate more
-significantly, and the series with neither learning nor network effects is
-much more volatile.
+first post-shock year.
 
 The differences in these patterns trace largely to differences in the
 numbers of matches, which are depicted in Panels (c) and (d) of Fgure \ref%
@@ -2243,9 +2235,6 @@ maintain a large client base when market conditions turn sour. Negative
 aggregate shocks therefore trigger relatively rapid retrenchment when both
 learning and network effects are absent.\textbf{\ [JT: Need to confirm that
 aggregate worsen after year 8 or so.]}
-
-\textbf{[JT: maybe figure }\ref{fig:export_dynamics_average}\textbf{\ can go
-to an appendix?]}
 
 In sum, learning effects and---to a lesser extent---network effects do
 appear to lend persistence to aggregate bilateral export flows, adding
