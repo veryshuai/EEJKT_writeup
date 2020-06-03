@@ -1,3 +1,5 @@
+%2multibyte Version: 5.50.0.2960 CodePage: 936
+
 \documentclass[12pt]{article}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{eurosym}
@@ -31,7 +33,7 @@
 %TCIDATA{Codepage=936}
 %TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
 %TCIDATA{BibliographyScheme=Manual}
-%TCIDATA{LastRevised=Tuesday, May 26, 2020 13:24:49}
+%TCIDATA{LastRevised=Tuesday, June 02, 2020 13:06:32}
 %TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
 %TCIDATA{Language=American English}
 
@@ -74,27 +76,28 @@ Census Bureau staff. It has undergone a more limited review than official
 Census Bureau publications. All results were reviewed to ensure
 confidentiality. Any views, findings and opinions in the paper reflect the
 views of the authors and do not reflect the views of the U.S. Census Bureau.}%
-\\
 }
 \author{Jonathan Eaton$^{a,e}$, Marcela Eslava$^{b}$, David Jinkins$^{c}$,
-\and C. J. Krizan$^{d}$, and James Tybout$^{c,e}$}
+\and  \ \ \ \ \ \ \ C. J. Krizan$^{d}$, and James Tybout$^{c,e}$ \ \ \ \ \ \
+\and (first draft: February, 2014) }
 \maketitle
 
 \begin{abstract}
-Customs record data reveal a number of patterns in relationships Colombian
-firms have with their U.S. buyers. We interpret these patterns in terms of a
-continuous-time model in which heterogeneous sellers search for buyers in a
-market. Success in selling to a buyer reveals information to the seller
-about the appeal of her product in the market, affecting her incentive to
-search for more buyers. Fit using the method of simulated moments, the model
-replicates key patterns in the customs records and allows us quantify
-several types of trade costs, including the search costs of\ identifying
-potential clients and the costs of maintaining business relationships with
-existing clients. It also allows us to estimate the effect of previous
-exporting activity on the costs of meeting new clients, and to characterize
-the cumulative effects of learning on firms' search intensities. Finally, we
-use our fitted model to explore the effects of these trade costs and
-learning effects on aggregate export dynamics.
+\textbf{[JT: not yet updated]} Customs record data reveal a number of
+patterns in relationships Colombian firms have with their U.S. buyers. We
+interpret these patterns in terms of a continuous-time model in which
+heterogeneous sellers search for buyers in a market. Success in selling to a
+buyer reveals information to the seller about the appeal of her product in
+the market, affecting her incentive to search for more buyers. Fit using the
+method of simulated moments, the model replicates key patterns in the
+customs records and allows us quantify several types of trade costs,
+including the search costs of\ identifying potential clients and the costs
+of maintaining business relationships with existing clients. It also allows
+us to estimate the effect of previous exporting activity on the costs of
+meeting new clients, and to characterize the cumulative effects of learning
+on firms' search intensities. Finally, we use our fitted model to explore
+the effects of these trade costs and learning effects on aggregate export
+dynamics.
 \end{abstract}
 
 %\date{This draft: April 2020}
@@ -118,7 +121,8 @@ available, to penetrating individual markets (Das et. al, 2007; Arkolakis,
 step forward by examining exporters' relationships with individual buyers in
 a market, both descriptively and through the lens of a dynamic model. In
 doing so we quantify exporting costs, link them to particular types of
-information frictions, and explore their dynamic implications.
+information frictions, and explore their dynamic implications. \textbf{[JT:
+this paragraph has not really been updated.]}
 
 The first type of friction in our model is standard: exporters must engage
 in costly search to identify potential clients abroad. Since search costs
@@ -128,14 +132,14 @@ sellers' limited knowledge of foreign buyers' tastes. Potential exporters
 are unsure about the appeal of their products in foreign markets, but they
 gradually learn about this as they meet potential customers. Therefore,
 exporters with appealing products intensify their marketing efforts as they
-receive positive reinforcement. The final type of friction has to do with
-buyers learning about sellers. Exporters that have already established a
-large number of business relationships are relatively visible to other
-buyers, so for a given level of spending on search, they meet relatively\
-more potential customers. This means that new exporters add clients
-relatively slowly, and it makes it profitable for exporters with large
-client bases to replace the many business relationships they lose to
-attrition.
+receive positive reinforcement, and they expand relatively quickly. The
+final type of friction has to do with buyers learning about sellers.
+Exporters that have already established a large number of business
+relationships are relatively visible to other buyers, so for a given level
+of spending on search, they meet relatively\ more potential customers. Thus
+new exporters add clients relatively slowly, and the per unit cost of
+replacing failing business relationships are relatively small at
+well-established firms.
 
 We base our analysis on the cross-sectional and temporal variation in
 shipment-level customs records from the United States, which report importer
@@ -143,102 +147,166 @@ and exporter identifiers. We begin by summarizing the main patterns in these
 data that we want our model to explain, including the dynamics of seller
 matching patterns and the life-cycle revenue trajectories generated by
 indiviudal matches. Then we develop a dynamic search and matching model in
-which exporters expand by adding to their client base in destination
+which firms expand by adding to their client base at home and in foreign
 markets. Finally, we fit this model to our customs data and use it to make
 inferences about the importance of several types of infomation frictions.
 
-In addition to quantifying the value of information, this last stage
-involves several counterfactual experiments.\ These are designed to answer\
-several questions: How much intangible capital is tied to foreign business
-connections, and how does this capital vary across different types of
-exports? Controlling for exporters' productivity and product appeal, how big
-a role does market visability play in driving success? And finally, to what
-extent do information frictions cause aggregate export dynamics to deviate
-from a sequence of static equilibria?
+When bringing our model to data, we rely on a simple identification
+strategy. Specifically, we define a buyer-seller match to have occurred\
+whenever we observe an initial shipment between a particular exporting firm
+and a particular importing firm. But if the exporter makes no further
+shipments to the importer, we say the match was a failure. That is, we view
+the first shipment as a sample, and we define \textit{successful} matches to
+be those that result in at least two shipments. These assumptions are
+consistent with the large number of one-off shipments we observe between
+sellers and buyers, and they render the key variables in our model
+observable for each exporter at each point in time, namely, its match
+arrival rate, its cumulative number of matches, and its success rate.
+
+In addition to quantifying the value of information and intangible capital,
+our estimated model allows us to perform several counterfactual exercises.\
+These are designed to answer\ several questions. First, how much intangible
+capital is tied to foreign business connections, and how does this capital
+vary across different types of exports? Second, controlling for exporters'
+productivity and product appeal, how big a role does market visability play
+in driving success? And finally, to what extent does each type of
+information friction cause aggregate export dynamics to deviate from a
+sequence of static equilibria?
 
 \subsection{Relation to literature}
 
-\textbf{JT: section needs to be updated, including discussion of:}
+\textbf{Calibrated GE models:} Broadly speaking, our paper concerns firm
+dynamics in open economies. As such, it connects to a number of strands of
+the trade literature. The first uses calibrated general equilibrium models
+with productivity shocks that move firms through the size distribution.
+These include Alessandria and Choi (2007), Ruhl (2007), Alessandria (2010),
+Atkeson and Burstein (2010), Burstein and Melitz (2012), Impullitti et al.
+(2012), Drozd and Nozal (2012), and Arkolakis (2015). We depart from all of
+these papers by focussing on the market knowledge and visibility that firms
+reap by investing in business relationships with new clients. 
 
-Aeberhardt, R., I. Buono, and H. Fadinger (2014)
+Our model does, however, share some features with these papers. Among them,
+Arkolakis (2015) is perhaps closest to ours, in that he uses convex market
+penetration costs to generate a number of stylized facts, including the
+age-dependence of export growth rates. However, since the exporting decision
+is static in his model and learning is absent, it\ does not explain the
+irreversibilities observed in firms' exporting behavior, nor does it speak
+to the duration of matches. Drozd and Nozal (2012) are also relatively close
+to us in the sense that they treat firms as building their foreign market
+shares gradually through a costly search and matching process. However, they
+do this using a representative agent RBC model that abstracts from firm
+heterogeneity, thereby missing most of the patterns in the firm-level data
+we focus upon.
 
-Eaton, Jinkins, Tybout and Xu (?)
+\textbf{Single-agent models with a customer margin:} Another strand of the
+trade literature includes single-agent models that describe firms' customer
+accumulation in more detail, sacrificing qeneral equilibrium results to do
+so. Like ours, these papers rely on customs records. Using Irish data,
+Fitzgerald et al. (2019) investigate whether firms build their customer base
+through non-price marketing efforts versus price discounts to establish a
+market presence. They find little role for discounting, but an important
+role for the customer base. Using French data, Pivetau (forthcoming) also
+investigates the importance of discounts versus non-price efforts to build a
+customer base. Unlike Fitzgerald et al. (2019), he finds a tendency for
+firms to discount their goods when they are new to a market, but he confirms
+that a large existing customer base improves product awareness in the
+remainder of the population and conveys an important advantage. Our model is
+perhaps closest to these papers, in that it is also a single-agent model fit
+to customs records.\footnote{
+[\textit{Tempting to write: They copied us with minimal acknowledgement but
+finished more quickly}. \textit{Fitzgerald et al. is especially annoying:
+they added learning to their most recent version and acknowledge EEJKT only
+as a general "see also" mention in a footnote of their intro.}]} But we
+differ from them in that we study the joint evolution of home and foreign
+sales for each firm, allowing for endogenous entry and exit in both markets,
+learning effects, and search frictions. Also we characterize the life-cycle
+of successful matches, including their endogenous dissolution.\footnote{%
+From a very different perspective, Chaney (2014) uses customs records to
+model the emergence of international trading networks as a contagion
+penomhenon, with exporters tending to break into markets that are
+geographically close to those that are they already service. The contagion
+processes are not based on optimizing behavior, however.}
 
-Monarch and Schmidt-Eisenlohr (2018)
+\textbf{Static matching models }Addional papers with a consumer margin shut
+down dynamics in order to analyze assortative matching patterns between
+exporters and importers in particular markets. Blum et al. (2010, 2012),
+Bernard et al. (2018) and Sugita et al. (2019) explore the buyer-seller
+matching patterns that emerge in a full-information world with productivity
+heterogeneity on both sides of the market, fixed matching costs, and (in
+some cases) production complementarities.\footnote{%
+Bernard and Moxnes (2018) provide a useful summary of the literature on
+networks and trade.} 
 
-Ruhl and Willis (2017)
+\textbf{Models with search frictions }Closer to the present paper is Eaton
+et al. (2016), which lacks a mechanism for assortative matching, but treats
+both buyers and sellers as building client portfolios by searching for each
+other in a dynamic market equilibrium.\footnote{%
+An appendix shows how assortative matching can be added.} They, too, find an
+important role for the effect of existing business relationships on market
+visibility and matching rates. But like the static models, they do not allow
+for learning effects, nor do they characterize the life cycle of matches
+once they have been formed.
 
-Alessandria, Choi and Ruhl (2018)
+Matching and/or screening frictions appear in a number of other trade models
+that are too abstract to bring directly to data, but are supported by
+reduced form evidence. In Rauch and Watson (2003), importers experiment with
+foreign suppliers by placing trial orders with them, and they gain access to
+a supplier network if they establish a successful business relationship. We
+take the assumption that importers evaluate a sample shipment before forming
+business relationships from this formulation. In Albornoz et al (2012),
+firms choose to experiment in markets with low entry costs in order to learn
+about their product's appeal elsewhere. Our model resembles theirs in that
+exporters learn about their products' through early shipments, and when new
+exporters survive, their sales tend to grow rapidly. Aeberhardt et al.
+(2014)\ and Araujo et al. (2016) explain the small scale and high exit rate
+of new exporters (inter alia) by assuming that exporters are initially
+uncertain about the reliability of their new buyers, whom they find through
+a random matching process. The learning mechanisms built into these models
+are different from ours, but they too are designed to capture some of the
+same patterns that we target. \textbf{[JT: this paragraph was based on
+superficial readings--I need to confirm that these descriptions are
+accurate.]}
 
-Foster, Haltiwanger and Syverson (2016)
-
-Nguyen (2012)
-
-Rho, Young-Woo and Joel Rodrigue (2016)
-
-Bernard (2018 \& what else?)
-
-Pivetau (forthcoming)
-
-Timoshenko (2015)
-
-Macchiavello (2015)
-
-Li (2018)
-
-Kohn et al. (2016)
-
-Gourio, F. and L. Rudanko (2014)
-
-Dickstein and Morales (2018)
-
-others?
-
-\bigskip
-
-While we look at the evolution of firms' sales in a particular market, our
-analysis is related to the literature on the dynamics of firm size in
-general. The model explains the size distribution of firm sales through two
-interacting mechanisms. One, as in Melitz (2003), Bernard et al. (2003),
-Luttmer (2007), and Irarrazabal and Opromolla (2006), is firm efficiency:
-More efficient firms sell more to a given set of buyers by having a lower
-price or a higher quality product. A second is that some firms have larger
-networks of buyers than others, as in Jackson and Rogers (2007) or Chaney
-(2011).
-
-Investments in building a client base constitute a type of sunk cost, so our
-model also relates to the export hysteresis literature (Dixit, 1989; Baldwin
-and Krugman, 1989; Das, et al., 2007; Alessandria and Choi, 2007;
-Alessandria et al., 2010), where firms pay a one-shot start-up cost to break
-into new markets. But unlike these formulations, our sunk costs are incurred
-on the client margin rather than the country margin, and they pay off in
-terms of market knowledge and reputation as well as revenue streams. These
-features of our model allow us to explain why new exporters who don't exit
-tend to rapidly expand, and why established exporters' sales are relatively
-stable. They also explain why many firms export for short periods on a very
-small scale.
-
-Our formulation is also related to the two-period learning models developed
-by Rauch and Watson (2003) and Albornoz et al (2012). In the former,
-importers experiment with foreign suppliers by placing trial orders with
-them, and they gain access to a supplier network if they establish a
-successful business relationship. In the latter, firms choose to experiment
-in markets with low entry costs in order to learn about their product's
-appeal elsewhere. Like our model, these formulations provide interpretations
-for the fact that when new exporters survive, their exports tend to grow
-rapidly.\renewcommand{\baselinestretch}{1}\footnote{%
+\textbf{Learning models:} Other learning models of export dynamics are
+designed for structural estimation. Timoshenko (2015) adds age as a profit
+shifter to a standard sunk-cost model of exporter behavior. She then
+demonstrates that this variable helps explain exporter persistence in
+differentiated (but not homogeneous) product industries and interprets this
+to imply that learning effects are important.\ \textbf{[JT: not strictly
+structural; she used the Roberts/Tybout 1997 estimator.]} Arkolakis, et al.\
+(2018) adapt Jovanovic (1982) type learning to export market behavior in
+order to explain the relatively rapid expansion of new exporters. This paper
+resembles ours in that firms learn about their product's appeal in export
+market by observing their previous sales. It differs in that it is a
+calibrated equilibrium model with a representative consumer and no matching
+frictions or network effects. Li (2018) adds time variation to the
+idiosyncratic productivity shocks in Eaton et al (2014), replaces endogenous
+search efforts with a Markov process on the number of foreign orders firms
+receive, and treats firms as learning about their demand per order in each
+destination market. With these adjustments, he then quantifies the effects
+of priors, productivity, and learning on export market participation.
+Finally, without developing a complete model, Berman et al. (2019) use a
+simple decomposition to isolate residual fluctuation in foreign demand that
+they attribute to learning. Like the other studies mentioned here, they find
+learning plays an important role.\textbf{\ [JT: Mention Dickstein and
+Morales, 2018?]} \renewcommand{\baselinestretch}{1}\footnote{%
 Ruhl and Willis (2008) also note this pattern in plant-level export data and
 show that market entry costs are insufficient to explain it.}
 
-Finally, in allowing firms to attract more buyers by incurring greater
-costs, our analysis relates to Drozd and Nozal (2012) and Arkolakis (2009,
-2010). By positing that firms face marketing costs that are convex in the
-number of foreign clients they service, Arkolakis also accounts for
-small-scale exporters and the age-dependence of export growth rates.
-However, since all exporting relationships last a single period in his
-models and learning is absent, Arkolakis's models\ do not explain the
-irreversibilities observed in firms' exporting behavior, nor do they speak
-to the duration of matches.
+\textbf{Micro-founded models of aggregate trade fluctuations}: Finally, our
+model allows us to explore the microfoundations of aggregate export dynamics
+in the presence of several types of frictions. Alessandria and Choi (2014),
+Alessandria et al. (2014), and Alessandria et al. (2018) use foreign market
+entry costs to induce forward-looking behavior, with the last paper adding
+endogenous variable exporting costs. Ruhl and Willis (2017) extend the
+standard sunk cost model by assuming that firm-specific foreign demand grows
+with years of export market experience. This allows them to explain the fact
+that exporters typically start small, reduces estimates of sunk entry costs,
+and dampens simulated export responses to an exchange rate shock over
+medium-term horizons. Piviteau (forthoming) also explores these
+relationships using his model of export dynamics (discussed above). Our
+model can be thought of as providing a particular micro foundation for the
+dependence of exporting volumes on years in the market.
 
 \section{Firm-Level Trade: Transaction Level Evidence}
 
@@ -1067,6 +1135,13 @@ home macro state jump size & $\Delta ^{x_{h}}$ & \multicolumn{1}{c}{0.003}
 foreign macro state jump size & $\Delta ^{x_{f}}$ & \multicolumn{1}{c}{0.053}
 \\ \hline
 \end{tabular}%
+%
+%
+%
+%
+%
+%
+%
 %
 %
 %
@@ -1954,7 +2029,7 @@ their early matches happened to yield successful business relationships.
     \caption{Log continuation value of firms conditional on match history}
     \label{fig:val_three_types}
     \caption*{Notes: Continuation value trajectories for firms with productivity in the 10th, 50th, and 90th percentiles of the simulated productivity distribution of exporters.  For each productivity type, we plot values for all successful matches, alternating success and failure, and all failures.}
-\end{figure}
+\end{figure} 
 
 To get some sense for the combined importance of the network effect and the
 learning effect, Figure \ref{fig:val_three_types} shows the perceived change
@@ -2243,7 +2318,7 @@ shock. These results obtain because the relevant extensive margin here is
 the match, not the firm. This means that adjustment on that margin matters
 for dominant exporters and fringe players alike.
 
-\pagebreak 
+\pagebreak
 
 \section{Summary}
 
@@ -2303,17 +2378,31 @@ pp. 289-336.
 "Inventories, Lumpy Trade, and Large Devaluations," \textit{American
 Economic Review}, 100 (5) pp. 2304-39.
 
-\item Arkolakis, Konstantinos (2009) \textquotedblleft A Unified Theory of
-Firm Selection and Growth,\textquotedblright\ Yale University, Department of
-Economics, Working Paper.
+\item Araujo, Luis and Emanuel Ornelas (2007) "Trust-based Trade." CEP
+discussion paper 820.
+
+\item Araujo, Luis, Emanuel Ornelas and Giordano Mion (2016) "Institutions
+and Export Dynamics" \textit{Journal of International Economics }98: 2-20
 
 \item Arkolakis, Konstantinos (2010) \textquotedblleft Market Access Costs
 and the New Consumers Margin in International Trade,\textquotedblright\ 
 \textit{Journal of Political Economy}, 118(6), pp. 1151-1199.
 
+\item Arkolakis, Konstantinos (2015) \textquotedblleft A Unified Theory of
+Firm Selection and Growth,\textquotedblright\ \textit{Quarterly Journal of
+Economics} 131(1): 89-155.
+
+\item Arkolakis, Konstantinos, Theodore Papageorgiou and Olga Timoshenko \
+(2018). "Firm Learning and Growth,"\textit{\ Review of Economic Dynamics}
+27: 146-168.
+
 \item Baldwin, Richard. E. and Paul Krugman (1989): \textquotedblleft
 Persistent Trade Effects of Large Exchange Rate Changes.\textquotedblright\ 
 \textit{Quarterly Journal of Economics}, 104, pp. 635-654.
+
+\item Berman, N., V. Rebeyrol, and V. Vicard (2019) "Demand learning and
+Firm dynamics: Evidence from Exporters," \textit{Review of Economics and
+Statistics }101(1): 91-106.
 
 \item Bernard, Andrew and J. Bradford Jensen (1999) \textquotedblleft
 Exceptional Exporter Performance: Cause, Effect, or Both?\textquotedblright\ 
@@ -2328,6 +2417,13 @@ Trade,\textquotedblright\ \textit{American Economic Review }93(4), pp.
 K. Schott (2007) \textquotedblleft Firms in International
 Trade,\textquotedblright\ \textit{Journal of Economic Perspectives}.
 
+\item Bernard, Andrew, Andreas Moxnes and Karen Helene Ulltveit-Moe. 2018.
+"Two-Sided Heterogeneity and Trade." \textit{Review of Economics and
+Statistics }100(3): 424-439.
+
+\item Bernard, Andrew, and Andreas Moxnes. 2019. "Networks and Trade." 
+\textit{Annual Review of Economics} 10(65): 65-85.
+
 \item Besedes, Tibor (2007). \textquotedblleft A Search Cost Perspective on
 Formation and Duration of Trade,\textquotedblright\ Working Paper,
 Department of Economics, Georgia Tech University.
@@ -2340,8 +2436,9 @@ Evidence.\textquotedblright\ Working Paper, The University of Toronto.
 Product Quality and Colombian Plants\textquotedblright\ \textit{Journal of
 Development Economics,} 80: 160-178.
 
-\item Chaney, Thomas (2011) \textquotedblleft The Network Structure of
-International Trade,\textquotedblright\ University of Chicago.
+\item Chaney, Thomas (2014) \textquotedblleft The Network Structure of
+International Trade,\textquotedblright\ \textit{American Economic Review}
+104(11): 3600--3634
 
 \item Clerides, Sofronis, Saul Lach and\ James Tybout (1998)
 \textquotedblleft Is Learning-by-Exporting Important? Micro-dynamic Evidence
@@ -2388,6 +2485,10 @@ Cambridge, MA: Harvard U. Press.
 and Profitability Enhancing Reallocation: Evidence from
 Colombia,\textquotedblright\ \textit{Journal of Development Economics,} 75:
 333-371.
+
+\item Eaton, Jonathan, Marcela Eslava, David Jinkins, C.J. Krizan, and James
+Tybout (2014). \textquotedblleft A Search and Learning Model of Export
+Dynamics,\textquotedblright\ working paper, Pennsylvania State U.
 
 \item Foster, Lucia, John Haltiwanger and Chad Syverson (2016) "The Slow
 Growth of New Plants: Learning aboout Demand?" \textit{Economica} 83(329):
