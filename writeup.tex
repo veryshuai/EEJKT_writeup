@@ -2198,12 +2198,23 @@ fraction of total supply.}
 To do so, we simulate a permanent (but unanticipated) 20 percent Colombian
 peso devaluation on total export trajectories under two alternative
 scenarios: our benchmark model, and the no-learning model.  For both simulations, we use the same set of
-market-wide shocks.  Specifically, we use a series of randomly-generated aggregate rate shocks to simulate the model, and then simulate the model again with the same shocks, but increasing their values by 20\% after a particular date.  The shock progression is graphed in Figure \ref{fig:exch_shk_cmp}, with the shock arriving at time zero.  As with the rest of the series in this section, in the figure the shocks are normalized to one at the time of impact.
+market-wide shocks.  Specifically, we use a series of randomly-generated aggregate rate shocks to simulate the model, and then simulate the model again with the same shocks, but increasing their values by 20\% after a particular date.  The shock progression is graphed in Figure \ref{fig:exch_shk_cmp} Panel \ref{fig:raw_exch_rate}, with the shock arriving at time zero.  As with the rest of the series in this section, in the figure the shocks are normalized to one at the time of impact.  In order to show how the model interacts with these shocks, in Panel \ref{fig:total_matches_exch_rate} we graph the total number of matches across all firms in our baseline model along with the baseline exchange rate series.  Changes in total matches are visibly correlated with exchange rate changes, but the total match series is less volatile than the exchange rate.
 
  \begin{figure}
     \centering
-    \includegraphics[scale = 0.5]{figures/exch_rate_series_compare}
-    \caption{Series of Peso to Dollar Exchange Rate Shocks, Baseline and with 20\% Peso Devaluation}
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/exch_rate_series_compare}
+        \caption{Baseline vs devaluation}
+        \label{fig:raw_exch_rate}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/total_matches_exch_rate_series}
+        \caption{Total matches vs baseline rate}
+        \label{fig:total_matches_exch_rate}
+    \end{subfigure}
+        \caption{Series of Peso to Dollar Exchange Rate, 20\% Peso Devaluation}
     \label{fig:exch_shk_cmp}
 \end{figure}
 
@@ -2291,7 +2302,7 @@ market-wide shocks.  Specifically, we use a series of randomly-generated aggrega
 % 
 % \end{figure}
 
-Figures \ref{fig:export_dynamics_macro} summarizes the results of these experiments, normalizing each export series to unity in the year before the shock hits (year -1). Consider Panel (a)
+Figures \ref{fig:export_dynamics_macro} summarizes the results of these experiments, normalizing each export series to unity in the year before the shock hits (year -1).  Consider Panel (a)
 and Panel (b) of Figure \ref{fig:export_dynamics_macro}, which plot total
 export sales over a 30 year period bisected by the shock. In both versions of
 the model, the immediate effect of the depreciation is to increase the
@@ -2301,30 +2312,18 @@ accounts for almost all of the movement in aggregate exports during the
 first post-shock year.
 
 The differences in these patterns trace largely to differences in the
-numbers of matches, which are depicted in Panels (c) and (d) of Fgure \ref%
+numbers of matches, which are depicted in Panels (c) and (d) of Figure \ref%
 {fig:export_dynamics_macro}. Here the valuation effect plays no role, so it
 is easier to see the difference between the baseline series and the two
-series without learning. We interpret these patterns to mean that firms with
-high success rates (large $\theta ^{f}$ values) jump into the export market
-aggressively when they know their profit potential, but they go slow if they
-do not, gaining confidence and intensifying their search efforts as positive
-signals accrue.
+series without learning.  Both series see matches adjust slowly to the devaluation,
+with more than five years between the shock and the maximum difference between the baseline series and 
+the devaluation series.  In the learning version of the model, there is 20\% growth in matches seven years 
+after the devaluation, while in the no-learning series there is only 15\% growth.  After 15 years, however,
+both series exhibit only 15\% growth relative to the baseline series.
 
-What accounts for the high volatility of the no-learning, no-network series?
-We have already noted that when firms know their type, the high-$\theta ^{f}$
-exporters want to expand quickly when markets turn favorable. But if network
-effects are missing, these same firms have relatively little incentive to
-maintain a large client base when market conditions turn sour. Negative
-aggregate shocks therefore trigger relatively rapid retrenchment when both
-learning and network effects are absent.\textbf{\ [JT: Need to confirm that
-aggregate worsen after year 8 or so.]}
+Panels (e) and (f) display a similar pattern for firm entry.  Seven years after the devaluation there are far 15\% more exporting firms relative to the baseline in the learning version of the model, but only 5\% more firms in the no-learning version.  After 15 years, the relative growth of exporters in the two model versions is comparable.  We interpret this pattern as showing how in the version of the model with learning, exporters with little experience enter the market due to the devaluation, learn after a few years that they have low success probability, and then exit.
 
-In sum, learning effects and---to a lesser extent---network effects do
-appear to lend persistence to aggregate bilateral export flows, adding
-several years to the transition period in the aftermath of a permanent
-shock. These results obtain because the relevant extensive margin here is
-the match, not the firm. This means that adjustment on that margin matters
-for dominant exporters and fringe players alike.
+In sum, search frictions themselves cause quite sluggish adjustment to shocks, with full adjustment only after more than five years.  Learning increases the volatility of bilateral export flows in the medium run.  In our experiment, exporters are induced by a favorable exchange rate shock to enter the market and learn about their success probabilities.  This experimentation has little effect on the market aggregates relative to the no-learning model after fifteen years.
 
 \pagebreak
 
