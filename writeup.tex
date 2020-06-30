@@ -33,7 +33,7 @@
 %TCIDATA{Codepage=936}
 %TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
 %TCIDATA{BibliographyScheme=Manual}
-%TCIDATA{LastRevised=Saturday, June 13, 2020 10:54:20}
+%TCIDATA{LastRevised=Tuesday, June 30, 2020 11:08:23}
 %TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
 %TCIDATA{Language=American English}
 
@@ -172,7 +172,8 @@ vary across different types of exporters? Second, controlling for exporters'
 productivity and product appeal, how big a role does market visability play
 in driving success? And finally, to what extent does each type of
 information friction cause aggregate export dynamics to deviate from a
-sequence of static equilibria?
+sequence of static equilibria? \textbf{[JT: discussion of main findings to
+be added here]}
 
 \subsection{Relation to literature}
 
@@ -213,15 +214,11 @@ mechansims for building a foreign customer base. Unlike Fitzgerald et al.
 new to a market, but he confirms that a large existing customer base
 improves product awareness in the remainder of the population and conveys an
 important advantage. Our model is perhaps closest to these papers, in that
-it is also a single-agent model fit to customs records.\footnote{%
-[\textit{Tempting to write: They copied us with minimal acknowledgement but
-finished more quickly}. \textit{Fitzgerald et al. is especially annoying:
-they added learning to their most recent version and acknowledge EEJKT only
-as a general "see also" mention in a footnote of their intro.}]} But we
-differ from them in that we study the joint evolution of home and foreign
-sales for each firm, allowing for endogenous entry and exit in both markets,
-learning effects, and search frictions. Also we characterize the life-cycle
-of successful matches, including their endogenous dissolution.\footnote{%
+it is also a single-agent model fit to customs records. But we differ from
+them in that we study the joint evolution of home and foreign sales for each
+firm, allowing for endogenous entry and exit in both markets, learning
+effects, and search frictions. Also we characterize the life-cycle of
+successful matches, including their endogenous dissolution.\footnote{%
 From a very different perspective, Chaney (2014) uses customs records to
 model the emergence of international trading networks as a contagion
 penomhenon, with exporters tending to break into markets that are
@@ -1176,6 +1173,7 @@ foreign macro state jump size & $\Delta ^{x_{f}}$ & \multicolumn{1}{c}{0.053}
 %
 %
 %
+%
 %\caption{\textbf{Market-wide Demand Shifters}}
 \end{table}
 
@@ -2031,13 +2029,13 @@ also means that two firms, \textit{ex ante} identical, may have very
 different long term experiences in export markets, depending upon whether
 their early matches happened to yield successful business relationships.
 
-\begin{figure}
-    \centering
-    \includegraphics[scale=0.5]{figures/val_f_three_types}
-    \caption{Log continuation value of firms conditional on match history}
-    \label{fig:val_three_types}
-    \caption*{Notes: Continuation value trajectories for firms with productivity in the 10th, 50th, and 90th percentiles of the simulated productivity distribution of exporters.  For each productivity type, we plot values for all successful matches, alternating success and failure, and all failures.}
-\end{figure} 
+%\begin{figure}
+%    \centering
+%    \includegraphics[scale=0.5]{figures/val_f_three_types}
+%    \caption{Log continuation value of firms conditional on match history}
+%    \label{fig:val_three_types}
+%    \caption*{Notes: Continuation value trajectories for firms with productivity in the 10th, 50th, and 90th percentiles of the simulated productivity distribution of exporters.  For each productivity type, we plot values for all successful matches, alternating success and failure, and all failures.}
+%\end{figure} 
 
 To get some sense for the combined importance of the network effect and the
 learning effect, Figure \ref{fig:val_three_types} shows the perceived change
@@ -2074,13 +2072,13 @@ erase firm value. The continuation value of the median productivity firm
 with four successful matches is almost the same as the value of the high
 productivity firm with four failed matches, at US\$ 5,669.
 
-\begin{figure}
-    \centering
-    \includegraphics[scale=0.5]{figures/success_beliefs}
-    \caption{Evolution of success probability belief}
-    \label{fig:success_beliefs}
-    \caption*{\small{Notes: Beliefs of a firm with productivity in the 90th percentile of exporters over success probability.  Top line is five success followed by five failures.  Bottom line is five failures followed by five successes.}}
-\end{figure}
+%\begin{figure}
+%    \centering
+%    \includegraphics[scale=0.5]{figures/success_beliefs}
+%    \caption{Evolution of success probability belief}
+%    \label{fig:success_beliefs}
+%    \caption*{\small{Notes: Beliefs of a firm with productivity in the 90th percentile of exporters over success probability.  Top line is five success followed by five failures.  Bottom line is five failures followed by five successes.}}
+%\end{figure}
 
 In addition to continuation values, match histories affect the intensity
 with which firms search for new clients. We explore this dependence in
@@ -2102,13 +2100,14 @@ searches far less intensively along the way.
 
 \subsubsection{Comparison with no-learning}
 
-\begin{figure}
-    \centering
-    \includegraphics[scale=0.5]{figures/val_f_three_types_nl}
-    \caption{Log continuation value of firms conditional on match history, no learning}
-    \label{fig:val_three_types_nl}
-    \caption*{Notes: Continuation value trajectories for firms with productivity in the 10th, 50th, and 90th percentiles of the simulated productivity distribution of exporters in the learning version of the model.  For each productivity type, we plot values for all successful matches, alternating success and failure, and all failures.}
-\end{figure}
+%
+%\begin{figure}
+%    \centering
+%    \includegraphics[scale=0.5]{figures/val_f_three_types_nl}
+%    \caption{Log continuation value of firms conditional on match history, no learning}
+%    \label{fig:val_three_types_nl}
+%    \caption*{Notes: Continuation value trajectories for firms with productivity in the 10th, 50th, and 90th percentiles of the simulated productivity distribution of exporters in the learning version of the model.  For each productivity type, we plot values for all successful matches, alternating success and failure, and all failures.}
+%\end{figure}
 
 The patterns we have depicted thus far reflect both the network effect and
 the learning effect. To gauge their relative importance, we now redo Figure %
@@ -2120,7 +2119,10 @@ estimates of the "no learning" policy function (see Table \ref%
 {fig:val_three_types} we consider three alternative match histories: only
 successes, only failures, and alternating successes and failures. Also,
 since true success rates now affect behavior, we give all firms a success
-probability of $\theta ^{f}=0.43$.  This number corresponds to the 65th percentile of success probabilities among active exporters in our simulated data.  We chose this particular value because it is close to 50\%, and it is one of the discritized points on the grid we use for estimation.
+probability of $\theta ^{f}=0.43$. This number corresponds to the 65th
+percentile of success probabilities among active exporters in our simulated
+data. We chose this particular value because it is close to 50\%, and it is
+one of the discritized points on the grid we use for estimation.
 
 The results appear in Figure \ref{fig:val_three_types_nl}. Overall,
 continuation values move much less as firms acquire experience, implying
@@ -2130,22 +2132,22 @@ bit when firms make successful matches because these matches make is easier
 to meet additional buyers (the "network effect"). However, unsuccessful
 matches now have no effect on these values.
 
-\begin{figure}
-    \centering
-    \begin{subfigure}[b]{0.5\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{figures/success_order}
-        \caption{Baseline}
-    \end{subfigure}%
-    ~
-    \begin{subfigure}[b]{0.5\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{figures/success_order_nl}
-        \caption{No-learning}
-    \end{subfigure}
-    \caption{Time to ten meetings by placement of five consecutive successes}
-    \label{fig:success_order}
-\end{figure}
+%\begin{figure}
+%    \centering
+%    \begin{subfigure}[b]{0.5\textwidth}
+%        \centering
+%        \includegraphics[width=\textwidth]{figures/success_order}
+%        \caption{Baseline}
+%    \end{subfigure}%
+%    ~
+%    \begin{subfigure}[b]{0.5\textwidth}
+%        \centering
+%        \includegraphics[width=\textwidth]{figures/success_order_nl}
+%        \caption{No-learning}
+%    \end{subfigure}
+%    \caption{Time to ten meetings by placement of five consecutive successes}
+%    \label{fig:success_order}
+%\end{figure}
 
 We can also examine how match arrival times depend on successes and failures
 in the no-learning model. Since firms know their success probabilities in
@@ -2197,57 +2199,63 @@ fraction of total supply.}
 
 To do so, we simulate a permanent (but unanticipated) 20 percent Colombian
 peso devaluation on total export trajectories under two alternative
-scenarios: our benchmark model, and the no-learning model.  For both simulations, we use the same set of
-market-wide shocks.  Specifically, we use a series of randomly-generated aggregate rate shocks to simulate the model, and then simulate the model again with the same shocks, but increasing their values by 20\% after a particular date.  The shock progression is graphed in Figure \ref{fig:exch_shk_cmp}, with the shock arriving at time zero.  As with the rest of the series in this section, in the figure the shocks are normalized to one at the time of impact.
+scenarios: our benchmark model, and the no-learning model. For both
+simulations, we use the same set of market-wide shocks. Specifically, we use
+a series of randomly-generated aggregate rate shocks to simulate the model,
+and then simulate the model again with the same shocks, but increasing their
+values by 20\% after a particular date. The shock progression is graphed in
+Figure \ref{fig:exch_shk_cmp}, with the shock arriving at time zero. As with
+the rest of the series in this section, in the figure the shocks are
+normalized to one at the time of impact.
 
- \begin{figure}
-    \centering
-    \includegraphics[scale = 0.5]{figures/exch_rate_series_compare}
-    \caption{Series of Peso to Dollar Exchange Rate Shocks, Baseline and with 20\% Peso Devaluation}
-    \label{fig:exch_shk_cmp}
-\end{figure}
-
-\begin{figure}
-    \centering
-    \begin{subfigure}[b]{0.5\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{figures/total_sales}
-        \caption{Total sales}
-    \end{subfigure}%
-    ~
-    \begin{subfigure}[b]{0.5\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{figures/total_sales_nl}
-        \caption{Total sales}
-    \end{subfigure} \\
-    ~
-    \begin{subfigure}[b]{0.5\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{figures/total_matches}
-        \caption{Total active matches}
-    \end{subfigure}%
-    ~
-    \begin{subfigure}[b]{0.5\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{figures/total_matches_nl}
-        \caption{Total active matches}
-    \end{subfigure} \\
-    ~
-    \begin{subfigure}[b]{0.5\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{figures/total_firms}
-        \caption{Total active firms}
-    \end{subfigure}%
-    ~
-    \begin{subfigure}[b]{0.5\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{figures/total_firms_nl}
-        \caption{Total active firms}
-    \end{subfigure}
-    \caption{Response to a 20\% depreciation of Colombian Peso: Market level outcomes}
-    \label{fig:export_dynamics_macro}
-
-\end{figure}
+% \begin{figure}
+%    \centering
+%    \includegraphics[scale = 0.5]{figures/exch_rate_series_compare}
+%    \caption{Series of Peso to Dollar Exchange Rate Shocks, Baseline and with 20\% Peso Devaluation}
+%    \label{fig:exch_shk_cmp}
+%\end{figure}
+%
+%\begin{figure}
+%    \centering
+%    \begin{subfigure}[b]{0.5\textwidth}
+%        \centering
+%        \includegraphics[width=\textwidth]{figures/total_sales}
+%        \caption{Total sales}
+%    \end{subfigure}%
+%    ~
+%    \begin{subfigure}[b]{0.5\textwidth}
+%        \centering
+%        \includegraphics[width=\textwidth]{figures/total_sales_nl}
+%        \caption{Total sales}
+%    \end{subfigure} \\
+%    ~
+%    \begin{subfigure}[b]{0.5\textwidth}
+%        \centering
+%        \includegraphics[width=\textwidth]{figures/total_matches}
+%        \caption{Total active matches}
+%    \end{subfigure}%
+%    ~
+%    \begin{subfigure}[b]{0.5\textwidth}
+%        \centering
+%        \includegraphics[width=\textwidth]{figures/total_matches_nl}
+%        \caption{Total active matches}
+%    \end{subfigure} \\
+%    ~
+%    \begin{subfigure}[b]{0.5\textwidth}
+%        \centering
+%        \includegraphics[width=\textwidth]{figures/total_firms}
+%        \caption{Total active firms}
+%    \end{subfigure}%
+%    ~
+%    \begin{subfigure}[b]{0.5\textwidth}
+%        \centering
+%        \includegraphics[width=\textwidth]{figures/total_firms_nl}
+%        \caption{Total active firms}
+%    \end{subfigure}
+%    \caption{Response to a 20\% depreciation of Colombian Peso: Market level outcomes}
+%    \label{fig:export_dynamics_macro}
+%
+%\end{figure}
 
 % \begin{figure}
 %     \centering
@@ -2291,14 +2299,15 @@ market-wide shocks.  Specifically, we use a series of randomly-generated aggrega
 % 
 % \end{figure}
 
-Figures \ref{fig:export_dynamics_macro} summarizes the results of these experiments, normalizing each export series to unity in the year before the shock hits (year -1). Consider Panel (a)
-and Panel (b) of Figure \ref{fig:export_dynamics_macro}, which plot total
-export sales over a 30 year period bisected by the shock. In both versions of
-the model, the immediate effect of the depreciation is to increase the
-peso-denominated revenue flow from existing clients by 20 percent. And
-because other margins of adjustment are sluggish, this valuation effect
-accounts for almost all of the movement in aggregate exports during the
-first post-shock year.
+Figures \ref{fig:export_dynamics_macro} summarizes the results of these
+experiments, normalizing each export series to unity in the year before the
+shock hits (year -1). Consider Panel (a) and Panel (b) of Figure \ref%
+{fig:export_dynamics_macro}, which plot total export sales over a 30 year
+period bisected by the shock. In both versions of the model, the immediate
+effect of the depreciation is to increase the peso-denominated revenue flow
+from existing clients by 20 percent. And because other margins of adjustment
+are sluggish, this valuation effect accounts for almost all of the movement
+in aggregate exports during the first post-shock year.
 
 The differences in these patterns trace largely to differences in the
 numbers of matches, which are depicted in Panels (c) and (d) of Fgure \ref%
