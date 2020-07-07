@@ -33,7 +33,7 @@
 %TCIDATA{Codepage=936}
 %TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
 %TCIDATA{BibliographyScheme=Manual}
-%TCIDATA{LastRevised=Tuesday, July 07, 2020 12:46:33}
+%TCIDATA{LastRevised=Tuesday, July 07, 2020 13:55:02}
 %TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
 %TCIDATA{Language=American English}
 
@@ -1179,6 +1179,7 @@ foreign macro state jump size & $\Delta ^{x_{f}}$ & \multicolumn{1}{c}{0.053}
 %
 %
 %
+%
 %\caption{\textbf{Market-wide Demand Shifters}}
 \end{table}
 
@@ -1830,20 +1831,23 @@ relying on learning effects. However, the no-learning version of the model
 does substantially worse than the benchmark version according to Rivers and
 Vuong's (2002) test statistic for non-nested comparisons.\footnote{%
 The Rivers and Voung (2002) statistic takes the form $T_{n}=\frac{\sqrt{n}}{%
-\hat{\sigma}_{n}}\left[ \hat{d}^{1}-\hat{d}^{2}\right] ,$ where $\hat{d}^{1}$
-and $\hat{d}^{2}$ are the MSM fit metrics for the two models and $\hat{\sigma%
-}_{n}^{2}=var\left[ \hat{d}^{1}-\hat{d}^{2}\right] .$ It has a standard
-normal distribution under the null $E(\hat{d}^{1})=E(\hat{d}^{2}).$ Applying
-it to our context (and treating the weighting matrix as non-stochastic when
-calculating $\hat{\sigma}_{n}^{2}$) we get $T_{n}=$ -1,583.2. Two caveats
-apply. First, it is not obvious what the right sample size $n$ is in our
-context, given that some of our moments are constructed using firm-year
-level data, some are constructed using shipment-level, and some are
-constructed using match level. We used a very conservative approximation to
-the number of firms we base our inferences on. Second, this test statistic
-does not recognize randomness in the fit statistics due to the simulated
-draws we use. Computational prevented us from using samples so large that
-this was negligible, though we used common seeds for both sets of results.}
+\hat{\sigma}_{n}}\left[ \hat{\Lambda}^{1}-\hat{\Lambda}^{2}\right] ,$ where $%
+\hat{\Lambda}^{1}$ and $\hat{\Lambda}^{2}$ are the MSM fit metrics for the
+two models, and $\hat{\sigma}_{n}^{2}$ approximates $var\left[ \hat{\Lambda}%
+^{1}-\hat{\Lambda}^{2}\right] .$ This statistic has a standard normal
+distribution under the null $E(\hat{\Lambda}^{1})=E(\hat{\Lambda}^{2}).$
+Applying it to our context, and treating the weighting matrix $W$ as
+non-stochastic when calculating $\hat{\sigma}_{n}^{2}$, we get $T_{n}=$
+-1,583.2. Two caveats apply. First, it is not obvious what the right sample
+size $n$ is in our context, given that some of our moments are constructed
+using firm-year level data, some are constructed using shipment-level, and
+some are constructed using match level. We used a very conservative
+approximation to the number of firms we base our inferences on ($n=1000$),
+but clearly, the test statistic would have been highly significant at much
+smaller values. Second, this test statistic does not recognize randomness in
+the fit statistics due to the simulation draws we use. Time and hardware
+limitations prevented us from using samples so large that this was
+negligible, though we used common seeds for both sets of results.}
 
 \section{Analysis of results}
 

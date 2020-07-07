@@ -33,7 +33,7 @@
 %TCIDATA{Codepage=936}
 %TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
 %TCIDATA{BibliographyScheme=Manual}
-%TCIDATA{LastRevised=Tuesday, July 07, 2020 12:41:58}
+%TCIDATA{LastRevised=Tuesday, July 07, 2020 12:46:33}
 %TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
 %TCIDATA{Language=American English}
 
@@ -1842,7 +1842,8 @@ level data, some are constructed using shipment-level, and some are
 constructed using match level. We used a very conservative approximation to
 the number of firms we base our inferences on. Second, this test statistic
 does not recognize randomness in the fit statistics due to the simulated
-draws we use.}
+draws we use. Computational prevented us from using samples so large that
+this was negligible, though we used common seeds for both sets of results.}
 
 \section{Analysis of results}
 
