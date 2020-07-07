@@ -33,7 +33,7 @@
 %TCIDATA{Codepage=936}
 %TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
 %TCIDATA{BibliographyScheme=Manual}
-%TCIDATA{LastRevised=Tuesday, June 30, 2020 12:16:04}
+%TCIDATA{LastRevised=Tuesday, July 07, 2020 12:46:33}
 %TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
 %TCIDATA{Language=American English}
 
@@ -1178,6 +1178,7 @@ foreign macro state jump size & $\Delta ^{x_{f}}$ & \multicolumn{1}{c}{0.053}
 %
 %
 %
+%
 %\caption{\textbf{Market-wide Demand Shifters}}
 \end{table}
 
@@ -1826,8 +1827,23 @@ $\kappa _{0}^{f}=5,982$).\ Higher search costs scalars and larger network
 effects appear to help the model explain the observed pattern of small,
 gradual growth and eventual dominance of high-$\theta $ entrants without
 relying on learning effects. However, the no-learning version of the model
-does significantly worse than the benchmark version according to Rivers and
-Vuong's (2002) test statistic for non-nested comparisons: \textbf{XX.}
+does substantially worse than the benchmark version according to Rivers and
+Vuong's (2002) test statistic for non-nested comparisons.\footnote{%
+The Rivers and Voung (2002) statistic takes the form $T_{n}=\frac{\sqrt{n}}{%
+\hat{\sigma}_{n}}\left[ \hat{d}^{1}-\hat{d}^{2}\right] ,$ where $\hat{d}^{1}$
+and $\hat{d}^{2}$ are the MSM fit metrics for the two models and $\hat{\sigma%
+}_{n}^{2}=var\left[ \hat{d}^{1}-\hat{d}^{2}\right] .$ It has a standard
+normal distribution under the null $E(\hat{d}^{1})=E(\hat{d}^{2}).$ Applying
+it to our context (and treating the weighting matrix as non-stochastic when
+calculating $\hat{\sigma}_{n}^{2}$) we get $T_{n}=$ -1,583.2. Two caveats
+apply. First, it is not obvious what the right sample size $n$ is in our
+context, given that some of our moments are constructed using firm-year
+level data, some are constructed using shipment-level, and some are
+constructed using match level. We used a very conservative approximation to
+the number of firms we base our inferences on. Second, this test statistic
+does not recognize randomness in the fit statistics due to the simulated
+draws we use. Computational prevented us from using samples so large that
+this was negligible, though we used common seeds for both sets of results.}
 
 \section{Analysis of results}
 
