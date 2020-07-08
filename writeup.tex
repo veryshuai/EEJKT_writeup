@@ -33,7 +33,7 @@
 %TCIDATA{Codepage=936}
 %TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
 %TCIDATA{BibliographyScheme=Manual}
-%TCIDATA{LastRevised=Wednesday, July 08, 2020 08:26:10}
+%TCIDATA{LastRevised=Wednesday, July 08, 2020 08:29:31}
 %TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
 %TCIDATA{Language=American English}
 
@@ -1772,8 +1772,7 @@ exporters are uncertain about their $\theta ^{f}$ draws, they expect to
 learn a good deal from the outcomes of their early matches.\ \ 
 
 \begin{table}[tbp]
-\caption{\textbf{Structural parameter estimates}}
-\label{tab:struct_param}\centering
+\caption{\textbf{Structural parameter estimates}}\centering
 {\small \ }
 \par
 {\small 
@@ -1805,10 +1804,11 @@ home search cost function scalar & $\ln \kappa _{0}^{h}$ & 11.722 & (0.1486)
 \ \  & 12.408 & (0.0850) \\ 
 foreign search cost function scalar & $\ln \kappa _{0}^{f}$ & 13.002 & 
 (0.0095) \ \  & 13.666 & (0.1373) \\ \cline{3-6}
-fit metric &  & \multicolumn{2}{r}{10.806 \ \ \ \ \ \ \ \ \ \ \ } & 
-\multicolumn{2}{r}{11.346 \ \ \ \ \ \ \ \ \ } \\ \hline
+log of fit metric & $\log (\Lambda )$ & \multicolumn{2}{r}{10.806 \ \ \ \ \
+\ \ \ \ \ \ } & \multicolumn{2}{r}{11.346 \ \ \ \ \ \ \ \ \ } \\ \hline
 \end{tabular}
 }
+\label{tab:struct_param}
 \end{table}
 
 \textbf{No-learning parameter estimates }Recall that our no-learning model
@@ -1848,7 +1848,7 @@ but clearly, the test statistic would have been highly significant at much
 smaller values. Second, this test statistic does not recognize randomness in
 the fit statistics due to the simulation draws we use. Time and hardware
 limitations prevented us from using samples so large that this was
-negligible, though we used common seeds for both sets of results.}
+negligible, though we used common seeds for both sets of results.} 
 
 \section{Analysis of results}
 
