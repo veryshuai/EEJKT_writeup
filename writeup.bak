@@ -33,7 +33,7 @@
 %TCIDATA{Codepage=936}
 %TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
 %TCIDATA{BibliographyScheme=Manual}
-%TCIDATA{LastRevised=Sunday, July 19, 2020 15:02:30}
+%TCIDATA{LastRevised=Sunday, July 19, 2020 15:33:07}
 %TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
 %TCIDATA{Language=American English}
 
@@ -2421,11 +2421,7 @@ pp. 289-336.
 
 \item Alessandria, George and Horag Choi (2014) "Establishment
 heterogeneity, exporter dynamics, and the effects of trade liberalization." 
-\textit{Journal of International Economics} 94: 207-233.
-
-\item Alessandria,\ George, Joseph Kaboski and Virgiliu Midrigan (2010)
-"Inventories, Lumpy Trade, and Large Devaluations," \textit{American
-Economic Review}, 100 (5) pp. 2304-39.
+\textit{Journal of International Economics} 94: 207-233..
 
 \item Alessandria, George, Sangeeta Pratap, and Vivian Yue (2014) "Export
 Dynamics in Large Devaluations." Working Paper, Federal Reserve Bank of
@@ -2434,9 +2430,6 @@ Philadelphia.
 \item Alessandria, George, Horag Choi, and Kim Ruhl (2018) "Trade Adjustment
 Dynamics and the Welfare Gains from Trade." Working Paper, The University of
 Rochester.
-
-\item Araujo, Luis and Emanuel Ornelas (2007) "Trust-based Trade." CEP
-discussion paper 820.
 
 \item Araujo, Luis, Emanuel Ornelas and Giordano Mion (2016) "Institutions
 and Export Dynamics" \textit{Journal of International Economics }98: 2-20.
@@ -2457,22 +2450,9 @@ Economics} 131(1): 89-155.
 and International Trade." \textit{Journal of Political Economy} 118(3):
 433-484.
 
-\item Baldwin, Richard. E. and Paul Krugman (1989): \textquotedblleft
-Persistent Trade Effects of Large Exchange Rate Changes.\textquotedblright\ 
-\textit{Quarterly Journal of Economics}, 104, pp. 635-654.
-
 \item Berman, N., V. Rebeyrol, and V. Vicard (2019) "Demand learning and
 Firm dynamics: Evidence from Exporters," \textit{Review of Economics and
 Statistics }101(1): 91-106.
-
-\item Bernard, Andrew and J. Bradford Jensen (1999) \textquotedblleft
-Exceptional Exporter Performance: Cause, Effect, or Both?\textquotedblright\ 
-\textit{Journal of International Economics} , 47, pp. 1-25.
-
-\item Bernard, Andrew, J. Bradford Jensen, Samuel Kortum and\ Jonathan Eaton
-(2003) \textquotedblleft Plants and Productivity in International
-Trade,\textquotedblright\ \textit{American Economic Review }93(4), pp.
-1268-1290
 
 \item Bernard, Andrew, J. Bradford Jensen, J. Stephen J. Reading, and Peter
 K. Schott (2007) \textquotedblleft Firms in International
@@ -2486,7 +2466,7 @@ Statistics }100(3): 424-439.
 \item Bernard, Andrew, and Andreas Moxnes (2018) "Networks and Trade." 
 \textit{Annual Review of Economics} 10(65): 65-85.
 
-\item Melitz, Marc, and Ariel Burstein (2013) \textquotedblleft Trade
+\item Burstein, Ariel and Marc Melitz (2013) \textquotedblleft Trade
 Liberalization and Firm Dynamics.\textquotedblright\ in \textit{Advances in
 Economics and Econometrics Tenth World Congress}. Applied Economics,
 Econometric Society Monographs. Vol. 2. Cambridge, UK: Cambridge University
@@ -2664,6 +2644,9 @@ Dynamics,\textquotedblright\ \textit{International Economic Review} 58(3):
 \item Shimer, Robert (2005) "The Cyclical Behavior of Equilibrium
 Unemployment and Vacancies," \textit{The American Economic Review}, 95(1),
 pp. 25-49.
+
+\item Sugita, Yoichi, Kensuke Teshima, and Enrique Seira (2019) "Assortative
+Matching of Exporters and Importers," Working paper, Hitotsubashi University.
 
 \item Tauchen, George (1986) \textquotedblleft Finite State Markov-Chain
 Approximation to Univariate and Vector Autoregressions,\textquotedblright\ 
