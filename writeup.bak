@@ -33,7 +33,7 @@
 %TCIDATA{Codepage=936}
 %TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
 %TCIDATA{BibliographyScheme=Manual}
-%TCIDATA{LastRevised=Friday, July 17, 2020 16:57:21}
+%TCIDATA{LastRevised=Sunday, July 19, 2020 15:02:30}
 %TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
 %TCIDATA{Language=American English}
 
@@ -181,9 +181,9 @@ be added here]}
 dynamics in open economies. As such, it connects to a number of strands of
 the trade literature. The first uses calibrated general equilibrium models
 with productivity shocks that move firms through the size distribution.
-These include Alessandria and Choi (2007), Ruhl (2007), Alessandria (2010),
+These include Alessandria and Choi (2007), Ruhl (2008), Alessandria (2010),
 Atkeson and Burstein (2010), Burstein and Melitz (2012), Impullitti et al.
-(2012), Drozd and Nozal (2012), and Arkolakis (2015). We depart from all of
+(2013), Drozd and Nozal (2012), and Arkolakis (2015). We depart from all of
 these papers by focussing on the market knowledge and visibility that firms
 reap by investing in business relationships with new clients.
 
@@ -1140,6 +1140,7 @@ home macro state jump size & $\Delta ^{x_{h}}$ & \multicolumn{1}{c}{0.003}
 foreign macro state jump size & $\Delta ^{x_{f}}$ & \multicolumn{1}{c}{0.053}
 \\ \hline
 \end{tabular}%
+%
 %
 %
 %
@@ -2483,12 +2484,13 @@ Trade,\textquotedblright\ \textit{Journal of Economic Perspectives}. 21(3):
 Statistics }100(3): 424-439.
 
 \item Bernard, Andrew, and Andreas Moxnes (2018) "Networks and Trade." 
-\textit{Annual Review of Economics} 10(65): 65-85. 
+\textit{Annual Review of Economics} 10(65): 65-85.
 
-\item  Burstein, Ariel and Marc Melitz () "Trade Liberalization and Firm
-Dynamics," in
-
-\item 
+\item Melitz, Marc, and Ariel Burstein (2013) \textquotedblleft Trade
+Liberalization and Firm Dynamics.\textquotedblright\ in \textit{Advances in
+Economics and Econometrics Tenth World Congress}. Applied Economics,
+Econometric Society Monographs. Vol. 2. Cambridge, UK: Cambridge University
+Press.
 
 \item Besedes, Tibor (2007). \textquotedblleft A Search Cost Perspective on
 Formation and Duration of Trade,\textquotedblright\ Working Paper,
@@ -2551,15 +2553,22 @@ Evidence,\textquotedblright\ in Elhanan Helpman, Dalia Marin and Thierry
 Verdier, eds., T\textit{he Organization of Firms in a Global Economy},
 Cambridge, MA: Harvard U. Press.
 
+\item Eaton, Jonathan, Marcela Eslava, David Jinkins, C.J. Krizan, and James
+Tybout (2014). \textquotedblleft A Search and Learning Model of Export
+Dynamics,\textquotedblright\ working paper, Pennsylvania State U.
+
+\item Eaton, Jonathan, David Jinkins, James Tybout, and Daniel Xu (2016)
+"Two-sided Search in International Markets," working paper, Pennsylvania
+State U.
+
 \item Eslava, Marcela, John Haltiwanger, Adriana Kugler, and Maurice Kugler
 (2004) \textquotedblleft The Effects of Structural Reforms on Productivity
 and Profitability Enhancing Reallocation: Evidence from
 Colombia,\textquotedblright\ \textit{Journal of Development Economics,} 75:
 333-371.
 
-\item Eaton, Jonathan, Marcela Eslava, David Jinkins, C.J. Krizan, and James
-Tybout (2014). \textquotedblleft A Search and Learning Model of Export
-Dynamics,\textquotedblright\ working paper, Pennsylvania State U.
+\item Fitzgerald, Doireann, Stefanie Hallerz, and Yaniv Yedid-Levi (2019)
+"How Exporters Grow." Working Paper, Federal Reserve Bank of Minneapolis.
 
 \item Foster, Lucia, John Haltiwanger and Chad Syverson (2016) "The Slow
 Growth of New Plants: Learning aboout Demand?" \textit{Economica} 83(329):
@@ -2571,6 +2580,10 @@ Capital,\textquotedblright\ \textit{Review of Economic Studies}, 81:
 
 \item Gouri\'{e}roux and Monfort, 1996. \textit{Simulation-Based Econometric
 Methods}. New York: Oxford U. Press.
+
+\item Impullitti, Giammario, Alfonso. Irarrazabal, and Luca Opromolla (2013)
+"A Theory of Entry into and Exit From Export Markets," \textit{Journal of
+International Economics} 90\textit{: }75-90.
 
 \item Irarrazabal, Alfonso A. and Luca David Opromolla (2006)
 \textquotedblleft Hysteresis in Export Markets,\textquotedblright\ New York
@@ -2620,6 +2633,9 @@ Productivity,\textquotedblright\ \textit{Econometrica }71, 1695-1725.
 Exporting Failures,"\textit{\ Journal of International Economics }86:
 336-344.
 
+\item Piveteau, Paul (forthcoming) "An Empirical Dynamic Model of Trade with
+Consumer Accumulation," \textit{American Economic Journal: Macroeconomics.}
+
 \item Rauch, James and Joel Watson (2003) \textquotedblleft Starting Small
 in an Unfamiliar Environment,\textquotedblright\ \textit{International
 Journal of Industrial Organization} 21: 1021-1042.
@@ -2638,6 +2654,9 @@ Costs,\textquotedblright\ \textit{American Economic Review} 87(4), pp.
 \item Roo, Yungwoo and Joel Rodrigue (2016) "Firm-Level Investment and
 Export Dynamics" \textit{International Economic Review \ }57(1): 271-304
 
+\item Ruhl, Kim (2008) "The International Elasticity Puzzle." Working Paper,
+The University of Wisconsin.
+
 \item Ruhl, Kim and Jonathan Willis (2017) \textquotedblleft New Exporter
 Dynamics,\textquotedblright\ \textit{International Economic Review} 58(3):
 703-725.
@@ -2652,7 +2671,7 @@ Approximation to Univariate and Vector Autoregressions,\textquotedblright\
 
 \item Timoshenko, O. A. (2015): \textquotedblleft Learning versus sunk costs
 explanations of export persistence,\textquotedblright\ \textit{European
-Economic Review}, 79, 113--128\pagebreak
+Economic Review}, 79, 113--128\pagebreak 
 \end{description}
 
 \appendix
