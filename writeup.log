@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.4.25)  3 JUN 2020 15:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.5.11)  5 AUG 2020 10:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -577,344 +577,237 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4] [5] [6] [7] [8
 ]
 LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 4
-92.
+97.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 492.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 497.
  [9] [10]
-<figures/Figure_1_quadrants_v2.png, id=235, 681.86745pt x 407.96416pt>
+<figures/Figure_1_quadrants_v2.png, id=232, 681.86745pt x 407.96416pt>
 File: figures/Figure_1_quadrants_v2.png Graphic file (type png)
 <use figures/Figure_1_quadrants_v2.png>
 Package pdftex.def Info: figures/Figure_1_quadrants_v2.png  used on input line 
-614.
+619.
 (pdftex.def)             Requested size: 469.75502pt x 281.05981pt.
- [11 <./figures/Figure_1_quadrants_v2.png>] [12] [13]
-Overfull \hbox (12.08257pt too wide) in alignment at lines 778--790
+ [11] [12 <./figures/Figure_1_quadrants_v2.png>] [13] [14]
+Overfull \hbox (12.08257pt too wide) in alignment at lines 783--795
  [][][] []
  []
 
-[14] [15] [16] [17] [18] [19] [20]
+[15] [16] [17] [18] [19] [20]
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 1204.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 1213.
+LaTeX Font Warning: Command \small invalid in math mode on input line 1217.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 1213.
+LaTeX Font Warning: Command \small invalid in math mode on input line 1226.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 1215.
+LaTeX Font Warning: Command \small invalid in math mode on input line 1226.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 1215.
+LaTeX Font Warning: Command \small invalid in math mode on input line 1228.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 1215.
+LaTeX Font Warning: Command \small invalid in math mode on input line 1228.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 1218.
+LaTeX Font Warning: Command \small invalid in math mode on input line 1228.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 1220.
+LaTeX Font Warning: Command \small invalid in math mode on input line 1231.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 1220.
+LaTeX Font Warning: Command \small invalid in math mode on input line 1233.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 1223.
+LaTeX Font Warning: Command \small invalid in math mode on input line 1233.
+
+[21]
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 1236.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 1223.
+LaTeX Font Warning: Command \small invalid in math mode on input line 1236.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 1223.
+LaTeX Font Warning: Command \small invalid in math mode on input line 1236.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 1224.
+LaTeX Font Warning: Command \small invalid in math mode on input line 1237.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 1224.
+LaTeX Font Warning: Command \small invalid in math mode on input line 1237.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 1225.
+LaTeX Font Warning: Command \small invalid in math mode on input line 1238.
 
-[21] [22] [23]
+[22] [23]
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 1372.
+LaTeX Font Warning: Command \small invalid in math mode on input line 1385.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 1372.
+LaTeX Font Warning: Command \small invalid in math mode on input line 1385.
 
-[24] [25] [26]
-Underfull \hbox (badness 10000) in paragraph at lines 1661--1670
+[24] [25] [26] [27]
+Underfull \hbox (badness 10000) in paragraph at lines 1674--1683
 
  []
 
-[27]
-Overfull \hbox (2.01105pt too wide) in paragraph at lines 1715--1720
+[28]
+Overfull \hbox (2.01105pt too wide) in paragraph at lines 1728--1733
 []\OT1/cmr/m/n/12 Turning to the fixed cost es-ti-mates, note that both are qui
 te small ($\OML/cmm/m/it/12 F[]$\OT1/cmr/bx/n/12 =\TS1/cmr/m/n/12 $\OT1/cmr/m/n
 /12 0.30\OT1/cmr/bx/n/12 , $\OML/cmm/m/it/12 F[]$\OT1/cmr/bx/n/12 =\TS1/cmr/m/n
 /12 $\OT1/cmr/m/n/12 0.03).
  []
 
-[28]
-Overfull \hbox (53.96748pt too wide) in paragraph at lines 1751--1760
+[29]
+Overfull \hbox (53.96748pt too wide) in paragraph at lines 1764--1773
 \OT1/cmr/m/n/12 which we es-ti-mate to have mean $[]\OML/cmm/m/it/12 =\OT1/cmr
 /m/n/12 ([]\OML/cmm/m/it/12  \OT1/cmr/m/n/12 + []\OML/cmm/m/it/12 ^^L\OT1/cmr/
 m/n/12 ) = 0\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 23$ and stan-dard de-vi-a-tion $[
 ] =$
  []
 
-[29] [30]
+[30] [31]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 1957.
+               Default added (so using `tbp') on input line 1988.
 
-[31] [32]
-<figures/val_f_three_types.png, id=446, 429.2838pt x 338.7054pt>
-File: figures/val_f_three_types.png Graphic file (type png)
-<use figures/val_f_three_types.png>
-Package pdftex.def Info: figures/val_f_three_types.png  used on input line 2028
-.
-(pdftex.def)             Requested size: 214.64137pt x 169.35228pt.
- [33 <./figures/val_f_three_types.png (PNG copy)>]
-<figures/success_beliefs.png, id=454, 429.2838pt x 338.7054pt>
-File: figures/success_beliefs.png Graphic file (type png)
-<use figures/success_beliefs.png>
-Package pdftex.def Info: figures/success_beliefs.png  used on input line 2071.
-(pdftex.def)             Requested size: 214.64137pt x 169.35228pt.
-<figures/val_f_three_types_nl.png, id=457, 429.2838pt x 338.7054pt>
-File: figures/val_f_three_types_nl.png Graphic file (type png)
-<use figures/val_f_three_types_nl.png>
-Package pdftex.def Info: figures/val_f_three_types_nl.png  used on input line 2
-100.
-(pdftex.def)             Requested size: 214.64137pt x 169.35228pt.
- [34]
-<figures/success_order.png, id=469, 429.2838pt x 338.7054pt>
-File: figures/success_order.png Graphic file (type png)
-<use figures/success_order.png>
-Package pdftex.def Info: figures/success_order.png  used on input line 2130.
-(pdftex.def)             Requested size: 234.8775pt x 185.31691pt.
-<figures/success_order_nl.png, id=470, 429.2838pt x 338.7054pt>
-File: figures/success_order_nl.png Graphic file (type png)
-<use figures/success_order_nl.png>
-Package pdftex.def Info: figures/success_order_nl.png  used on input line 2136.
+[32] [33] [34] [35] [36]
 
-(pdftex.def)             Requested size: 234.8775pt x 185.31691pt.
+LaTeX Warning: Reference `fig:exch_shk_cmp' on page 37 undefined on input line 
+2232.
 
-Overfull \hbox (5.22215pt too wide) in paragraph at lines 2128--2139
- [][]  [] 
- []
-
-[35 <./figures/success_beliefs.png (PNG copy)>] [36 <./figures/val_f_three_type
-s_nl.png (PNG copy)> <./figures/success_order.png (PNG copy)> <./figures/succes
-s_order_nl.png (PNG copy)>]
-<figures/total_sales_l.png, id=487, 429.2838pt x 338.7054pt>
-File: figures/total_sales_l.png Graphic file (type png)
-<use figures/total_sales_l.png>
-Package pdftex.def Info: figures/total_sales_l.png  used on input line 2204.
-(pdftex.def)             Requested size: 234.8775pt x 185.31691pt.
-<figures/total_sales_nl.png, id=488, 429.2838pt x 338.7054pt>
-File: figures/total_sales_nl.png Graphic file (type png)
-<use figures/total_sales_nl.png>
-Package pdftex.def Info: figures/total_sales_nl.png  used on input line 2210.
-(pdftex.def)             Requested size: 234.8775pt x 185.31691pt.
-
-Overfull \hbox (5.22215pt too wide) in paragraph at lines 2202--2212
- [][]  [] 
- []
-
-<figures/total_matches_l.png, id=489, 429.2838pt x 338.7054pt>
-File: figures/total_matches_l.png Graphic file (type png)
-<use figures/total_matches_l.png>
-Package pdftex.def Info: figures/total_matches_l.png  used on input line 2216.
-(pdftex.def)             Requested size: 234.8775pt x 185.31691pt.
-<figures/total_matches_nl.png, id=490, 429.2838pt x 338.7054pt>
-File: figures/total_matches_nl.png Graphic file (type png)
-<use figures/total_matches_nl.png>
-Package pdftex.def Info: figures/total_matches_nl.png  used on input line 2222.
-
-(pdftex.def)             Requested size: 234.8775pt x 185.31691pt.
-
-Overfull \hbox (10.44432pt too wide) in paragraph at lines 2213--2224
- []  []  [] 
- []
-
-<figures/total_firms_l.png, id=491, 429.2838pt x 338.7054pt>
-File: figures/total_firms_l.png Graphic file (type png)
-<use figures/total_firms_l.png>
-Package pdftex.def Info: figures/total_firms_l.png  used on input line 2228.
-(pdftex.def)             Requested size: 234.8775pt x 185.31691pt.
-<figures/total_firms_nl.png, id=492, 429.2838pt x 338.7054pt>
-File: figures/total_firms_nl.png Graphic file (type png)
-<use figures/total_firms_nl.png>
-Package pdftex.def Info: figures/total_firms_nl.png  used on input line 2234.
-(pdftex.def)             Requested size: 234.8775pt x 185.31691pt.
-
-Overfull \hbox (10.44432pt too wide) in paragraph at lines 2225--2237
- []  []  [] 
- []
-
-
-LaTeX Warning: Float too large for page by 8.36581pt on input line 2240.
-
-<figures/sales_per_firm_l.png, id=493, 429.2838pt x 338.7054pt>
-File: figures/sales_per_firm_l.png Graphic file (type png)
-<use figures/sales_per_firm_l.png>
-Package pdftex.def Info: figures/sales_per_firm_l.png  used on input line 2246.
-
-(pdftex.def)             Requested size: 234.8775pt x 185.31691pt.
-<figures/sales_per_firm_nl.png, id=494, 429.2838pt x 338.7054pt>
-File: figures/sales_per_firm_nl.png Graphic file (type png)
-<use figures/sales_per_firm_nl.png>
-Package pdftex.def Info: figures/sales_per_firm_nl.png  used on input line 2252
-.
-(pdftex.def)             Requested size: 234.8775pt x 185.31691pt.
-
-Overfull \hbox (5.22215pt too wide) in paragraph at lines 2244--2254
- [][]  [] 
- []
-
-<figures/sales_per_match_l.png, id=495, 429.2838pt x 338.7054pt>
-File: figures/sales_per_match_l.png Graphic file (type png)
-<use figures/sales_per_match_l.png>
-Package pdftex.def Info: figures/sales_per_match_l.png  used on input line 2258
-.
-(pdftex.def)             Requested size: 234.8775pt x 185.31691pt.
-<figures/sales_per_match_nl.png, id=496, 429.2838pt x 338.7054pt>
-File: figures/sales_per_match_nl.png Graphic file (type png)
-<use figures/sales_per_match_nl.png>
-Package pdftex.def Info: figures/sales_per_match_nl.png  used on input line 226
-4.
-(pdftex.def)             Requested size: 234.8775pt x 185.31691pt.
-
-Overfull \hbox (10.44432pt too wide) in paragraph at lines 2255--2266
- []  []  [] 
- []
-
-<figures/matches_per_firm_l.png, id=497, 429.2838pt x 338.7054pt>
-File: figures/matches_per_firm_l.png Graphic file (type png)
-<use figures/matches_per_firm_l.png>
-Package pdftex.def Info: figures/matches_per_firm_l.png  used on input line 227
-0.
-(pdftex.def)             Requested size: 234.8775pt x 185.31691pt.
-<figures/matches_per_firm_nl.png, id=498, 429.2838pt x 338.7054pt>
-File: figures/matches_per_firm_nl.png Graphic file (type png)
-<use figures/matches_per_firm_nl.png>
-Package pdftex.def Info: figures/matches_per_firm_nl.png  used on input line 22
-76.
-(pdftex.def)             Requested size: 234.8775pt x 185.31691pt.
-
-Overfull \hbox (10.44432pt too wide) in paragraph at lines 2267--2279
- []  []  [] 
- []
-
-
-LaTeX Warning: Float too large for page by 8.36581pt on input line 2282.
-
-[37] [38 <./figures/total_sales_l.png (PNG copy)> <./figures/total_sales_nl.png
- (PNG copy)> <./figures/total_matches_l.png (PNG copy)> <./figures/total_matche
-s_nl.png (PNG copy)> <./figures/total_firms_l.png (PNG copy)> <./figures/total_
-firms_nl.png (PNG copy)>] [39 <./figures/sales_per_firm_l.png (PNG copy)> <./fi
-gures/sales_per_firm_nl.png (PNG copy)> <./figures/sales_per_match_l.png (PNG c
-opy)> <./figures/sales_per_match_nl.png (PNG copy)> <./figures/matches_per_firm
-_l.png (PNG copy)> <./figures/matches_per_firm_nl.png (PNG copy)>] [40]
-[41]
-Overfull \hbox (4.04012pt too wide) in paragraph at lines 2418--2421
+[37] [38] [39]
+Overfull \hbox (4.04012pt too wide) in paragraph at lines 2449--2452
 []\OT1/cmr/m/n/12 Bernard, An-drew and J. Brad-ford Jensen (1999) \Ex-cep-tiona
 l Ex-porter Per-for-mance: Cause,
  []
 
-[42] [43] [44] [45]
-Overfull \hbox (17.58313pt too wide) in paragraph at lines 2604--2627
+[40] [41] [42] [43] [44]
+Overfull \hbox (17.58313pt too wide) in paragraph at lines 2638--2661
  [][] 
  []
 
-[46] [47] [48] [49] [50] [51] [52]
+[45] [46] [47] [48] [49] [50] [51]
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 2871.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 2871.
+LaTeX Font Warning: Command \small invalid in math mode on input line 2905.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 2871.
+LaTeX Font Warning: Command \small invalid in math mode on input line 2905.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 2871.
+LaTeX Font Warning: Command \small invalid in math mode on input line 2905.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 2871.
+LaTeX Font Warning: Command \small invalid in math mode on input line 2905.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 2871.
+LaTeX Font Warning: Command \small invalid in math mode on input line 2905.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 2871.
+LaTeX Font Warning: Command \small invalid in math mode on input line 2905.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 2871.
+LaTeX Font Warning: Command \small invalid in math mode on input line 2905.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 2935.
+LaTeX Font Warning: Command \small invalid in math mode on input line 2905.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 2935.
+LaTeX Font Warning: Command \small invalid in math mode on input line 2969.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 2935.
+LaTeX Font Warning: Command \small invalid in math mode on input line 2969.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 2935.
+LaTeX Font Warning: Command \small invalid in math mode on input line 2969.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 2935.
+LaTeX Font Warning: Command \small invalid in math mode on input line 2969.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 2935.
+LaTeX Font Warning: Command \small invalid in math mode on input line 2969.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 2935.
+LaTeX Font Warning: Command \small invalid in math mode on input line 2969.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 2935.
+LaTeX Font Warning: Command \small invalid in math mode on input line 2969.
 
-[53] [54] [55] [56
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 2969.
+
+[52] [53] [54] [55
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3236.
- [57] [58]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 3236.
+
+Package caption Warning: Unused \captionsetup[sub] on input line 24.
+See the caption package documentation for explanation.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3270.
+[56] [57]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 3270.
  (./writeup.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 3236.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3236.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 3270.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3270.
 
 Package rerunfilecheck Info: File `writeup.out' has not changed.
 (rerunfilecheck)             Checksum: 9B2A94ED25901A68AB832758D2FB78A0;2417.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 3236.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 3270.
  )
 (\end occurred when \ifx on line 678 was incomplete) 
 Here is how much of TeX's memory you used:
- 10063 strings out of 481239
- 149391 string characters out of 5920377
- 477830 words of memory out of 5000000
- 24939 multiletter control sequences out of 15000+600000
- 550049 words of font info for 95 fonts, out of 8000000 for 9000
+ 9924 strings out of 481239
+ 145416 string characters out of 5920377
+ 477831 words of memory out of 5000000
+ 24815 multiletter control sequences out of 15000+600000
+ 549703 words of font info for 94 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,19n,42p,814b,500s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,19n,42p,814b,427s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name
-{Hfootnote.31} has been referenced but does not exist, replaced by a fixed one
+{table.caption.29} has been referenced but does not exist, replaced by a fixed 
+one
+
+pdfTeX warning (dest): name{table.caption.28} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.caption.27} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.18} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.31} has been referenced but does not exis
+t, replaced by a fixed one
 
 pdfTeX warning (dest): name{Hfootnote.30} has been referenced but does not exis
 t, replaced by a fixed one
 
+pdfTeX warning (dest): name{figure.caption.17} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.16} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.15} has been referenced but does not
+ exist, replaced by a fixed one
+
 pdfTeX warning (dest): name{Hfootnote.29} has been referenced but does not exis
 t, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.14} has been referenced but does not
+ exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{Hfootnote.28} has been referenced but does not exis
 t, replaced by a fixed one
@@ -979,6 +872,9 @@ pdfTeX warning (dest): name{Hfootnote.9} has been referenced but does not exist
 pdfTeX warning (dest): name{Hfootnote.8} has been referenced but does not exist
 , replaced by a fixed one
 
+pdfTeX warning (dest): name{table.caption.24} has been referenced but does not 
+exist, replaced by a fixed one
+
 pdfTeX warning (dest): name{Hfootnote.7} has been referenced but does not exist
 , replaced by a fixed one
 
@@ -1007,27 +903,28 @@ fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/sh
-are/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type
-1/public/cm-super/sfrm0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sf
-rm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb>
-Output written on writeup.pdf (58 pages, 1011527 bytes).
+onts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/tex
+mf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/publi
+c/cm-super/sfrm0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.
+pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb>
+Output written on writeup.pdf (57 pages, 504238 bytes).
 PDF statistics:
- 744 PDF objects out of 1000 (max. 8388607)
- 633 compressed objects within 7 object streams
- 165 named destinations out of 1000 (max. 500000)
- 363 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 728 PDF objects out of 1000 (max. 8388607)
+ 634 compressed objects within 7 object streams
+ 167 named destinations out of 1000 (max. 500000)
+ 278 words of extra memory for PDF output out of 10000 (max. 10000000)
 
