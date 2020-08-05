@@ -2211,8 +2211,8 @@ effects both matter, but the former are more important.
 \subsection{Macroeconomic adjustment dynamics}
 
 If there were no sources of friction in our model, and if the effects of
-idioynscratic shocks were ignorable by the law of large numbers, aggregate
-exports would be static functions of the aggegate shocks that affect all
+idiosyncratic shocks were ignorable by the law of large numbers, aggregate
+exports would be static functions of the aggregate shocks that affect all
 firms' export revenues ($x^f$). We conclude our analysis by asking how much
 our model's predictions for aggregate export trajectories deviate from this
 hypothetical norm, and why.\footnote{%
@@ -2222,143 +2222,165 @@ be a reasonable approximation to the aggregate exports responses of a small
 country shipping to a large one, where its products constitute a small
 fraction of total supply.}
 
-To do so, we simulate a permanent (but unanticipated) 20 percent Colombian
-peso devaluation on total export trajectories under two alternative
-scenarios: our benchmark model, and the no-learning model. For both
-simulations, we use the same set of market-wide shocks. Specifically, we use
-a series of randomly-generated aggregate rate shocks to simulate the model,
-and then simulate the model again with the same shocks, but increasing their
-values by 20\% after a particular date. The shock progression is graphed in
-Figure \ref{fig:exch_shk_cmp}, with the shock arriving at time zero. As with
-the rest of the series in this section, in the figure the shocks are
-normalized to one at the time of impact.
+To do so, we simulate permanent (but unanticipated) Colombian
+peso exchange rate shocks on total export trajectories under two alternative
+scenarios: a 20\% Colombian peso devaluation, and a 20\% Colombian peso appreciation. To remove the effect of the unrelated random sequences of aggregate shocks, in each scenario, we simulate the model 500 times with sequences of randomly-generated aggregate shocks,
+and then report means across these series.  The exchange rate shocks are modeled as simply increasing or decreasing the value of the random aggregate shocks by 20\% after a particular date, which will be year 25 in the plots below.\footnote{We additionally let the firms burn in for 25 years before the plots start.}
+\begin{figure}
+    \centering
+    \begin{subfigure}[b]{0.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/intangible_value_per_firm}
+        \caption{Mean value of experience}
+    \end{subfigure}%
+    ~
+    \begin{subfigure}[b]{0.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/intangible_value_per_firm_median}
+        \caption{Median value of experience}
+    \end{subfigure} \\
+    \caption{Value of exporter experience}
+    \label{fig:avg_value}
+\end{figure}
 
-% \begin{figure}
-%    \centering
-%    \includegraphics[scale = 0.5]{figures/exch_rate_series_compare}
-%    \caption{Series of Peso to Dollar Exchange Rate Shocks, Baseline and with 20\% Peso Devaluation}
-%    \label{fig:exch_shk_cmp}
-%\end{figure}
-%
-%\begin{figure}
-%    \centering
-%    \begin{subfigure}[b]{0.5\textwidth}
-%        \centering
-%        \includegraphics[width=\textwidth]{figures/total_sales}
-%        \caption{Total sales}
-%    \end{subfigure}%
-%    ~
-%    \begin{subfigure}[b]{0.5\textwidth}
-%        \centering
-%        \includegraphics[width=\textwidth]{figures/total_sales_nl}
-%        \caption{Total sales}
-%    \end{subfigure} \\
-%    ~
-%    \begin{subfigure}[b]{0.5\textwidth}
-%        \centering
-%        \includegraphics[width=\textwidth]{figures/total_matches}
-%        \caption{Total active matches}
-%    \end{subfigure}%
-%    ~
-%    \begin{subfigure}[b]{0.5\textwidth}
-%        \centering
-%        \includegraphics[width=\textwidth]{figures/total_matches_nl}
-%        \caption{Total active matches}
-%    \end{subfigure} \\
-%    ~
-%    \begin{subfigure}[b]{0.5\textwidth}
-%        \centering
-%        \includegraphics[width=\textwidth]{figures/total_firms}
-%        \caption{Total active firms}
-%    \end{subfigure}%
-%    ~
-%    \begin{subfigure}[b]{0.5\textwidth}
-%        \centering
-%        \includegraphics[width=\textwidth]{figures/total_firms_nl}
-%        \caption{Total active firms}
-%    \end{subfigure}
-%    \caption{Response to a 20\% depreciation of Colombian Peso: Market level outcomes}
-%    \label{fig:export_dynamics_macro}
-%
-%\end{figure}
+In Figure \ref{fig:avg_value} we plot the average value of simulated firms net of their value had they not had any export experience.  That is, suppose that a firm has met a number of clients, and has both learned something about its success rate $\theta$.  In addition, this firm has accumulated network effects through its history.  We take the firm's value, and subtract from it the value of an otherwise similar firm, but with no export experience.  We call this object the value of the firm's export experience.  It is the value a firm would lose if we made it forget everything it learned and gained from exporting.  
 
-% \begin{figure}
-%     \centering
-%     \begin{subfigure}[b]{0.5\textwidth}
-%         \centering
-%         \includegraphics[width=\textwidth]{figures/sales_per_firm_l}
-%         \caption{Sales per firm}
-%     \end{subfigure}%
-%     ~
-%     \begin{subfigure}[b]{0.5\textwidth}
-%         \centering
-%         \includegraphics[width=\textwidth]{figures/sales_per_firm_nl}
-%         \caption{Sales per firm}
-%     \end{subfigure} \\
-%     ~
-%     \begin{subfigure}[b]{0.5\textwidth}
-%         \centering
-%         \includegraphics[width=\textwidth]{figures/sales_per_match_l}
-%         \caption{Sales per match}
-%     \end{subfigure}%
-%     ~
-%     \begin{subfigure}[b]{0.5\textwidth}
-%         \centering
-%         \includegraphics[width=\textwidth]{figures/sales_per_match_nl}
-%         \caption{Sales per match}
-%     \end{subfigure} \\
-%     ~
-%     \begin{subfigure}[b]{0.5\textwidth}
-%         \centering
-%         \includegraphics[width=\textwidth]{figures/matches_per_firm_l}
-%         \caption{Matches per firm}
-%     \end{subfigure}%
-%     ~
-%     \begin{subfigure}[b]{0.5\textwidth}
-%         \centering
-%         \includegraphics[width=\textwidth]{figures/matches_per_firm_nl}
-%         \caption{Matches per firm}
-%     \end{subfigure}
-%     \caption{Response to a 20\% depreciation of Colombian Peso: Average outcomes}
-%     \label{fig:export_dynamics_average}
-% 
-% \end{figure}
+Subfigure (a) contains the mean value of experience within each simulation, averaged across all 500 simulations.  Subfigure (b) contains the median value of experience within each simulation, averaged across simulations.  As the productivity distribution is right skewed, it is not surprising that our mean is significantly higher than the median.  The mean value before any shock is around 1.7 million dollars, while the median is only 80,000 dollars.  After the exchange rate shock, the values ultimately converge to around 20\% higher or lower than before the shock, but the change in value on impact is larger.  This is due to the lagged entry of marginally productive firms when the shock is favorable, and the exit of marginally productive firms when the shock is negative.  The value of experience is on average around 18\% of the total value of firms both before and after the exchange rate shocks.  For a back-of-the-envelope calculation of the total value of experience in the economy, we multiply 1.7 million dollars by the approximately 3000 Colombian exporters we observe each year.  We get that the total value of exporter experience in the Colombian economy is about 5.1 billion dollars.
 
-Figures \ref{fig:export_dynamics_macro} summarizes the results of these
-experiments, normalizing each export series to unity in the year before the
-shock hits (year -1). Consider Panel (a) and Panel (b) of Figure \ref%
-{fig:export_dynamics_macro}, which plot total export sales over a 30 year
-period bisected by the shock. In both versions of the model, the immediate
-effect of the depreciation is to increase the peso-denominated revenue flow
-from existing clients by 20 percent. And because other margins of adjustment
-are sluggish, this valuation effect accounts for almost all of the movement
-in aggregate exports during the first post-shock year.
+\begin{figure}
+    \centering
+    \begin{subfigure}[b]{0.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/total_sales}
+        \caption{Total sales: Favorable}
+    \end{subfigure}%
+    ~
+    \begin{subfigure}[b]{0.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/total_sales_unf}
+        \caption{Total sales: Unfavorable}
+    \end{subfigure} \\
+    ~
+    \begin{subfigure}[b]{0.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/total_matches}
+        \caption{Total active matches: Favorable}
+    \end{subfigure}%
+    ~
+    \begin{subfigure}[b]{0.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/total_matches_unf}
+        \caption{Total active matches: Unfavorable}
+    \end{subfigure} \\
+    ~
+    \begin{subfigure}[b]{0.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/total_firms}
+        \caption{Total active exporters: Favorable}
+    \end{subfigure}%
+    ~
+    \begin{subfigure}[b]{0.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/total_firms_unf}
+        \caption{Total active exporters: Unfavorable}
+    \end{subfigure}
+    \caption{Response to a 20\% shock to the Colombian Peso: Market level outcomes}
+    \label{fig:export_dynamics_macro}
 
-The differences in these patterns trace largely to differences in the
-numbers of matches, which are depicted in Panels (c) and (d) of Fgure \ref%
-{fig:export_dynamics_macro}. Here the valuation effect plays no role, so it
-is easier to see the difference between the baseline series and the two
-series without learning. We interpret these patterns to mean that firms with
-high success rates (large $\theta ^{f}$ values) jump into the export market
-aggressively when they know their profit potential, but they go slow if they
-do not, gaining confidence and intensifying their search efforts as positive
-signals accrue.
+\end{figure}
 
-What accounts for the high volatility of the no-learning, no-network series?
-We have already noted that when firms know their type, the high-$\theta ^{f}$
-exporters want to expand quickly when markets turn favorable. But if network
-effects are missing, these same firms have relatively little incentive to
-maintain a large client base when market conditions turn sour. Negative
-aggregate shocks therefore trigger relatively rapid retrenchment when both
-learning and network effects are absent.\textbf{\ [JT: Need to confirm that
-aggregate worsen after year 8 or so.]}
+\begin{figure}
+    \centering
+    \begin{subfigure}[b]{0.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/total_sales_pct}
+        \caption{Total sales: Favorable}
+    \end{subfigure}%
+    ~
+    \begin{subfigure}[b]{0.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/total_sales_pct_unf}
+        \caption{Total sales: Unfavorable}
+    \end{subfigure} \\
+    ~
+    \begin{subfigure}[b]{0.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/total_matches_pct}
+        \caption{Total active matches: Favorable}
+    \end{subfigure}%
+    ~
+    \begin{subfigure}[b]{0.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/total_matches_pct_unf}
+        \caption{Total active matches: Unfavorable}
+    \end{subfigure} \\
+    ~
+    \begin{subfigure}[b]{0.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/total_firms_pct}
+        \caption{Total active exporters: Favorable}
+    \end{subfigure}%
+    ~
+    \begin{subfigure}[b]{0.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/total_firms_pct_unf}
+        \caption{Total active exporters: Unfavorable}
+    \end{subfigure}
+    \caption{Response to a 20\% shock to the Colombian Peso: Composition}
+    \label{fig:export_dynamics_average}
 
-In sum, learning effects and---to a lesser extent---network effects do
-appear to lend persistence to aggregate bilateral export flows, adding
-several years to the transition period in the aftermath of a permanent
-shock. These results obtain because the relevant extensive margin here is
-the match, not the firm. This means that adjustment on that margin matters
-for dominant exporters and fringe players alike.
+\end{figure}
+
+Figures \ref{fig:export_dynamics_macro}, inspired by the decomposition plots in Piveteau (2020), summarize the macroeconomic effects of our exchange rate experiments.  Our model is a different from Piveteau (2020) in several important ways which affect the decompositions we do.  In particular, we have firm entry and exit, as well as endogenous drops of matches.  In principle both of these margins could be important as firms enter to take advantage of favorable exchange rate shocks, and firms drop matches in response to negative shocks.  For this reason, our decomposition will be between new exporters, incumbent firms and new matches, and incumbent firms and incumbent matches.  Endogenous entry of exporters and exits of matches will potentially create asymmetries in the macroeconomic effects of favorable and unfavorable exchange rate shocks, which is why we do both experiments.
+
+Consider Panel (a) and Panel (b) of Figure \ref{fig:export_dynamics_macro} plot total export sales over a 50 year period bisected by the shock.  The superimposed lines show the decomposition in the situation in which there was no change in the exchange rate.  Relationships with incumbent importers are relatively short-lived in our model because of the high exogenous match death hazard rate.  New firms become more important over time.
+
+The immediate effect of the favorable depreciation (Panel (a)) is to increase the peso-denominated revenue flow from existing clients by 20 percent, and to decrease it 20 percent in the unfavorable shock (Panel (b)). Because other margins of adjustment are sluggish, this valuation effect accounts for almost all of the movement in aggregate exports during the first post-shock year.  As time progresses, both new importers and new firms become more and more important.  Additionally, the total effect of the exchange rate shock grows.
+
+A similar pattern can be seen in Panels (c) and (d) of Figure \ref{fig:export_dynamics_macro} which track matches. Here the valuation effect plays no role.  There is therefore only a small change the first year after the shock.  Panels (e) and (f) show the mean number of firms per simulation.  New firms quickly displace around 15\% of incumbent firms, and then the displacement grows more slowly over time.  This is because marginally profitable exporters enter and exit frequently, while solidly profitable exporters only exit when they are exogenously killed.
+
+We also plot the percentage decomposition of these macroeconomic aggregates in Figure \ref{fig:export dynamics_average}.  Summing up the figures, when the exchange rate shock is favorable, incumbent matches are less important, and when the exchange rate shock is unfavorable, incumbent matches are more important.  This is because exporters search harder for new matches when the exchange rate shock is favorable, and less hard when the exchange rate shock is unfavorable.  For the most part, incumbent relationships continue.
+
+Finally, we present short and long-run simulated trade elasticities.  These are presented in Table \ref{tab:elasticities}.  Based on the point estimates alone, total sales react more to the favorable exchange rate shock.  The 25 year elasticity of sales to the favorable exchange rate shock is 2.13.\footnote{The trade elasticities in our model for the favorable exchange rate shock are a bit more sluggish than those found in a analogous experiment by Piveteau (2020).  His point estimate for the one year trade elasticity is 1.3, and his estimate for the five year trade elasticity is 2.3.}  The 25 year elasticity of sales to the unfavorable exchange rate shock is 1.58.  We can reject the hypothesis that these elasticities are the same. We find evidence that adjustment to favorable exchange rate shocks is larger than to unfavorable exchange rate shocks.
+
+The elasticities for matches in Table \ref{tab:elasticities} are around one unit smaller than those for sales, since there is no mechanical change in matches from the exchange rate shock.  Here the values for favorable and unfavorable shocks are similar, although the point estimates are a bit smaller for unfavorable shocks.  The point estimates for firms have the opposite pattern.  They are larger for the unfavorable exchange rate shock than for the favorable shock.  We cannot, however, statistically reject that the elasticities are the same.
+
+\begin{table}[tbp]
+\caption{\textbf{Simulated Trade Elasticities}}
+\label{tab:elasticities}\centering
+{\small \ }
+\par
+{\small 
+\begin{tabular}{llll}
+\hline\hline
+& \multicolumn{3}{l}{\textbf{Favorable elasticities}} \\ 
+\cline{2-4}
+Time since shock & 1 year & 5 years & 25 years \\ \hline
+Sales     &1.20 &   1.74  &  2.13 \\
+          &(0.09) &   (0.11)  &  (0.11) \\
+Matches   &0.27 &   0.73 &   1.01 \\
+          &(0.06) &   (0.06)  &  (0.06) \\
+Exporters & 0.15 & 0.47 & 0.56 \\
+          &(0.04) &   (0.03)  &  (0.03) \\
+& \multicolumn{3}{l}{\textbf{Unfavorable elasticities}} \\ 
+\cline{2-4}
+Time since shock & 1 year & 5 years & 25 years \\ \hline
+Sales     &1.16 &   1.52  &  1.58 \\
+          &(0.10) &   (0.10)  &  (0.10) \\
+Matches   &0.25 &   0.75 &   0.91 \\
+          &(0.06) &   (0.06)  &  (0.06) \\
+Exporters & 0.14 & 0.53 & 0.71 \\ 
+          &(0.04) &   (0.04)  &  (0.04) \\\hline
+\end{tabular}
+}
+\par
+{\endcenter
+\begin{tablenotes}
+%\bigskip
+\item \textbf{Notes:} All elasticities are based on 500 simulations of favorable and unfavorable 20\% Colombian peso exchange rate fluctuations.  Delta-method standard errors are in parentheses.
+\end{tablenotes}
+}
+\end{table}
 
 \pagebreak
 
