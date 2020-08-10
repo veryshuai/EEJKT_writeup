@@ -33,7 +33,7 @@
 %TCIDATA{Codepage=936}
 %TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
 %TCIDATA{BibliographyScheme=Manual}
-%TCIDATA{LastRevised=Thursday, August 06, 2020 15:16:57}
+%TCIDATA{LastRevised=Monday, August 10, 2020 16:52:05}
 %TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
 %TCIDATA{Language=American English}
 
@@ -83,21 +83,28 @@ views of the authors and do not reflect the views of the U.S. Census Bureau.}%
 \maketitle
 
 \begin{abstract}
-\textbf{[JT: not yet updated]} Customs record data reveal a number of
-patterns in relationships Colombian firms have with their U.S. buyers. We
-interpret these patterns in terms of a continuous-time model in which
-heterogeneous sellers search for buyers in a market. Success in selling to a
-buyer reveals information to the seller about the appeal of her product in
-the market, affecting her incentive to search for more buyers. Fit using the
-method of simulated moments, the model replicates key patterns in the
-customs records and allows us quantify several types of trade costs,
-including the search costs of\ identifying potential clients and the costs
-of maintaining business relationships with existing clients. It also allows
-us to estimate the effect of previous exporting activity on the costs of
-meeting new clients, and to characterize the cumulative effects of learning
-on firms' search intensities. Finally, we use our fitted model to explore
-the effects of these trade costs and learning effects on aggregate export
-dynamics.
+We develop a model of firm-level export dynamics that features costly
+customer search, endogenous terminations of buyer-seller relationships, and
+learning on both sides of the market. Specifically, firms update their
+beliefs about their products products' popularity with each potential
+customer they meet, and potential customers update their awareness of a
+firm's products with each successful buyer-seller match the firm
+establishes. 
+
+We fit this model to customs records describing U.S. manufactured imports
+from Colombia. Identification comes from several key assumptions:
+buyer-seller meetings that generate only one shipment reflect unsuccessful
+encounters (rejected samples), multi-shipment pairings reflect successful
+buyer-seller relationships, and, for a given firm, the time gap between its
+new meetings with potential buyers reflects its search intensity (up to a
+random shock). 
+
+Qualitatively, the model replicates a large set of patterns in the customs
+regards regarding exporter maturation, transitions across states, and the
+distribution of partner counts across firms. It also provides a basis for
+assessing the value of business relationships, the importance of both types
+of learning, the role of luck in market penetration, and post-shock sources
+of fluctuation in aggregate export dynamics.
 \end{abstract}
 
 %\date{This draft: April 2020}
@@ -172,8 +179,22 @@ vary across different types of exporters? Second, controlling for exporters'
 productivity and product appeal, how big a role does market visability play
 in driving success? And finally, to what extent does each type of
 information friction cause aggregate export dynamics to deviate from a
-sequence of static equilibria? \textbf{[JT: discussion of main findings to
-be added here]}
+sequence of static equilibria?
+
+Fit to customs records describing U.S. manufactured imports from Colombia,
+the model qualitatively replicates a large set of patterns in the customs
+regards regarding exporter maturation, transitions across states, and the
+distribution of partner counts across firms. It also delivers a variety of
+implications regarding exporter behavior. First, the aggregate value of
+business connections amounts to roughly US\$5 billion dollars for Colombian
+manufacturers, with firm-specific values heavily dependent on productivity,
+product appeal, and portfolio of clients. Second, there is some scope for
+luck in the establishment of new exporters, since a few successful matches
+early in their market exploration encourages more intense search. Two firms
+with the productivity and product appeal may take a few years or many years
+to establish 10 successful business relationships. Finally, export responses
+to permanent devaluation are more muted and gradual in our model than in
+other treatments, and they exhibit substantial hysteresis.
 
 \subsection{Relation to literature}
 
@@ -894,14 +915,14 @@ n^{f}+\alpha +\beta }.  \label{success_probability}
 This posterior mean converges to $p\lim \left( \frac{a^{f}}{n^{f}}\right)
 =\theta ^{f}$ as $n$ gets large.
 
-By making the number of signals a firm receives depend upon the number of
-potential buyers it matches with--successfully or otherwise--we create an
-extra incentive for new exporters to search more intensively than
-established exporters. In this way (inter alia) we depart from earlier
-papers that model the number of signals received per period as either zero
-or one, depending upon firms' foreign market participation (Fitzgerald et
-al., 2019; Arkolakis et al., 2018; Timoshenko, 2015). We will quantify the
-importance of this incentive in Section 6 below.
+Note that exporters learn\ something about their foreign demand with each
+new match---successful or otherwise. In this regard we depart from other
+models with learning effects, which have generally presumed that the number
+of signals per period is either zero or one, depending upon firms' foreign
+market participation (Fitzgerald et al., 2019; Arkolakis et al., 2018;
+Timoshenko, 2015). Does it matter? Our formulation creates an extra
+incentive for inexperienced exporters to search intensively, which we will
+quantify in Section 6 below.
 
 \textbf{No-learning model: }As an alternative to our benchmark model, we
 consider the possibility that sellers already know their product's
@@ -1152,6 +1173,8 @@ home macro state jump size & $\Delta ^{x_{h}}$ & \multicolumn{1}{c}{0.003}
 foreign macro state jump size & $\Delta ^{x_{f}}$ & \multicolumn{1}{c}{0.053}
 \\ \hline
 \end{tabular}%
+%
+%
 %
 %
 %
@@ -1472,7 +1495,7 @@ $ & $%
 \text{(0.26e-3)} \\ 
 \end{array}%
 $ \\ 
-$\ln (1+a_{ij})$ & \ \ \ \ \ \ -- & \ \ \ \ \ \ -- & $%
+$\ln (1+n_{ij})$ & \ \ \ \ \ \ -- & \ \ \ \ \ \ -- & $%
 \begin{array}{c}
 \text{0.093 } \\ 
 \text{(0.003)} \\ 
@@ -1483,13 +1506,13 @@ $ & $%
 \text{(0.000)} \\ 
 \end{array}%
 $ \\ 
-$\ln (1+n_{ij})^{2}$ & $%
+$\ln (1+a_{ij})$ & $%
 \begin{array}{c}
 \text{-0.818} \\ 
 \text{(0.113)} \\ 
 \end{array}%
-$ & \ \ \ \ \ \ -- & \ \ \ \ \ \ -- & \ \ \ \ \ \ -- \\ 
-$\left[ \ln (1+a_{ij})\right] ^{2}$ & $%
+$ & \ \ \ \ \ \ -- &  &  \\ 
+$\ln (1+a_{ij})^{2}$ & $%
 \begin{array}{c}
 \text{0.312} \\ 
 \text{(0.017)\ } \\ 
@@ -2249,128 +2272,205 @@ be a reasonable approximation to the aggregate exports responses of a small
 country shipping to a large one, where its products constitute a small
 fraction of total supply.}
 
-To do so, we simulate permanent (but unanticipated) Colombian
-peso exchange rate shocks on total export trajectories under two alternative
-scenarios: a 20\% Colombian peso devaluation, and a 20\% Colombian peso appreciation. To remove the effect of the unrelated random sequences of aggregate shocks, in each scenario, we simulate the model 500 times with sequences of randomly-generated aggregate shocks,
-and then report means across these series.  The exchange rate shocks are modeled as simply increasing or decreasing the value of the random aggregate shocks by 20\% after a particular date, which will be year 25 in the plots below.\footnote{We additionally let the firms burn in for 25 years before the plots start.}
-\begin{figure}
-    \centering
-    \begin{subfigure}[b]{0.5\textwidth}
+To do so, we simulate permanent (but unanticipated) Colombian peso exchange
+rate shocks on total export trajectories under two alternative scenarios: a
+20\% Colombian peso devaluation, and a 20\% Colombian peso appreciation. To
+remove the effect of the unrelated random sequences of aggregate shocks, in
+each scenario, we simulate the model 500 times with sequences of
+randomly-generated aggregate shocks, and then report means across these
+series. The exchange rate shocks are modeled as simply increasing or
+decreasing the value of the random aggregate shocks by 20\% after a
+particular date, which will be year 25 in the plots below.\footnote{%
+We additionally let the firms burn in for 25 years before the plots start.} 
+\begin{figure}[tbp]
+\centering
+\begin{subfigure}[b]{0.5\textwidth}
         \centering
         \includegraphics[width=\textwidth]{figures/intangible_value_per_firm}
         \caption{Mean value of experience}
-    \end{subfigure}%
-    ~
-    \begin{subfigure}[b]{0.5\textwidth}
+    \end{subfigure} ~  
+\begin{subfigure}[b]{0.5\textwidth}
         \centering
         \includegraphics[width=\textwidth]{figures/intangible_value_per_firm_median}
         \caption{Median value of experience}
-    \end{subfigure} \\
-    \caption{Value of exporter experience}
-    \label{fig:avg_value}
+    \end{subfigure} \newline
+\caption{Value of exporter experience}
+\label{fig:avg_value}
 \end{figure}
 
-In Figure \ref{fig:avg_value} we plot the average value of simulated firms net of their value had they not had any export experience.  That is, suppose that a firm has met a number of clients, and has both learned something about its success rate $\theta$.  In addition, this firm has accumulated network effects through its history.  We take the firm's value, and subtract from it the value of an otherwise similar firm, but with no export experience.  We call this object the value of the firm's export experience.  It is the value a firm would lose if we made it forget everything it learned and gained from exporting.  
+In Figure \ref{fig:avg_value} we plot the average value of simulated firms
+net of their value had they not had any export experience. That is, suppose
+that a firm has met a number of clients, and has both learned something
+about its success rate $\theta$. In addition, this firm has accumulated
+network effects through its history. We take the firm's value, and subtract
+from it the value of an otherwise similar firm, but with no export
+experience. We call this object the value of the firm's export experience.
+It is the value a firm would lose if we made it forget everything it learned
+and gained from exporting.
 
-Subfigure (a) contains the mean value of experience within each simulation, averaged across all 500 simulations.  Subfigure (b) contains the median value of experience within each simulation, averaged across simulations.  As the productivity distribution is right skewed, it is not surprising that our mean is significantly higher than the median.  The mean value before any shock is around 1.7 million dollars, while the median is only 80,000 dollars.  After the exchange rate shock, the values ultimately converge to around 20\% higher or lower than before the shock, but the change in value on impact is larger.  This is due to the lagged entry of marginally productive firms when the shock is favorable, and the exit of marginally productive firms when the shock is negative.  The value of experience is on average around 18\% of the total value of firms both before and after the exchange rate shocks.  For a back-of-the-envelope calculation of the total value of experience in the economy, we multiply 1.7 million dollars by the approximately 3000 Colombian exporters we observe each year.  We get that the total value of exporter experience in the Colombian economy is about 5.1 billion dollars.
+Subfigure (a) contains the mean value of experience within each simulation,
+averaged across all 500 simulations. Subfigure (b) contains the median value
+of experience within each simulation, averaged across simulations. As the
+productivity distribution is right skewed, it is not surprising that our
+mean is significantly higher than the median. The mean value before any
+shock is around 1.7 million dollars, while the median is only 80,000
+dollars. After the exchange rate shock, the values ultimately converge to
+around 20\% higher or lower than before the shock, but the change in value
+on impact is larger. This is due to the lagged entry of marginally
+productive firms when the shock is favorable, and the exit of marginally
+productive firms when the shock is negative. The value of experience is on
+average around 18\% of the total value of firms both before and after the
+exchange rate shocks. For a back-of-the-envelope calculation of the total
+value of experience in the economy, we multiply 1.7 million dollars by the
+approximately 3000 Colombian exporters we observe each year. We get that the
+total value of exporter experience in the Colombian economy is about 5.1
+billion dollars.
 
-\begin{figure}
-    \centering
-    \begin{subfigure}[b]{0.5\textwidth}
+\begin{figure}[tbp]
+\centering
+\begin{subfigure}[b]{0.5\textwidth}
         \centering
         \includegraphics[width=\textwidth]{figures/total_sales}
         \caption{Total sales: Favorable}
-    \end{subfigure}%
-    ~
-    \begin{subfigure}[b]{0.5\textwidth}
+    \end{subfigure} ~  
+\begin{subfigure}[b]{0.5\textwidth}
         \centering
         \includegraphics[width=\textwidth]{figures/total_sales_unf}
         \caption{Total sales: Unfavorable}
-    \end{subfigure} \\
-    ~
-    \begin{subfigure}[b]{0.5\textwidth}
+    \end{subfigure} \newline
+~  
+\begin{subfigure}[b]{0.5\textwidth}
         \centering
         \includegraphics[width=\textwidth]{figures/total_matches}
         \caption{Total active matches: Favorable}
-    \end{subfigure}%
-    ~
-    \begin{subfigure}[b]{0.5\textwidth}
+    \end{subfigure} ~  
+\begin{subfigure}[b]{0.5\textwidth}
         \centering
         \includegraphics[width=\textwidth]{figures/total_matches_unf}
         \caption{Total active matches: Unfavorable}
-    \end{subfigure} \\
-    ~
-    \begin{subfigure}[b]{0.5\textwidth}
+    \end{subfigure} \newline
+~  
+\begin{subfigure}[b]{0.5\textwidth}
         \centering
         \includegraphics[width=\textwidth]{figures/total_firms}
         \caption{Total active exporters: Favorable}
-    \end{subfigure}%
-    ~
-    \begin{subfigure}[b]{0.5\textwidth}
+    \end{subfigure} ~  
+\begin{subfigure}[b]{0.5\textwidth}
         \centering
         \includegraphics[width=\textwidth]{figures/total_firms_unf}
         \caption{Total active exporters: Unfavorable}
     \end{subfigure}
-    \caption{Response to a 20\% shock to the Colombian Peso: Market level outcomes}
-    \label{fig:export_dynamics_macro}
-
+\caption{Response to a 20\% shock to the Colombian Peso: Market level
+outcomes}
+\label{fig:export_dynamics_macro}
 \end{figure}
 
-\begin{figure}
-    \centering
-    \begin{subfigure}[b]{0.5\textwidth}
+\begin{figure}[tbp]
+\centering
+\begin{subfigure}[b]{0.5\textwidth}
         \centering
         \includegraphics[width=\textwidth]{figures/total_sales_pct}
         \caption{Total sales: Favorable}
-    \end{subfigure}%
-    ~
-    \begin{subfigure}[b]{0.5\textwidth}
+    \end{subfigure} ~  
+\begin{subfigure}[b]{0.5\textwidth}
         \centering
         \includegraphics[width=\textwidth]{figures/total_sales_pct_unf}
         \caption{Total sales: Unfavorable}
-    \end{subfigure} \\
-    ~
-    \begin{subfigure}[b]{0.5\textwidth}
+    \end{subfigure} \newline
+~  
+\begin{subfigure}[b]{0.5\textwidth}
         \centering
         \includegraphics[width=\textwidth]{figures/total_matches_pct}
         \caption{Total active matches: Favorable}
-    \end{subfigure}%
-    ~
-    \begin{subfigure}[b]{0.5\textwidth}
+    \end{subfigure} ~  
+\begin{subfigure}[b]{0.5\textwidth}
         \centering
         \includegraphics[width=\textwidth]{figures/total_matches_pct_unf}
         \caption{Total active matches: Unfavorable}
-    \end{subfigure} \\
-    ~
-    \begin{subfigure}[b]{0.5\textwidth}
+    \end{subfigure} \newline
+~  
+\begin{subfigure}[b]{0.5\textwidth}
         \centering
         \includegraphics[width=\textwidth]{figures/total_firms_pct}
         \caption{Total active exporters: Favorable}
-    \end{subfigure}%
-    ~
-    \begin{subfigure}[b]{0.5\textwidth}
+    \end{subfigure} ~  
+\begin{subfigure}[b]{0.5\textwidth}
         \centering
         \includegraphics[width=\textwidth]{figures/total_firms_pct_unf}
         \caption{Total active exporters: Unfavorable}
     \end{subfigure}
-    \caption{Response to a 20\% shock to the Colombian Peso: Composition}
-    \label{fig:export_dynamics_average}
-
+\caption{Response to a 20\% shock to the Colombian Peso: Composition}
+\label{fig:export_dynamics_average}
 \end{figure}
 
-Figures \ref{fig:export_dynamics_macro}, inspired by the decomposition plots in Piveteau (2020), summarize the macroeconomic effects of our exchange rate experiments.  Our model is a different from Piveteau (2020) in several important ways which affect the decompositions we do.  In particular, we have firm entry and exit, as well as endogenous drops of matches.  In principle both of these margins could be important as firms enter to take advantage of favorable exchange rate shocks, and firms drop matches in response to negative shocks.  For this reason, our decomposition will be between new exporters, incumbent firms and new matches, and incumbent firms and incumbent matches.  Endogenous entry of exporters and exits of matches will potentially create asymmetries in the macroeconomic effects of favorable and unfavorable exchange rate shocks, which is why we do both experiments.
+Figures \ref{fig:export_dynamics_macro}, inspired by the decomposition plots
+in Piveteau (2020), summarize the macroeconomic effects of our exchange rate
+experiments. Our model is a different from Piveteau (2020) in several
+important ways which affect the decompositions we do. In particular, we have
+firm entry and exit, as well as endogenous drops of matches. In principle
+both of these margins could be important as firms enter to take advantage of
+favorable exchange rate shocks, and firms drop matches in response to
+negative shocks. For this reason, our decomposition will be between new
+exporters, incumbent firms and new matches, and incumbent firms and
+incumbent matches. Endogenous entry of exporters and exits of matches will
+potentially create asymmetries in the macroeconomic effects of favorable and
+unfavorable exchange rate shocks, which is why we do both experiments.
 
-Consider Panel (a) and Panel (b) of Figure \ref{fig:export_dynamics_macro} plot total export sales over a 50 year period bisected by the shock.  The superimposed lines show the decomposition in the situation in which there was no change in the exchange rate.  Relationships with incumbent importers are relatively short-lived in our model because of the high exogenous match death hazard rate.  New firms become more important over time.
+Consider Panel (a) and Panel (b) of Figure \ref{fig:export_dynamics_macro}
+plot total export sales over a 50 year period bisected by the shock. The
+superimposed lines show the decomposition in the situation in which there
+was no change in the exchange rate. Relationships with incumbent importers
+are relatively short-lived in our model because of the high exogenous match
+death hazard rate. New firms become more important over time.
 
-The immediate effect of the favorable depreciation (Panel (a)) is to increase the peso-denominated revenue flow from existing clients by 20 percent, and to decrease it 20 percent in the unfavorable shock (Panel (b)). Because other margins of adjustment are sluggish, this valuation effect accounts for almost all of the movement in aggregate exports during the first post-shock year.  As time progresses, both new importers and new firms become more and more important.  Additionally, the total effect of the exchange rate shock grows.
+The immediate effect of the favorable depreciation (Panel (a)) is to
+increase the peso-denominated revenue flow from existing clients by 20
+percent, and to decrease it 20 percent in the unfavorable shock (Panel (b)).
+Because other margins of adjustment are sluggish, this valuation effect
+accounts for almost all of the movement in aggregate exports during the
+first post-shock year. As time progresses, both new importers and new firms
+become more and more important. Additionally, the total effect of the
+exchange rate shock grows.
 
-A similar pattern can be seen in Panels (c) and (d) of Figure \ref{fig:export_dynamics_macro} which track matches. Here the valuation effect plays no role.  There is therefore only a small change the first year after the shock.  Panels (e) and (f) show the mean number of firms per simulation.  New firms quickly displace around 15\% of incumbent firms, and then the displacement grows more slowly over time.  This is because marginally profitable exporters enter and exit frequently, while solidly profitable exporters only exit when they are exogenously killed.
+A similar pattern can be seen in Panels (c) and (d) of Figure \ref%
+{fig:export_dynamics_macro} which track matches. Here the valuation effect
+plays no role. There is therefore only a small change the first year after
+the shock. Panels (e) and (f) show the mean number of firms per simulation.
+New firms quickly displace around 15\% of incumbent firms, and then the
+displacement grows more slowly over time. This is because marginally
+profitable exporters enter and exit frequently, while solidly profitable
+exporters only exit when they are exogenously killed.
 
-We also plot the percentage decomposition of these macroeconomic aggregates in Figure \ref{fig:export_dynamics_average}.  Summing up the figures, when the exchange rate shock is favorable, incumbent matches are less important, and when the exchange rate shock is unfavorable, incumbent matches are more important.  This is because exporters search harder for new matches when the exchange rate shock is favorable, and less hard when the exchange rate shock is unfavorable.  For the most part, incumbent relationships continue.
+We also plot the percentage decomposition of these macroeconomic aggregates
+in Figure \ref{fig:export_dynamics_average}. Summing up the figures, when
+the exchange rate shock is favorable, incumbent matches are less important,
+and when the exchange rate shock is unfavorable, incumbent matches are more
+important. This is because exporters search harder for new matches when the
+exchange rate shock is favorable, and less hard when the exchange rate shock
+is unfavorable. For the most part, incumbent relationships continue.
 
-Finally, we present short and long-run simulated trade elasticities.  These are presented in Table \ref{tab:elasticities}.  Based on the point estimates alone, total sales react more to the favorable exchange rate shock.  The 25 year elasticity of sales to the favorable exchange rate shock is 2.22.\footnote{The trade elasticities in our model for the favorable exchange rate shock are a bit more sluggish than those found in a analogous experiment by Piveteau (2020).  His point estimate for the one year trade elasticity is 1.3, and his estimate for the five year trade elasticity is 2.3.}  The 25 year elasticity of sales to the unfavorable exchange rate shock is 1.62.  We can reject the hypothesis that these elasticities are the same. We find evidence that sales adjustment to favorable exchange rate shocks is larger than to unfavorable exchange rate shocks.
+Finally, we present short and long-run simulated trade elasticities. These
+are presented in Table \ref{tab:elasticities}. Based on the point estimates
+alone, total sales react more to the favorable exchange rate shock. The 25
+year elasticity of sales to the favorable exchange rate shock is 2.22.%
+\footnote{%
+The trade elasticities in our model for the favorable exchange rate shock
+are a bit more sluggish than those found in a analogous experiment by
+Piveteau (2020). His point estimate for the one year trade elasticity is
+1.3, and his estimate for the five year trade elasticity is 2.3.} The 25
+year elasticity of sales to the unfavorable exchange rate shock is 1.62. We
+can reject the hypothesis that these elasticities are the same. We find
+evidence that sales adjustment to favorable exchange rate shocks is larger
+than to unfavorable exchange rate shocks.
 
-The elasticities for matches in Table \ref{tab:elasticities} are around one unit smaller than those for sales, since there is no mechanical change in matches from the exchange rate shock.  Here the values for favorable and unfavorable shocks are similar, although the point estimates are a bit smaller for unfavorable shocks.  The point estimates for firms have the opposite pattern.  They are larger for the unfavorable exchange rate shock than for the favorable shock, particularly after 25 years.  This difference is statistically significant. 
+The elasticities for matches in Table \ref{tab:elasticities} are around one
+unit smaller than those for sales, since there is no mechanical change in
+matches from the exchange rate shock. Here the values for favorable and
+unfavorable shocks are similar, although the point estimates are a bit
+smaller for unfavorable shocks. The point estimates for firms have the
+opposite pattern. They are larger for the unfavorable exchange rate shock
+than for the favorable shock, particularly after 25 years. This difference
+is statistically significant.
 
 \begin{table}[tbp]
 \caption{\textbf{Simulated Trade Elasticities}}
@@ -2380,24 +2480,22 @@ The elasticities for matches in Table \ref{tab:elasticities} are around one unit
 {\small 
 \begin{tabular}{llll}
 \hline\hline
-& \multicolumn{3}{l}{\textbf{Favorable elasticities}} \\ 
-\cline{2-4}
+& \multicolumn{3}{l}{\textbf{Favorable elasticities}} \\ \cline{2-4}
 Time since shock & 1 year & 5 years & 25 years \\ \hline
-Sales     &1.18 &   1.75  &  2.22 \\
-          &(0.07) &   (0.09)  &  (0.08) \\
-Matches   &0.26 &   0.75 &   1.05 \\
-          &(0.05) &   (0.05)  &  (0.05) \\
-Exporters & 0.15 & 0.48 & 0.57 \\
-          &(0.03) &   (0.03)  &  (0.03) \\
-& \multicolumn{3}{l}{\textbf{Unfavorable elasticities}} \\ 
-\cline{2-4}
+Sales & 1.18 & 1.75 & 2.22 \\ 
+& (0.07) & (0.09) & (0.08) \\ 
+Matches & 0.26 & 0.75 & 1.05 \\ 
+& (0.05) & (0.05) & (0.05) \\ 
+Exporters & 0.15 & 0.48 & 0.57 \\ 
+& (0.03) & (0.03) & (0.03) \\ 
+& \multicolumn{3}{l}{\textbf{Unfavorable elasticities}} \\ \cline{2-4}
 Time since shock & 1 year & 5 years & 25 years \\ \hline
-Sales     &1.16 &   1.55  &  1.62 \\
-          &(0.08) &   (0.08)  &  (0.08) \\
-Matches   &0.25 &   0.76 &   0.92 \\
-          &(0.05) &   (0.05)  &  (0.05) \\
+Sales & 1.16 & 1.55 & 1.62 \\ 
+& (0.08) & (0.08) & (0.08) \\ 
+Matches & 0.25 & 0.76 & 0.92 \\ 
+& (0.05) & (0.05) & (0.05) \\ 
 Exporters & 0.13 & 0.50 & 0.69 \\ 
-          &(0.03) &   (0.03)  &  (0.03) \\\hline
+& (0.03) & (0.03) & (0.03) \\ \hline
 \end{tabular}
 }
 \par
