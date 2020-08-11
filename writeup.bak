@@ -33,7 +33,7 @@
 %TCIDATA{Codepage=936}
 %TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
 %TCIDATA{BibliographyScheme=Manual}
-%TCIDATA{LastRevised=Monday, August 10, 2020 17:23:02}
+%TCIDATA{LastRevised=Tuesday, August 11, 2020 15:57:45}
 %TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
 %TCIDATA{Language=American English}
 
@@ -88,8 +88,7 @@ customer search, endogenous terminations of buyer-seller relationships, and
 learning on both sides of the market. Specifically, firms update their
 beliefs about their products products' popularity with each potential
 customer they meet, and potential customers update their awareness of a
-firm's products with each successful buyer-seller match the firm
-establishes. 
+firm's products with each successful buyer-seller match the firm establishes.
 
 We fit this model to customs records describing U.S. manufactured imports
 from Colombia. Identification comes from several key assumptions:
@@ -97,7 +96,7 @@ buyer-seller meetings that generate only one shipment reflect unsuccessful
 encounters (rejected samples), multi-shipment pairings reflect successful
 buyer-seller relationships, and, for a given firm, the time gap between its
 new meetings with potential buyers reflects its search intensity (up to a
-random shock). 
+random shock).
 
 Qualitatively, the model replicates a large set of patterns in the customs
 regards regarding exporter maturation, transitions across states, and the
@@ -171,16 +170,6 @@ sellers and buyers, and they render the key variables in our model
 observable for each exporter at each point in time, namely, its match
 arrival rate, its cumulative number of matches, and its success rate.
 
-In addition to quantifying the value of information and intangible capital,
-our estimated model allows us to perform several counterfactual exercises.\
-These are designed to answer\ several questions. First, how much intangible
-capital is tied to foreign business connections, and how does this capital
-vary across different types of exporters? Second, controlling for exporters'
-productivity and product appeal, how big a role does market visability play
-in driving success? And finally, to what extent does each type of
-information friction cause aggregate export dynamics to deviate from a
-sequence of static equilibria?
-
 Fit to customs records describing U.S. manufactured imports from Colombia,
 the model qualitatively replicates a large set of patterns in the customs
 regards regarding exporter maturation, transitions across states, and the
@@ -189,12 +178,11 @@ implications regarding exporter behavior. First, the aggregate value of
 business connections amounts to roughly US\$5 billion dollars for Colombian
 manufacturers, with firm-specific values heavily dependent on productivity,
 product appeal, and portfolio of clients. Second, there is some scope for
-luck in the establishment of new exporters, since a few successful matches
-early in their market exploration encourages more intense search. Two firms
-with the productivity and product appeal may take a few years or many years
-to establish 10 successful business relationships. Finally, export responses
-to permanent devaluation are more muted and gradual in our model than in
-other treatments, and they exhibit substantial hysteresis.
+luck in the establishment of a new exporting firm, since a few successful
+matches early in their market exploration encourages more intense search and
+thereby improves visibility. Finally, export responses to permanent
+devaluation are more muted and gradual in our model than in other
+treatments, and they exhibit substantial hysteresis.
 
 \subsection{Relation to literature}
 
@@ -296,25 +284,25 @@ designed for structural estimation. Timoshenko (2015) adds age as a profit
 shifter to a standard sunk-cost model of exporter behavior. She then
 demonstrates that this variable helps explain exporter persistence in
 differentiated (but not homogeneous) product industries and interprets this
-to imply that learning effects are important.\ \textbf{[JT: this paper is
-not strictly structural; she used the Roberts/Tybout 1997 estimator.] }%
-Drawing from Jovanovic (1982), Arkolakis, et al.\ (2018) characterize firms
-as learning their types by observing their sales histories. This allows them
-to explain the relatively rapid expansion of new exporters. This paper
-resembles ours in that firms learn about their products' appeal in export
-markets from their match histories. It differs in that it is a calibrated
-equilibrium model with a representative consumer and no matching frictions
-or network effects. Li (2018) adds time variation to the idiosyncratic
-productivity shocks in Eaton et al (2014), replaces endogenous search
-efforts with a Markov process on the number of foreign orders firms receive,
-and treats firms as learning about their demand per order in each
-destination market. With these adjustments, he then quantifies the effects
-of priors, productivity, and learning on export market participation.
-Finally, without developing a complete model, Berman et al. (2019) use a
-simple decomposition to isolate residual fluctuation in foreign demand that
-they attribute to learning. Like the other studies mentioned here, they find
-learning plays an important role.\textbf{\ [JT: Mention Dickstein and
-Morales, 2018?]} \renewcommand{\baselinestretch}{1}\footnote{%
+to imply that learning effects are important.\footnote{%
+This paper is not strictly structural in the sense that it uses a
+reduced-form approximation to exporters' value functions.}\ Drawing from
+Jovanovic (1982), Arkolakis, et al.\ (2018) characterize firms as learning
+their types by observing their sales histories. This allows them to explain
+the relatively rapid expansion of new exporters. This paper resembles ours
+in that firms learn about their products' appeal in export markets from
+their match histories. It differs in that it is a calibrated equilibrium
+model with a representative consumer and no matching frictions or network
+effects. Li (2018) adds time variation to the idiosyncratic productivity
+shocks in Eaton et al (2014), replaces endogenous search efforts with a
+Markov process on the number of foreign orders firms receive, and treats
+firms as learning about their demand per order in each destination market.
+With these adjustments, he then quantifies the effects of priors,
+productivity, and learning on export market participation. Finally, without
+developing a complete model, Berman et al. (2019) use a simple decomposition
+to isolate residual fluctuation in foreign demand that they attribute to
+learning. Like the other studies mentioned here, they find learning plays an
+important role.\renewcommand{\baselinestretch}{1}\footnote{%
 Ruhl and Willis (2008) also note this pattern in plant-level export data and
 show that market entry costs are insufficient to explain it.}
 
@@ -923,15 +911,15 @@ Timoshenko, 2015). Does it matter? Our formulation creates an extra
 incentive for inexperienced exporters to search intensively, which we will
 quantify in Section 6 below.
 
-\textbf{No-learning model: }As an alternative to our benchmark model, we
-consider the possibility that sellers already know their product's
+\textbf{known-$\theta ^{f}$ model: }As an alternative to our benchmark
+model, we consider the possibility that sellers already know their product's
 popularity in \textit{both} markets, so that $p(\theta ^{f}|a^{f},n^{f})$ is
 a degenerate distribution and $\overline{\theta }_{a,n}^{f}=$ $\theta ^{f}.$
 In this version of the model, sellers' matching histories only affect their
 search intensities by affecting their visibility in each market, as we will
-discuss shortly. Our no-learning model is not nested by the benchmark model,
-it is simply a different characterization of the role of information in
-driving search policies.\footnote{%
+discuss shortly. Our known-$\theta ^{f}$ model is not nested by the
+benchmark model, it is simply a different characterization of the role of
+information in driving search policies.\footnote{%
 In order for the learning model to nest the no learning model, each firm
 would have to have its own Beta distribution parameters, $\alpha $ and $%
 \beta .$}
@@ -1048,7 +1036,8 @@ and the first-order condition is simply:%
 \end{equation*}%
 The marginal cost of search equals the expected profit from a successful
 relationship times the probability of success. Of course, this condition
-also describes foreign market search in the no-learning version of the model.
+also describes foreign market search in the known-$\theta ^{f}$ version of
+the model.
 
 \section{An empirical version of the model}
 
@@ -1172,6 +1161,10 @@ home macro state jump size & $\Delta ^{x_{h}}$ & \multicolumn{1}{c}{0.003}
 foreign macro state jump size & $\Delta ^{x_{f}}$ & \multicolumn{1}{c}{0.053}
 \\ \hline
 \end{tabular}%
+%
+%
+%
+%
 %
 %
 %
@@ -1726,15 +1719,15 @@ iv$), and the fraction of firms that export (equation $x$).\linebreak
 \subsection{Parameter estimates}
 
 Table \ref{tab:struct_param} reports estimates of the structural parameter
-vector $\Lambda $ for both the benchmark and the no-learning model. Although
-our estimator exploits month-to-month transitions in the customs records,
-all hazards are normalized so that the unit of time is one year. Thus, for
-example, our estimate of $\delta $ implies that on average, matches last
-roughly 4 months (one-third of a year) before separating for exogenous
-reasons. Most parameter estimates are similar for both models, though, as
-we'll argue below, the benchmark model fits the data better. We therefore
-focus our discussion on the results for this model, turning later to the
-main distinguishing features of the no-learning results.
+vector $\Lambda $ for both the benchmark and the known-$\theta ^{f}$ model.
+Although our estimator exploits month-to-month transitions in the customs
+records, all hazards are normalized so that the unit of time is one year.
+Thus, for example, our estimate of $\delta $ implies that on average,
+matches last roughly 4 months (one-third of a year) before separating for
+exogenous reasons. Most parameter estimates are similar for both models,
+though, as we'll argue below, the benchmark model fits the data better. We
+therefore focus our discussion on the results for this model, turning later
+to the main distinguishing features of the known-$\theta ^{f}$ results.
 
 \textbf{Benchmark parameter estimates} Active matches generate an average of 
 $\lambda _{b}=15.43$ shipments per year, and the profits associated with
@@ -1814,15 +1807,14 @@ exporters are uncertain about their $\theta ^{f}$ draws, they expect to
 learn a good deal from the outcomes of their early matches.\ 
 
 \begin{table}[tbp]
-\caption{\textbf{Structural parameter estimates}}
-\label{tab:struct_param}\centering
+\caption{\textbf{Structural parameter estimates}}\centering
 {\small \ }
 \par
 {\small 
 \begin{tabular}{llrrrr}
 \hline\hline
-&  & \multicolumn{2}{r}{Benchmark model \ \ \ } & \multicolumn{2}{r}{
-No-learning model} \\ 
+&  & \multicolumn{2}{r}{Benchmark model \ \ \ } & \multicolumn{2}{r}{Known-$%
+\theta ^{f}$ model} \\ 
 & \textit{Parameter} & \textit{value} & \textit{std. error} & \textit{value}
 & \textit{std. error} \\ \cline{2-3}\cline{2-6}
 log of domestic profit scalar & $\ln \Pi ^{h}$ & -3.879 & (0.1364) \ \  & 
@@ -1851,30 +1843,31 @@ log of fit metric & $\ln (\Lambda )$ & \multicolumn{2}{r}{10.806 \ \ \ \ \ \
 \ \ \ \ \ } & \multicolumn{2}{r}{11.346 \ \ \ \ \ \ \ \ \ } \\ \hline
 \end{tabular}
 }
+\label{tab:struct_param}
 \end{table}
 
-\textbf{No-learning parameter estimates }Recall that our no-learning model
-differs from the benchmark model in that it presumes each firm $j$ already
-knows the fraction of the foreign population of buyers that is willing to do
-business with it, $\theta _{j}^{f}.$ This assumption implies that low-appeal
-firms never bother to invest much in foreign market searches. Further,
-compared to firms that learn their $\theta _{j}^{f}$ draws through
-experience, fully-informed firms have less incentive to search intensively
-when they are new to export markets. That is, for these firms their is no
-information value to matches.
+\textbf{Known-}$\theta ^{f}$\textbf{\ parameter estimates }Recall that our
+known $\theta ^{f}$ model differs from the benchmark model in that it
+presumes each firm $j$ already knows the fraction of the foreign population
+of buyers that is willing to do business with it, $\theta _{j}^{f}.$ This
+assumption implies that low-appeal firms never bother to invest much in
+foreign market searches. Further, compared to firms that learn their $\theta
+_{j}^{f}$ draws through experience, fully-informed firms have less incentive
+to search intensively when they are new to export markets. That is, for
+these firms their is no information value to matches.
 
 The last two columns of Table \ref{tab:struct_param} present parameter
 estimates based on this version of the model. Most parameters are similar,
-but for the no-learning model the estimate of the network effect is larger ($%
-\gamma =0.50$ versus $\gamma =0.38$) and the estimates of search costs are
-higher ($\kappa _{0}^{h}=859$ and $\kappa _{0}^{f}=3,079$ versus $\kappa
-_{0}^{h}=1,826$ and $\kappa _{0}^{f}=5,982$).\ Higher search cost scalars
-and larger network effects appear to help the no-learning model explain the
-observed pattern of small entry, gradual growth, and eventual dominance by
-high-$\theta $ entrants without relying on learning effects. However, the
-no-learning version of the model does substantially worse than the benchmark
-version according to Rivers and Vuong's (2002) test statistic for non-nested
-comparisons.\footnote{%
+but for the known-$\theta ^{f}$ model the estimate of the network effect is
+larger ($\gamma =0.50$ versus $\gamma =0.38$) and the estimates of search
+costs are higher ($\kappa _{0}^{h}=859$ and $\kappa _{0}^{f}=3,079$ versus $%
+\kappa _{0}^{h}=1,826$ and $\kappa _{0}^{f}=5,982$).\ Higher search cost
+scalars and larger network effects appear to help the known $\theta ^{f}$
+model explain the observed pattern of small entry, gradual growth, and
+eventual dominance by high-$\theta $ entrants without relying on learning
+effects. However, the known-$\theta ^{f}$ version of the model does
+substantially worse than the benchmark version according to Rivers and
+Vuong's (2002) test statistic for non-nested comparisons.\footnote{%
 The Rivers and Voung (2002) statistic takes the form $T_{n}=\frac{\sqrt{n}}{%
 \hat{\sigma}_{n}}\left[ \hat{\Lambda}^{1}-\hat{\Lambda}^{2}\right] ,$ where $%
 \hat{\Lambda}^{1}$ and $\hat{\Lambda}^{2}$ are the MSM fit metrics for the
@@ -1902,16 +1895,15 @@ Appendix \ref{sec:model_fit} juxtaposes the data-based moments, $\bar{m},$
 with their simulated counterparts, $m(\Lambda ),$ from the benchmark model.
 Generally, the patterns in the data are replicated by our model, though not
 all of the model-based equation estimates correspond closely to their
-data-based counterparts. In particular, average exporting rates,
-match-specific sales dynamics, and the client distribution are well-captured
-by the model, as are most mean values of dependent variables. However the
-model fails to generate the association between success rates and firms'
-search intensities that we observe in the data. This relationship is
-relatively weak---note the large standard errors for the coefficients on $%
-\ln (1+\frac{a}{n})$ and $\left[ \ln (1+\frac{a}{n})\right] ^{2}$ in column
-1 of Table \ref{tab:haz_reg}---so it doesn't receive much weight in the fit
-metric. A more detailed summary of the fit can be found in Appendix \ref%
-{sec:model_fit}.
+data-based analogs. In particular, average exporting rates, match-specific
+sales dynamics, and the client distribution are well-captured by the model,
+as are most mean values of dependent variables. However the model fails to
+generate the association between success rates and firms' search intensities
+that we observe in the data. This relationship is relatively weak---note the
+large standard errors for the coefficients on $\ln (1+\frac{a}{n})$ and $%
+\left[ \ln (1+\frac{a}{n})\right] ^{2}$ in column 1 of Table \ref%
+{tab:haz_reg}---so it doesn't receive much weight in the fit metric. A more
+detailed summary of the fit can be found in Appendix \ref{sec:model_fit}.
 
 Since we have not targeted the patterns described in Section \ref{sec:data}
 when estimating, it is instructive to ask how well they are replicated by
@@ -1947,11 +1939,10 @@ between a buyer and a seller as establishing a match, while the model does
 not.\footnote{%
 Specifically, since the data-based series count single-shipment buyer-seller
 encounters as matches, these series inflate the one-year-old firm and total
-export counts, while depressing mean exports among one-year olds. And the
-one-year old figures appear in the denominator of the ratios for all other
-years. Restrictions on data access have temporarily prevented us from
-re-doing these tables in a fully compatible way. The issue will be addressed
-in a future draft.}
+export counts, while they depress mean exports among one-year olds.
+Restrictions on data access have temporarily prevented us from re-doing
+these tables in a fully compatible way. The issue will be addressed in a
+future draft.}
 
 \begin{table}[tbp]
 \caption{\textbf{Cohort evolutions: data vs. model}}
@@ -2172,7 +2163,7 @@ first, it takes more than 43 years. Thus, simply because of luck, it takes
 four times longer for the failure-first firm to get to 10 meetings and it
 searches far less intensively along the way.
 
-\subsubsection{Comparison with no-learning}
+\subsubsection{Comparison with known-$\protect\theta ^{f}$}
 
 %
 %\begin{figure}
@@ -2187,7 +2178,7 @@ The patterns we have depicted thus far reflect both the network effect and
 the learning effect. To gauge their relative importance, we now redo Figure %
 \ref{fig:val_three_types} under the assumption that firms know their true $%
 \theta ^{f}$ realizations from the start. More precisely, using our
-estimates of the "no learning" policy function (see Table \ref%
+estimates of the "known-$\theta ^{f}$" policy function (see Table \ref%
 {tab:struct_param}), we simulate the continuation values of firms at the
 10th, 50th, and 90th productivity percentiles. And as in Figure \ref%
 {fig:val_three_types} we consider three alternative match histories: only
@@ -2195,16 +2186,16 @@ successes, only failures, and alternating successes and failures. Also,
 since true success rates now affect behavior, we give all firms a success
 probability of $\theta ^{f}=0.43$. This number corresponds to the 65th
 percentile of success probabilities among active exporters in our simulated
-data. We chose this particular value because it is close to 50\%, and it is
-one of the discritized points on the grid we use for estimation.
+data. (We chose this particular value because it is close to 50\%, and it is
+one of the discritized points on the grid we use for estimation.)
 
 The results appear in Figure \ref{fig:val_three_types_nl}. Overall,
 continuation values move much less as firms acquire experience, implying
 that the new exporter dynamics in Figure \ref{fig:val_three_types} were
-mainly due to firms learning their types. Continue values do still rise a
-bit when firms make successful matches because these matches make is easier
-to meet additional buyers (the "network effect"). However, unsuccessful
-matches now have no effect on these values.
+mainly due to firms learning their types. Continuation values do still rise
+a bit when firms make successful matches because these matches make is
+easier to meet additional buyers (the "network effect"). However,
+unsuccessful matches now have no effect on these values.
 
 %\begin{figure}
 %    \centering
@@ -2217,38 +2208,38 @@ matches now have no effect on these values.
 %    \begin{subfigure}[b]{0.5\textwidth}
 %        \centering
 %        \includegraphics[width=\textwidth]{figures/success_order_nl}
-%        \caption{No-learning}
+%        \caption{known-$\theta ^{f}$ }
 %    \end{subfigure}
 %    \caption{Time to ten meetings by placement of five consecutive successes}
 %    \label{fig:success_order}
 %\end{figure}
 
 We can also examine how match arrival times depend on successes and failures
-in the no-learning model. Since firms know their success probabilities in
-this model, the no-learning version of Figure \ref{fig:success_beliefs} (not
-pictured) is simply two horizontal lines with height $\theta ^{f}$. But the
-lengths of these lines still depends upon match histories because of the
-network effect. To demonstrate this dependence, Figure \ref%
-{fig:success_order} plots the expected time to ten meetings, when five
-consecutive meetings are successful and the others failures. The $x$-axis is
-the number of meetings that take place before the first success occurs. If
-it is one, then the first five meetings are successes, and the next five
-failures. If it is 6, then the first five meetings are failures, and the
-last five meetings successes.
+in the known-$\theta ^{f}$ model. Since firms know their success
+probabilities in this model, the known-$\theta ^{f}$ version of Figure \ref%
+{fig:success_beliefs} (not pictured) is simply two horizontal lines with
+height $\theta ^{f}$. But the lengths of these lines still depends upon
+match histories because of the network effect. To demonstrate this
+dependence, Figure \ref{fig:success_order} plots the expected time to ten
+meetings, when five consecutive meetings are successful and the others
+failures. The $x$-axis is the number of meetings that take place before the
+first success occurs. If it is one, then the first five meetings are
+successes, and the next five failures. If it is 6, then the first five
+meetings are failures, and the last five meetings successes.
 
 To facilitate comparison, Figure \ref{fig:success_order} presents results
-for both the baseline model (panel a) and the no learning model (panel b).
-All plots are for a firm in the 90th percentile of productivity among
-exporters, and, in the case of the no-learning model, the success
-probability is set to $\theta ^{f}=0.43$. As we saw in Figure \ref%
+for both the baseline model (panel a) and the known-$\theta ^{f}$ model
+(panel b). All plots are for a firm in the 90th percentile of productivity
+among exporters, and, in the case of the known-$\theta ^{f}$ model, the
+success probability is set to $\theta ^{f}=0.43$. As we saw in Figure \ref%
 {fig:success_beliefs}, the time it takes a learning firm to reach ten
 meetings depends heavily on the placement of the successes (panel a). If the
 successes come at the beginning of the ten meetings, it takes 12 years for
 this type of firm to reach ten meetings. If the failures come first, it
-takes 45 years. But for no-learning firms (panel b), time to ten meetings
-depends much less on the placement of successes. If the successes come
-first, it takes 27 years to reach ten meetings. If they come last, it takes
-32 years.\footnote{%
+takes 45 years. But for known-$\theta ^{f}$ firms (panel b), time to ten
+meetings depends much less on the placement of successes. If the successes
+come first, it takes 27 years to reach ten meetings. If they come last, it
+takes 32 years.\footnote{%
 The reason it takes so long is that this type of firm expects that only
 around half of its meetings will be successes. This corresponds to the
 ultimate 50\% success rate we are simulating, but it also means that the
@@ -2287,7 +2278,7 @@ We additionally let the firms burn in for 25 years before the plots start.}
         \centering
         \includegraphics[width=\textwidth]{figures/intangible_value_per_firm}
         \caption{Mean value of experience}
-    \end{subfigure} ~  
+    \end{subfigure} ~ 
 \begin{subfigure}[b]{0.5\textwidth}
         \centering
         \includegraphics[width=\textwidth]{figures/intangible_value_per_firm_median}
@@ -2300,12 +2291,12 @@ We additionally let the firms burn in for 25 years before the plots start.}
 In Figure \ref{fig:avg_value} we plot the average value of simulated firms
 net of their value had they not had any export experience. That is, suppose
 that a firm has met a number of clients, and has both learned something
-about its success rate $\theta$. In addition, this firm has accumulated
+about its success rate $\theta ^{f}$. In addition, this firm has accumulated
 network effects through its history. We take the firm's value, and subtract
 from it the value of an otherwise similar firm, but with no export
 experience. We call this object the value of the firm's export experience.
 It is the value a firm would lose if we made it forget everything it learned
-and gained from exporting.
+and gained from exporting, including its current portfolio of cleints.
 
 Subfigure (a) contains the mean value of experience within each simulation,
 averaged across all 500 simulations. Subfigure (b) contains the median value
@@ -2314,16 +2305,16 @@ productivity distribution is right skewed, it is not surprising that our
 mean is significantly higher than the median. The mean value before any
 shock is around 1.7 million dollars, while the median is only 80,000
 dollars. After the exchange rate shock, the values ultimately converge to
-around 20\% higher or lower than before the shock, but the change in value
-on impact is larger. This is due to the lagged entry of marginally
+around 20 percent higher or lower than before the shock, but the change in
+value on impact is larger. This is due to the lagged entry of marginally
 productive firms when the shock is favorable, and the exit of marginally
 productive firms when the shock is negative. The value of experience is on
-average around 18\% of the total value of firms both before and after the
-exchange rate shocks. For a back-of-the-envelope calculation of the total
-value of experience in the economy, we multiply 1.7 million dollars by the
-approximately 3000 Colombian exporters we observe each year. We get that the
-total value of exporter experience in the Colombian economy is about 5.1
-billion dollars.
+average around 18 percent of the total value of firms both before and after
+the exchange rate shocks. For a back-of-the-envelope calculation of the
+total value of exporting experience in the economy, we multiply 1.7 million
+dollars by the approximately 3000 Colombian exporters we observe each year.
+We get that the total value of exporter experience in the Colombian economy
+is about 5.1 billion dollars.
 
 \begin{figure}[tbp]
 \centering
@@ -2331,29 +2322,29 @@ billion dollars.
         \centering
         \includegraphics[width=\textwidth]{figures/total_sales}
         \caption{Total sales: Favorable}
-    \end{subfigure} ~  
+    \end{subfigure} ~ 
 \begin{subfigure}[b]{0.5\textwidth}
         \centering
         \includegraphics[width=\textwidth]{figures/total_sales_unf}
         \caption{Total sales: Unfavorable}
     \end{subfigure} \newline
-~  
+~ 
 \begin{subfigure}[b]{0.5\textwidth}
         \centering
         \includegraphics[width=\textwidth]{figures/total_matches}
         \caption{Total active matches: Favorable}
-    \end{subfigure} ~  
+    \end{subfigure} ~ 
 \begin{subfigure}[b]{0.5\textwidth}
         \centering
         \includegraphics[width=\textwidth]{figures/total_matches_unf}
         \caption{Total active matches: Unfavorable}
     \end{subfigure} \newline
-~  
+~ 
 \begin{subfigure}[b]{0.5\textwidth}
         \centering
         \includegraphics[width=\textwidth]{figures/total_firms}
         \caption{Total active exporters: Favorable}
-    \end{subfigure} ~  
+    \end{subfigure} ~ 
 \begin{subfigure}[b]{0.5\textwidth}
         \centering
         \includegraphics[width=\textwidth]{figures/total_firms_unf}
@@ -2370,29 +2361,29 @@ outcomes}
         \centering
         \includegraphics[width=\textwidth]{figures/total_sales_pct}
         \caption{Total sales: Favorable}
-    \end{subfigure} ~  
+    \end{subfigure} ~ 
 \begin{subfigure}[b]{0.5\textwidth}
         \centering
         \includegraphics[width=\textwidth]{figures/total_sales_pct_unf}
         \caption{Total sales: Unfavorable}
     \end{subfigure} \newline
-~  
+~ 
 \begin{subfigure}[b]{0.5\textwidth}
         \centering
         \includegraphics[width=\textwidth]{figures/total_matches_pct}
         \caption{Total active matches: Favorable}
-    \end{subfigure} ~  
+    \end{subfigure} ~ 
 \begin{subfigure}[b]{0.5\textwidth}
         \centering
         \includegraphics[width=\textwidth]{figures/total_matches_pct_unf}
         \caption{Total active matches: Unfavorable}
     \end{subfigure} \newline
-~  
+~ 
 \begin{subfigure}[b]{0.5\textwidth}
         \centering
         \includegraphics[width=\textwidth]{figures/total_firms_pct}
         \caption{Total active exporters: Favorable}
-    \end{subfigure} ~  
+    \end{subfigure} ~ 
 \begin{subfigure}[b]{0.5\textwidth}
         \centering
         \includegraphics[width=\textwidth]{figures/total_firms_pct_unf}
@@ -2404,49 +2395,76 @@ outcomes}
 
 Figures \ref{fig:export_dynamics_macro}, inspired by the decomposition plots
 in Piveteau (2020), summarize the macroeconomic effects of our exchange rate
-experiments. Our model is a different from Piveteau (2020) in several
-important ways which affect the decompositions we do. In particular, we have
-firm entry and exit, as well as endogenous drops of matches. In principle
-both of these margins could be important as firms enter to take advantage of
-favorable exchange rate shocks, and firms drop matches in response to
-negative shocks. For this reason, our decomposition will be between new
-exporters, incumbent firms and new matches, and incumbent firms and
-incumbent matches. Endogenous entry of exporters and exits of matches will
-potentially create asymmetries in the macroeconomic effects of favorable and
-unfavorable exchange rate shocks, which is why we do both experiments.
+experiments. They break down the total value of exports into the
+contribution from (1) buyer-seller relationships that existed at the time of
+the shock (yellow), (2) new relationships with exporters that were already
+in the market at the time of shock (orange), and relationships with
+exporters that were not in the market at the time of the shock (blue). The
+pre-shock time period shows only the aggregate value of exports, which is
+somewhat confusingly color-coded as yellow. \textbf{[JT: David, please
+confirm. If correct, shall we start the graphs at period 25?]}
 
-Consider Panel (a) and Panel (b) of Figure \ref{fig:export_dynamics_macro}
-plot total export sales over a 50 year period bisected by the shock. The
-superimposed lines show the decomposition in the situation in which there
-was no change in the exchange rate. Relationships with incumbent importers
-are relatively short-lived in our model because of the high exogenous match
-death hazard rate. New firms become more important over time.
+Relative to Piveteau's (2020) model, our formulation includes several
+features that contribute to asymmetric exchange rate responses. First, we
+allow for endogenous match separations and search effort. This means that
+negative exchange rate shocks cause marginally profitable matches to
+immediately terminate, while positive exchange rate shocks induce a gradual
+accumulation of client connections. Second, we allow exporters to learn
+about their product appeal through each new match they make. Thus, by
+increasing search intensities, positive exchange rate shocks lead to
+accelerated learning and selection effects for inexperienced exporters,
+which are relatively common during an expansion. But negative exchange rate
+shocks do not destroy any of the knowledge already accumulated by incumbent
+exporters. Rather, they slow learning processes for the relatively scarce
+new exporters that appear during a contraction. To highlight these features
+of our model, we use a decompostion that distinguishes matches to new
+exporters from others.\footnote{%
+Piveteau (2020) distinguishes the consumer margin, the extensive margin, and
+an aggregative valuation effect.} 
 
-The immediate effect of the favorable depreciation (Panel (a)) is to
-increase the peso-denominated revenue flow from existing clients by 20
-percent, and to decrease it 20 percent in the unfavorable shock (Panel (b)).
-Because other margins of adjustment are sluggish, this valuation effect
-accounts for almost all of the movement in aggregate exports during the
-first post-shock year. As time progresses, both new importers and new firms
-become more and more important. Additionally, the total effect of the
-exchange rate shock grows.
+Consider Panel (a) and Panel (b) of Figure \ref{fig:export_dynamics_macro},
+which plot total export sales over a 50 year period bisected by the shock.
+The superimposed lines show the decomposition in the situation in which
+there was no re-scaling of the exchange rate process, and thus characterize
+the evolution of a typical cohort in an ergodic environment. Note that
+relationships with incumbent importers are relatively short-lived, and as
+time progresses, both new importers and new firms become more and more
+important. Nonetheless, incumbents retain more than 50 percent of the market
+after 25 years. These patterns reflect high match death hazard rates,
+combined with persistent firm-level productivity and product appeal. 
+
+How do the revaluation shocks disturb these trajectories? The immediate
+effect of the favorable depreciation (Panel (a)) is to increase the
+peso-denominated revenue flow from existing clients by 20 percent, and to
+decrease it 20 percent in the unfavorable shock (Panel (b)). Because other
+margins of adjustment are sluggish, this valuation effect accounts for
+almost all of the movement in aggregate exports during the first post-shock
+year. However, as time progresses the total effect of the exchange rate
+shock grows. (Compare the lines to the shaded regions to gauge the
+importance of each margin of adjustment.) This reflects upward (downward)
+adjustments in the client bases of incumbent exporters and net entry (exit)
+when the exchange rate depreciates (appreciates). 
 
 A similar pattern can be seen in Panels (c) and (d) of Figure \ref%
 {fig:export_dynamics_macro} which track matches. Here the valuation effect
-plays no role. There is therefore only a small change the first year after
-the shock. Panels (e) and (f) show the mean number of firms per simulation.
-New firms quickly displace around 15\% of incumbent firms, and then the
+plays no role, so there is only a small change the first year after the
+shock. Panels (e) and (f) show the mean number of firms per simulation. New
+firms quickly displace around 15 percent of incumbent firms, and then the
 displacement grows more slowly over time. This is because marginally
 profitable exporters enter and exit frequently, while solidly profitable
 exporters only exit when they are exogenously killed.
 
-We also plot the percentage decomposition of these macroeconomic aggregates
-in Figure \ref{fig:export_dynamics_average}. Summing up the figures, when
-the exchange rate shock is favorable, incumbent matches are less important,
-and when the exchange rate shock is unfavorable, incumbent matches are more
-important. This is because exporters search harder for new matches when the
-exchange rate shock is favorable, and less hard when the exchange rate shock
-is unfavorable. For the most part, incumbent relationships continue.
+Do these adjustments reflect a proportionate scaling of all margins we
+study? To address this question we plot the percentage decomposition of each
+aggregate in Figure \ref{fig:export_dynamics_average}. Summarizing the
+figures, when the exchange rate shock is favorable, all margins maintain
+their relative importance, but with an unfavorable shock, new matches gain
+market share relative to incumbents. As discussed above, this asymmetry
+reflects the fact that negative shocks cause exporters to immediately
+terminate their marginal matches, "cleansing" the market of
+low-profitability relationships. Percentage-wise, the negative effect of
+appreciation on incumbent exporters' sales share is bigger than its effect
+on their match share. \textbf{[JT: mention Gopinath and Neiman here?}]
 
 Finally, we present short and long-run simulated trade elasticities. These
 are presented in Table \ref{tab:elasticities}. Based on the point estimates
