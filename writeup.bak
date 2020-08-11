@@ -33,7 +33,7 @@
 %TCIDATA{Codepage=936}
 %TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
 %TCIDATA{BibliographyScheme=Manual}
-%TCIDATA{LastRevised=Monday, August 10, 2020 16:52:05}
+%TCIDATA{LastRevised=Monday, August 10, 2020 17:23:02}
 %TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
 %TCIDATA{Language=American English}
 
@@ -280,17 +280,16 @@ formulation. In Albornoz et al (2012), firms choose to experiment in markets
 with low entry costs in order to learn about their product's appeal
 elsewhere. Similarly, in Nguyen (2012), firms learn about idiosyncratic
 demands for their products by "testing" a subset of markets, each of which
-generates a correlated signal about unexplored markets. Our model resembles
-these in that exporters learn about their products' through early shipments,
-and when new exporters survive, their sales tend to grow rapidly. Aeberhardt
-et al. (2014)\ and Araujo et al. (2016) explain the small scale and high
-exit rate of new exporters (inter alia) by assuming that exporters are
-initially uncertain about the reliability of their new buyers, whom they
-find through a random matching process. The learning mechanisms built into
-these models are different from ours, but they too are designed to capture
-some of the same patterns that we target. \textbf{[JT: this paragraph was
-based on superficial review of papers--I need to confirm that these
-descriptions are accurate.]}
+generates a correlated signal about unexplored markets. ALthough we focus on
+a single destination market, our model resembles these in that exporters
+learn about their products' through early shipments, and when new exporters
+survive, their sales tend to grow rapidly. Aeberhardt et al. (2014)\ and
+Araujo et al. (2016) explain the small scale and high exit rate of new
+exporters (inter alia) by assuming that exporters are initially uncertain
+about the reliability of their new buyers, whom they find through a random
+matching process. The learning mechanisms built into these models are
+different from ours, but they too are designed to capture some of the same
+patterns that we target. \textbf{]}
 
 \textbf{Learning models:} Other learning models of export dynamics are
 designed for structural estimation. Timoshenko (2015) adds age as a profit
