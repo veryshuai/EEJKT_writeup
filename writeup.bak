@@ -33,7 +33,7 @@
 %TCIDATA{Codepage=936}
 %TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
 %TCIDATA{BibliographyScheme=Manual}
-%TCIDATA{LastRevised=Thursday, August 13, 2020 13:36:30}
+%TCIDATA{LastRevised=Thursday, August 13, 2020 14:19:13}
 %TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
 %TCIDATA{Language=American English}
 
@@ -393,10 +393,11 @@ relationship between exports and domestic sales.
 Following Brooks (2006) and Eaton et al. (2008), Table \ref{tab:Brooks}
 summarizes the typical cohort maturation process for Colombian exporters of
 manufactured goods to the United States.\footnote{%
-Over the past decade, many other studies have documented similar patterns,
-including \ . . .} It is based on observed evolution patterns among cohorts
-of firms that entered the market each year between 1993 and 1999, and it
-exploits U.S. customs records from 1992 through 2009.
+Over the past decade, many other studies have documented similar patterns.
+Most are mentioned in Bernard et al. (2017).} It is based on observed
+evolution patterns among cohorts of firms that entered the market each year
+between 1993 and 1999, and it exploits U.S. customs records from 1992
+through 2009.
 
 To interpret the figures in this table, imagine for a moment that they
 describe a particular cohort, say, those firms that first entered the U.S.
@@ -1378,8 +1379,8 @@ variation in productivity levels, $\varphi $.
 \textbf{Match success rates} The remaining regressions in Table \ref%
 {tab:sep_rates} concern the distribution of success rates, $\theta $.
 Equation ($iii$) summarizes the average success rate among active exporters
-and its relation to the cumulative number of meetings an exporter has had ($%
-n $). Accordingly it is informative about $\alpha /(\alpha +\beta )$ and
+and its relation to the cumulative number of meetings an exporter has had ($n
+$). Accordingly it is informative about $\alpha /(\alpha +\beta )$ and
 selection due to learning. Equation $(iv)$ describes dispersion in success
 rates--i.e., the squared residuals from equation ($iii$)--among exporters
 with different experience ($n$) levels. Both regressions suggest that
@@ -2542,22 +2543,28 @@ Exporters & 0.13 & 0.50 & 0.69 \\
 
 \section{Summary}
 
-New exporters ship small quantities and have few foreign clients. The
-typical buyer-seller relationship lasts only year or two, so it is common to
-see these firms cease exporting entirely. But each new cohort contains a
-small number of firms that survive and rapidly expand their client bases,
-growing many times faster than aggregate exports. .
+A robust set of stylized facts regarding firm-to-firm trade dynamics has
+emerged from more than a decade of research using customs records. First,
+most exporters are inexperienced, ship small quantities, and have few
+foreign clients. Second, the typical buyer-seller relationship lasts only
+year or two, so it is common to see firms with few clients cease exporting
+entirely. They are replaced by new firms, creating tremendous churning in
+the set of actively exporters. Third, however, each new cohort contains a
+small number of firms that survive and grow many times faster than aggregate
+exports. They do so not by selling increasing amounts to the same clients,
+but by expanding their customer base abroad.
 
-After documenting these patterns, we develop a continuous time model that
-explains them. Firms wishing to export must engage in costly search to
-identify potential buyers abroad. The buyers they encounter either reject
-their products or form finite-lived business relationships with them. Buyer
-who form business relationships with exporters send them favorable signals
-about the appeal of their products, and in doing so, encourage them to
-search more intensively for additional buyers. Successful business
-relationships also reduce search costs by improving sellers' visibility
-(network effects). Finally, sellers' search intensities depend upon their
-permanent idiosyncratic characteristics and marketwide conditions.
+After confirming these patterns for Colombian manufacturers shipping to the
+United States, we develop a continuous time model that explains them. Firms
+wishing to export must engage in costly search to identify potential buyers
+abroad. The buyers they encounter either reject their products or form
+finite-lived business relationships with them. Buyer who form business
+relationships with exporters send them favorable signals about the appeal of
+their products, and in doing so, encourage them to search more intensively
+for additional buyers. Successful business relationships also reduce search
+costs by improving sellers' visibility (network effects). Finally, sellers'
+search intensities depend upon their permanent idiosyncratic characteristics
+and marketwide conditions.
 
 Fit using the method of simulated moments, the model replicates the patterns
 in customs records described above and allows us quantify several types of
@@ -2565,10 +2572,11 @@ trade costs, including the search costs of identifying potential clients and
 the costs of maintaining business relationships with existing clients. It
 also allows us to estimate the network effect of previous exporting
 successes on the costs of meeting new clients, and to characterize the
-cumulative effects of learning on firms'search intensities. Both the
-learning effect and the network effect prove to be quantitatively important.
-Finally, our model provides a lens through which to view the seemingly
-unpredictable responses of export flows to exchange rate fluctuations.
+cumulative effects of learning on firms'search intensities and intangible
+capital stocks. Both the learning effect and the network effect prove to be
+quantitatively important. Finally, our model provides a lens through which
+to view the seemingly unpredictable responses of export flows to exchange
+rate fluctuations.
 
 \begin{center}
 \ \pagebreak
@@ -2633,6 +2641,9 @@ Statistics }101(1): 91-106.
 K. Schott (2007) \textquotedblleft Firms in International
 Trade,\textquotedblright\ \textit{Journal of Economic Perspectives}. 21(3):
 105-130.
+
+\item Bernard, Andrew (2017) "Exporter Dynamics and Partial-Year Effects
+(2017) \textit{American Economic Review }107(10): 3211-3228.
 
 \item Bernard, Andrew, Andreas Moxnes and Karen Helene Ulltveit-Moe. 2018.
 "Two-Sided Heterogeneity and Trade." \textit{Review of Economics and
