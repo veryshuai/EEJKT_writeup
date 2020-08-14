@@ -33,7 +33,7 @@
 %TCIDATA{Codepage=936}
 %TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
 %TCIDATA{BibliographyScheme=Manual}
-%TCIDATA{LastRevised=Wednesday, August 12, 2020 13:16:45}
+%TCIDATA{LastRevised=Friday, August 14, 2020 08:12:38}
 %TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
 %TCIDATA{Language=American English}
 
@@ -392,9 +392,13 @@ relationship between exports and domestic sales.
 
 Following Brooks (2006) and Eaton et al. (2008), Table \ref{tab:Brooks}
 summarizes the typical cohort maturation process for Colombian exporters of
-manufactured goods to the United States. It is based on observed evolution
-patterns among cohorts of firms that entered the market each year between
-1993 and 1999, and it exploits U.S. customs records from 1992 through 2009.
+manufactured goods to the United States.\footnote{%
+Over the past decade, a large number of studies have documented similar
+patterns. We will not attempt a complete listing here; the interested reader
+can find many of them mentioned in Bernard et al. (2017).} It is based on
+observed evolution patterns among cohorts of firms that entered the market
+each year between 1993 and 1999, and it exploits U.S. customs records from
+1992 through 2009.
 
 To interpret the figures in this table, imagine for a moment that they
 describe a particular cohort, say, those firms that first entered the U.S.
@@ -1214,6 +1218,9 @@ foreign macro state jump size & $\Delta ^{x_{f}}$ & \multicolumn{1}{c}{0.053}
 %
 %
 %
+%
+%
+
 %\caption{\textbf{Market-wide Demand Shifters}}
 \end{table}
 
@@ -2163,7 +2170,9 @@ first, it takes more than 43 years. Thus, simply because of luck, it takes
 four times longer for the failure-first firm to get to 10 meetings and it
 searches far less intensively along the way.
 
-\subsubsection{Comparison with known-$\protect\theta ^{f}$}
+
+\subsubsection{Value dynamics when $\protect\theta ^{f}$ is known}
+
 
 %
 %\begin{figure}
@@ -2288,16 +2297,18 @@ We additionally let the firms burn in for 25 years before the plots start.}
 \label{fig:avg_value}
 \end{figure}
 
-\textbf{The value of connections }In Figure \ref{fig:avg_value} we plot the
-average value of simulated firms net of their value had they not had any
-export experience. That is, suppose that a firm has met a number of clients,
-and has both learned something about its success rate $\theta ^{f}$. In
-addition, this firm has accumulated network effects through its history. We
-take the firm's value, and subtract from it the value of an otherwise
-similar firm, but with no export experience. We call this object the value
-of the firm's export experience. It is the value a firm would lose if we
-made it forget everything it learned and gained from exporting, including
-its current portfolio of cleints.
+\subsubsection{The value of connections}
+
+In Figure \ref{fig:avg_value} we plot the average value of simulated firms
+net of their value had they not had any export experience. That is, suppose
+that a firm has met a number of clients, and has both learned something
+about its success rate $\theta ^{f}$. In addition, this firm has accumulated
+network effects through its history. We take the firm's value, and subtract
+from it the value of an otherwise similar firm, but with no export
+experience. We call this object the value of the firm's export experience.
+It is the value a firm would lose if we made it forget everything it learned
+and gained from exporting, including its current portfolio of cleints.
+
 
 Subfigure (a) contains the mean value of experience within each simulation,
 averaged across all 500 simulations. Subfigure (b) contains the median value
@@ -2355,6 +2366,7 @@ is about 5.1 billion dollars.
 outcomes}
 \label{fig:export_dynamics_macro}
 \end{figure}
+
 
 \begin{figure}[tbp]
 \centering
@@ -2514,6 +2526,8 @@ opposite pattern. They are larger for the unfavorable exchange rate shock
 than for the favorable shock, particularly after 25 years. This difference
 is statistically significant.
 
+
+
 \begin{table}[tbp]
 \caption{\textbf{Simulated Trade Elasticities}}
 \label{tab:elasticities}\centering
@@ -2522,7 +2536,8 @@ is statistically significant.
 {\small 
 \begin{tabular}{llll}
 \hline\hline
-& \multicolumn{3}{l}{\textbf{Favorable elasticities}} \\ \cline{2-4}
+
+& \multicolumn{3}{l}{\ \ \ \ \ \textbf{Favorable shock}} \\ \cline{2-4}
 Time since shock & 1 year & 5 years & 25 years \\ \hline
 Sales & 1.18 & 1.75 & 2.22 \\ 
 & (0.07) & (0.09) & (0.08) \\ 
@@ -2530,7 +2545,7 @@ Matches & 0.26 & 0.75 & 1.05 \\
 & (0.05) & (0.05) & (0.05) \\ 
 Exporters & 0.15 & 0.48 & 0.57 \\ 
 & (0.03) & (0.03) & (0.03) \\ 
-& \multicolumn{3}{l}{\textbf{Unfavorable elasticities}} \\ \cline{2-4}
+& \multicolumn{3}{l}{\ \ \ \textbf{Unfavorable shock}} \\ \cline{2-4}
 Time since shock & 1 year & 5 years & 25 years \\ \hline
 Sales & 1.16 & 1.55 & 1.62 \\ 
 & (0.08) & (0.08) & (0.08) \\ 
@@ -2553,26 +2568,28 @@ Exporters & 0.13 & 0.50 & 0.69 \\
 
 \section{Summary}
 
-\textbf{[JT: section not yet updated]} Customs records reveal tremendous
-turnover among Colombian manufacturers who export to the U.S.. In a typical
-year, 48 percent of these exporters are new to the U.S. market, and 81
-percent of these new exporters will be gone two years hence. New exporters
-ship small quantities, so despite their numbers they account for only 12
-percent of total Colombian exports in value terms. But each new cohort of
-Colombian exporters contains a small number of firms that survive and
-rapidly expand, growing many times faster than aggregate Colombian exports.
-They do so by adding U.S. clients to their customer base at a rapid rate.
+A robust set of stylized facts regarding firm-to-firm trade dynamics has
+emerged from more than a decade of research on customs records. First, most
+exporters are inexperienced, ship small quantities, and have few foreign
+clients. Second, the typical buyer-seller relationship lasts only year or
+two, so business connections evolve rapidly, and it is common to see firms
+with only a few clients cease exporting entirely, giving way to the next
+entering cohort of inexperienced exporters. Third, however, each new cohort
+contains a small number of firms that survive and grow many times faster
+than aggregate exports. They do so not by selling increasing amounts to the
+same clients, but by expanding their customer base abroad.
 
-After documenting these patterns, we develop a continuous time model that
-explains them. Firms wishing to export must engage in costly search to
-identify potential buyers abroad. The buyers they encounter either reject
-their products or form finite-lived business relationships with them. Buyer
-who form business relationships with exporters send them favorable signals
-about the appeal of their products, and in doing so, encourage them to
-search more intensively for additional buyers. Successful business
-relationships also reduce search costs by improving sellers' visibility
-(network effects). Finally, sellers' search intensities depend upon their
-permanent idiosyncratic characteristics and marketwide conditions.
+After confirming these patterns for Colombian manufacturers shipping to the
+United States, we develop a continuous time model that explains them. Firms
+wishing to export must engage in costly search to identify potential buyers
+abroad. The buyers they encounter either reject their products or form
+finite-lived business relationships with them. Buyer who form business
+relationships with exporters send them favorable signals about the appeal of
+their products, and in doing so, encourage them to search more intensively
+for additional buyers. Successful business relationships also reduce search
+costs by improving sellers' visibility (network effects). Finally, sellers'
+search intensities depend upon their permanent idiosyncratic characteristics
+and marketwide conditions.
 
 Fit using the method of simulated moments, the model replicates the patterns
 in customs records described above and allows us quantify several types of
@@ -2580,10 +2597,11 @@ trade costs, including the search costs of identifying potential clients and
 the costs of maintaining business relationships with existing clients. It
 also allows us to estimate the network effect of previous exporting
 successes on the costs of meeting new clients, and to characterize the
-cumulative effects of learning on firms'search intensities. Both the
-learning effect and the network effect prove to be quantitatively important.
-Finally, our model provides a lens through which to view the seemingly
-unpredictable responses of export flows to exchange rate fluctuations.
+cumulative effects of learning on firms'search intensities and intangible
+capital stocks. Both the learning effect and the network effect prove to be
+quantitatively important. Finally, our model provides a lens through which
+to view the seemingly unpredictable responses of export flows to exchange
+rate fluctuations.
 
 \begin{center}
 \ \pagebreak
@@ -2636,6 +2654,10 @@ Economics} 131(1): 89-155.
 and International Trade." \textit{Journal of Political Economy} 118(3):
 433-484.
 
+\item Baldwin, Richard and Paul Krugman (1989) "Trade Effects if Karge
+Exchange Rate Shocks." \textit{Quarterly Journal of Economics} 104(4):
+635-654.
+
 \item Berman, N., V. Rebeyrol, and V. Vicard (2019) "Demand learning and
 Firm dynamics: Evidence from Exporters," \textit{Review of Economics and
 Statistics }101(1): 91-106.
@@ -2644,6 +2666,9 @@ Statistics }101(1): 91-106.
 K. Schott (2007) \textquotedblleft Firms in International
 Trade,\textquotedblright\ \textit{Journal of Economic Perspectives}. 21(3):
 105-130.
+
+\item Bernard, Andrew (2017) "Exporter Dynamics and Partial-Year Effects
+(2017) \textit{American Economic Review }107(10): 3211-3228.
 
 \item Bernard, Andrew, Andreas Moxnes and Karen Helene Ulltveit-Moe. 2018.
 "Two-Sided Heterogeneity and Trade." \textit{Review of Economics and
@@ -2686,6 +2711,9 @@ Dynamics,\textquotedblright\ \textit{Econometrica }75(3), pp. 837-874.
 \item Dickstein, M. J. and E. Morales (2018): \textquotedblleft What do
 exporters know?\textquotedblright\ \textit{Quarterly Journal of Economics}
 133: 1753--1801.
+
+\item Dixit, Avinish (1989). "Hysteresis, Import Penetration, and\ Exchange
+Rate Pass-Through." \textit{Quarterly Journal of Economics} 104: 205-228.
 
 \item Dom\'{\i}nguez, Juan Camilo, Jonathan Eaton, Marcela Eslava, and James
 Tybout. (2010) "Search and Learning in Export Markets: Case Studies for
