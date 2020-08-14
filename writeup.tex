@@ -1220,6 +1220,7 @@ foreign macro state jump size & $\Delta ^{x_{f}}$ & \multicolumn{1}{c}{0.053}
 %
 %
 %
+
 %\caption{\textbf{Market-wide Demand Shifters}}
 \end{table}
 
@@ -2169,7 +2170,9 @@ first, it takes more than 43 years. Thus, simply because of luck, it takes
 four times longer for the failure-first firm to get to 10 meetings and it
 searches far less intensively along the way.
 
+
 \subsubsection{Value dynamics when $\protect\theta ^{f}$ is known}
+
 
 %
 %\begin{figure}
@@ -2306,6 +2309,7 @@ experience. We call this object the value of the firm's export experience.
 It is the value a firm would lose if we made it forget everything it learned
 and gained from exporting, including its current portfolio of cleints.
 
+
 Subfigure (a) contains the mean value of experience within each simulation,
 averaged across all 500 simulations. Subfigure (b) contains the median value
 of experience within each simulation, averaged across simulations. As the
@@ -2363,6 +2367,7 @@ outcomes}
 \label{fig:export_dynamics_macro}
 \end{figure}
 
+
 \begin{figure}[tbp]
 \centering
 \begin{subfigure}[b]{0.5\textwidth}
@@ -2401,27 +2406,38 @@ outcomes}
 \label{fig:export_dynamics_average}
 \end{figure}
 
-\subsubsection{Margins of adjustment}
+\textbf{Margins of adjustment} Figures \ref{fig:export_dynamics_macro},
+inspired by the decomposition plots in Piveteau (2020), summarize the
+macroeconomic effects of our exchange rate experiments. They break down the
+total value of exports into the contribution from (1) buyer-seller
+relationships that existed at or before the time of the shock (yellow), (2)
+new relationships with exporters that were already in the market at the time
+of shock (orange), and relationships with exporters that were not in the
+market at the time of the shock (blue). 
 
-Figures \ref{fig:export_dynamics_macro} summarize the macroeconomic effects
-of our exchange rate experiments. They break down the total value of exports
-into the contribution from (1) buyer-seller relationships that existed at or
-before the time of the shock (yellow), (2) new relationships with exporters
-that were already in the market at the time of shock (orange), and
-relationships with exporters that were not in the market at the time of the
-shock (blue).
-
-These figures are inspired by similar graphs in Piveteau (2020), but to
-highlight the role of learning and endogenous match separations, we use a
-decompostion that distinguishes matches to new exporters from others.%
-\footnote{%
+Relative to Piveteau's (2020) model, our formulation includes several
+features that contribute to asymmetric exchange rate responses. First, we
+allow for endogenous match separations and search effort. This means that
+negative exchange rate shocks cause marginally profitable matches to
+immediately terminate, while positive exchange rate shocks induce a gradual
+accumulation of client connections. Second, we allow exporters to learn
+about their product appeal through each new match they make. Thus, by
+increasing search intensities, positive exchange rate shocks lead to
+accelerated learning and selection effects for inexperienced exporters,
+which are relatively common during an expansion. But negative exchange rate
+shocks do not destroy any of the knowledge already accumulated by incumbent
+exporters. Rather, they slow learning processes for the relatively scarce
+new exporters that appear during a contraction. To highlight these features
+of our model, we use a decompostion that distinguishes matches to new
+exporters from others.\footnote{%
 Piveteau (2020) distinguishes the consumer margin, the extensive margin, and
-an aggregative valuation effect.} Consider first Panels (a) and (b) of
-Figure \ref{fig:export_dynamics_macro}, which plot total export sales over a
-50 year period bisected by the shock. The superimposed lines show the
-decomposition in the situation in which there was no re-scaling of the
-exchange rate process, and thus characterize the evolution of a typical
-cohort in an ergodic environment. These no-shock trajectories show that
+an aggregative valuation effect.}
+
+Consider Panel (a) and Panel (b) of Figure \ref{fig:export_dynamics_macro},
+which plot total export sales over a 50 year period bisected by the shock.
+The superimposed lines show the decomposition in the situation in which
+there was no re-scaling of the exchange rate process, and thus characterize
+the evolution of a typical cohort in an ergodic environment. Note that
 relationships with incumbent importers are relatively short-lived, and as
 time progresses, both new importers and new firms become more and more
 important. Nonetheless, incumbents retain more than 50 percent of the market
@@ -2438,11 +2454,11 @@ year. However, as time progresses the total effect of the exchange rate
 shock grows. (Compare the lines to the shaded regions to gauge the
 importance of each margin of adjustment.) This reflects upward (downward)
 adjustments in the client bases of incumbent exporters and net entry (exit)
-when the exchange rate permanently depreciates (appreciates).
+when the exchange rate depreciates (appreciates).
 
 A similar pattern can be seen in Panels (c) and (d) of Figure \ref%
 {fig:export_dynamics_macro} which track matches. Here the valuation effect
-plays no role, so there is only a small change in the first year after the
+plays no role, so there is only a small change the first year after the
 shock. Panels (e) and (f) show the mean number of firms per simulation. New
 firms quickly displace around 15 percent of incumbent firms, and then the
 displacement grows more slowly over time. This is because marginally
@@ -2453,59 +2469,64 @@ Do these adjustments reflect a proportionate scaling of all margins we
 study? To address this question we plot the percentage contribution of each
 type of export to aggregate exports in Figure \ref%
 {fig:export_dynamics_average}. Summarizing the figures, when the exchange
-rate shock is favorable, all types of exports maintain their relative
-importance, but with an unfavorable shock, new exporters gain market share
-relative to incumbents. With the unfavorable shock, both groups immediately
-terminate their marginal matches, cleansing the market of low-profitability
-relationships (Panel d, Figure \ref{fig:export_dynamics_macro}).\footnote{%
+rate shock is favorable, all margins maintain their relative importance, but
+with an unfavorable shock, new exporters gain market share relative to
+incumbents. Both groups immediately terminate their marginal matches,
+cleansing the market of low-profitability relationships (Panel d, Figure \ref%
+{fig:export_dynamics_macro}).\footnote{%
 This pattern is consistent with the rapid, large-scale destruction of
 low-value importer-exporter matches during Argentina's 2001-2002 exchange
-rate crisis (Gopinath and Neiman, 2014).} However, inexperienced exporters
+rate crisis (Gopinath and Neiman, 2014). } However, inexperienced exporters
 are less inclined than experienced exporters to cut back on search, since
-there is information content in each match they make, and being smaller,
-they are operating in a less convex portion of the search cost function.
-Therefore, compared to the benchmark, no-shock scenario, new exporters gain
-market share as the importance of relationhips formed in the post-shock
-period grows over time (Panels b and d of figure \ref%
-{fig:export_dynamics_macro}).\textbf{\ [JT: this explanation may not be
-correct.]}
+there is information content in each match they make. Therefore, compared to
+the benchmark, no-shock scenario, new exporters gain market share as the
+importance of relationhips formed in the post-shock period grows over time
+(Panels b and d of figure \ref{fig:export_dynamics_macro}).
 
-\subsubsection{Trade elasticities}
+\textbf{Trade elasticities} Finally, we present short and long-run simulated
+trade elasticities in Table \ref{tab:elasticities}. Based on the point
+estimates alone, total sales react more to the favorable exchange rate
+shock. The 25 year elasticity of sales to the favorable exchange rate shock
+is 2.22.\footnote{%
+The trade elasticities in our model for the favorable exchange rate shock
+are a bit more sluggish than those found in a analogous experiment by
+Piveteau (2020). His point estimate for the one year trade elasticity is
+1.3, and his estimate for the five year trade elasticity is 2.3.} The 25
+year elasticity of sales to the unfavorable exchange rate shock is 1.62. We
+can reject the hypothesis that these elasticities are the same. We find
+evidence that sales adjustment to favorable exchange rate shocks is larger
+than to unfavorable exchange rate shocks. This asymmetry reflects . . .
 
-Finally, we present short and long-run simulated trade elasticities in Table %
-\ref{tab:elasticities}, with cross-simulation standard deviations in
-parentheses. Based on the point estimates alone, total sales react more to
-the favorable exchange rate shock. The 25 year elasticity of sales to the
-favorable exchange rate shock is 2.22, while the 25 year elasticity of sales
-to the unfavorable exchange rate shock is 1.62. The elasticities for matches
-are around one unit smaller than those for sales, since there is no
-mechanical change in matches from the exchange rate shock.
+These elasticities are smaller, and the transition period is longer, than
+those reported by Piveteau (2020), Alessandria and Choi (2014), and
+Alessandria, et al. (2018).\footnote{%
+Piveteau (2020) also uses a single agent model with customer accumulation,
+but with no learning about product appeal and no marketing or search
+investements. He estimates a long-run elasticity of roughly 2.3, with a
+transition period spanning 5 years. Alessandria and Choi (2014) use a
+symmetric 2-country dynamic model with endogenous firm creation, capital
+accumulation, fixed exporting costs, and iceberg costs but no other trade
+frictions or factor adjustment costs. Analyzing movement from a global 8
+percent tariff to free trade, they find the trade elasticity rises from
+about 5 in the short run to 8 in the long run, which is reached in 5-8
+years. In a similar model, but with firms' exporting costs depending upon
+their incumbency, Alessandria et al. (2018) estimate a short-run trade
+elasticity of 4 and a long-run elasticity of 11.55. This model generates
+transition dynamics over a period of 10-15 years.}\textbf{\ }The larger
+elasticities that obtain in the latter two papers are partly due to their
+general equilibrium\ . . .  The longer transition period in our paper
+reflect the large role our model assigns to search frictions and learning.
 
-Several features of these estimates merit comment. First, while our long run
-elasticity estimate for favorable shocks resembles Piveteau's (2020), we
-find a much longer transition period. This is likely due to the adjustment
-costs in our model that derive from convex search costs and learning
-effects. Second, for similar reasons, and because ours is a single agent
-model, our figures are substantially lower than the long run elasticities
-typically generated by calibrated general equilibrium models (e.g.,
-Alessandria and Choi, 2014; Alessandria, et al., 2018).\footnote{%
-Alessandria and Choi (2014) use a symmetric 2-country dynamic model with
-endogenous firm creation, capital accumulation, fixed exporting costs, and
-iceberg costs but no other trade frictions or factor adjustment costs.
-Analyzing movement from a global 8 percent tariff to free trade, they find
-the trade elasticity rises from about 5 in the short run to 8 in the long
-run, which is reached in 5-8 years. In a similar model, but with firms'
-exporting costs depending upon their incumbency, Alessandria et al. (2018)
-estimate a short-run trade elasticity of 4 and a long-run elasticity of
-11.55. This model generates transition dynamics over a period of 10-15 years.%
-}\textbf{\ }\ Finally, the asymmetry between responses to favorable and
-unfavorable shocks is significant. This most likely reflects learning
-effects and convex search costs, as discussed above.\footnote{%
-An early literature noted the phenomenon of export hystersis, and attributed
-it sunk market entry costs (Dixit, 1989; Baldwin and Krugman, 1989). While
-search costs are sunk, that explanation does not explain the differences in
-long run elasticities our model generates. The reason is that matches are
-short-lived, and search costs must be continuously incurred.}
+The elasticities for matches in Table \ref{tab:elasticities} are around one
+unit smaller than those for sales, since there is no mechanical change in
+matches from the exchange rate shock. Here the values for favorable and
+unfavorable shocks are similar, although the point estimates are a bit
+smaller for unfavorable shocks. The point estimates for firms have the
+opposite pattern. They are larger for the unfavorable exchange rate shock
+than for the favorable shock, particularly after 25 years. This difference
+is statistically significant.
+
+
 
 \begin{table}[tbp]
 \caption{\textbf{Simulated Trade Elasticities}}
@@ -2515,6 +2536,7 @@ short-lived, and search costs must be continuously incurred.}
 {\small 
 \begin{tabular}{llll}
 \hline\hline
+
 & \multicolumn{3}{l}{\ \ \ \ \ \textbf{Favorable shock}} \\ \cline{2-4}
 Time since shock & 1 year & 5 years & 25 years \\ \hline
 Sales & 1.18 & 1.75 & 2.22 \\ 
