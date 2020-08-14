@@ -33,7 +33,7 @@
 %TCIDATA{Codepage=936}
 %TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
 %TCIDATA{BibliographyScheme=Manual}
-%TCIDATA{LastRevised=Thursday, August 13, 2020 14:19:13}
+%TCIDATA{LastRevised=Thursday, August 13, 2020 14:32:02}
 %TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
 %TCIDATA{Language=American English}
 
@@ -393,11 +393,12 @@ relationship between exports and domestic sales.
 Following Brooks (2006) and Eaton et al. (2008), Table \ref{tab:Brooks}
 summarizes the typical cohort maturation process for Colombian exporters of
 manufactured goods to the United States.\footnote{%
-Over the past decade, many other studies have documented similar patterns.
-Most are mentioned in Bernard et al. (2017).} It is based on observed
-evolution patterns among cohorts of firms that entered the market each year
-between 1993 and 1999, and it exploits U.S. customs records from 1992
-through 2009.
+Over the past decade, a large number of studies have documented similar
+patterns. We will not attempt a complete listing here; the interested reader
+can find many of them mentioned in Bernard et al. (2017).} It is based on
+observed evolution patterns among cohorts of firms that entered the market
+each year between 1993 and 1999, and it exploits U.S. customs records from
+1992 through 2009.
 
 To interpret the figures in this table, imagine for a moment that they
 describe a particular cohort, say, those firms that first entered the U.S.
@@ -2544,15 +2545,15 @@ Exporters & 0.13 & 0.50 & 0.69 \\
 \section{Summary}
 
 A robust set of stylized facts regarding firm-to-firm trade dynamics has
-emerged from more than a decade of research using customs records. First,
-most exporters are inexperienced, ship small quantities, and have few
-foreign clients. Second, the typical buyer-seller relationship lasts only
-year or two, so it is common to see firms with few clients cease exporting
-entirely. They are replaced by new firms, creating tremendous churning in
-the set of actively exporters. Third, however, each new cohort contains a
-small number of firms that survive and grow many times faster than aggregate
-exports. They do so not by selling increasing amounts to the same clients,
-but by expanding their customer base abroad.
+emerged from more than a decade of research on customs records. First, most
+exporters are inexperienced, ship small quantities, and have few foreign
+clients. Second, the typical buyer-seller relationship lasts only year or
+two, so business connections evolve rapidly, and it is common to see firms
+with only a few clients cease exporting entirely, giving way to the next
+entering cohort of inexperienced exporters. Third, however, each new cohort
+contains a small number of firms that survive and grow many times faster
+than aggregate exports. They do so not by selling increasing amounts to the
+same clients, but by expanding their customer base abroad.
 
 After confirming these patterns for Colombian manufacturers shipping to the
 United States, we develop a continuous time model that explains them. Firms
