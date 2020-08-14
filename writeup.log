@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.4.25)  14 AUG 2020 20:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.4.25)  14 AUG 2020 20:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -664,19 +664,20 @@ m/n/12 ) = 0\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 23$ and stan-dard de-vi-a-tion $[
  []
 
 [30] [31] [32] [33] [34]
+<figures/val_f_three_types.png, id=474, 429.2838pt x 338.7054pt>
+File: figures/val_f_three_types.png Graphic file (type png)
+<use figures/val_f_three_types.png>
+Package pdftex.def Info: figures/val_f_three_types.png  used on input line 2055
+.
+(pdftex.def)             Requested size: 214.64137pt x 169.35228pt.
+ [35 <./figures/val_f_three_types.png (PNG copy)>]
+<figures/success_beliefs.png, id=483, 429.2838pt x 338.7054pt>
+File: figures/success_beliefs.png Graphic file (type png)
+<use figures/success_beliefs.png>
+Package pdftex.def Info: figures/success_beliefs.png  used on input line 2098.
+(pdftex.def)             Requested size: 214.64137pt x 169.35228pt.
 
-LaTeX Warning: Reference `fig:val_three_types' on page 35 undefined on input li
-ne 2062.
-
-
-LaTeX Warning: Reference `fig:success_beliefs' on page 35 undefined on input li
-ne 2106.
-
-[35]
-
-LaTeX Warning: Reference `fig:success_beliefs' on page 36 undefined on input li
-ne 2116.
-
+[36 <./figures/success_beliefs.png (PNG copy)>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 2122.
@@ -721,144 +722,135 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 2122.
 
+<figures/val_f_three_types_nl.png, id=491, 429.2838pt x 338.7054pt>
+File: figures/val_f_three_types_nl.png Graphic file (type png)
+<use figures/val_f_three_types_nl.png>
+Package pdftex.def Info: figures/val_f_three_types_nl.png  used on input line 2
+127.
+(pdftex.def)             Requested size: 214.64137pt x 169.35228pt.
+<figures/success_order.png, id=497, 429.2838pt x 338.7054pt>
+File: figures/success_order.png Graphic file (type png)
+<use figures/success_order.png>
+Package pdftex.def Info: figures/success_order.png  used on input line 2160.
+(pdftex.def)             Requested size: 234.8775pt x 185.31691pt.
+<figures/success_order_nl.png, id=498, 429.2838pt x 338.7054pt>
+File: figures/success_order_nl.png Graphic file (type png)
+<use figures/success_order_nl.png>
+Package pdftex.def Info: figures/success_order_nl.png  used on input line 2166.
 
-LaTeX Warning: Reference `fig:val_three_types' on page 36 undefined on input li
-ne 2135.
+(pdftex.def)             Requested size: 234.8775pt x 185.31691pt.
 
+Overfull \hbox (5.22215pt too wide) in paragraph at lines 2158--2169
+ [][]  [] 
+ []
 
-LaTeX Warning: Reference `fig:val_three_types' on page 36 undefined on input li
-ne 2140.
-
-
-LaTeX Warning: Reference `fig:val_three_types_nl' on page 36 undefined on input
- line 2148.
-
-
-LaTeX Warning: Reference `fig:val_three_types' on page 36 undefined on input li
-ne 2150.
-
-
-LaTeX Warning: Reference `fig:success_beliefs' on page 36 undefined on input li
-ne 2176.
-
-
-LaTeX Warning: Reference `fig:success_order' on page 36 undefined on input line
- 2179.
-
-
-LaTeX Warning: Reference `fig:success_order' on page 36 undefined on input line
- 2186.
-
-
-LaTeX Warning: Reference `fig:success_beliefs' on page 36 undefined on input li
-ne 2191.
-
-[36]
-<figures/intangible_value_per_firm.png, id=488, 1080.1956pt x 608.9952pt>
+[37 <./figures/val_f_three_types_nl.png (PNG copy)>] [38 <./figures/success_ord
+er.png (PNG copy)> <./figures/success_order_nl.png (PNG copy)>]
+<figures/intangible_value_per_firm.png, id=518, 1080.1956pt x 608.9952pt>
 File: figures/intangible_value_per_firm.png Graphic file (type png)
 <use figures/intangible_value_per_firm.png>
 Package pdftex.def Info: figures/intangible_value_per_firm.png  used on input l
 ine 2235.
 (pdftex.def)             Requested size: 211.38832pt x 119.17639pt.
-<figures/intangible_value_per_firm_median.png, id=489, 1080.1956pt x 608.9952pt
+<figures/intangible_value_per_firm_median.png, id=519, 1080.1956pt x 608.9952pt
 >
 File: figures/intangible_value_per_firm_median.png Graphic file (type png)
 <use figures/intangible_value_per_firm_median.png>
 Package pdftex.def Info: figures/intangible_value_per_firm_median.png  used on 
 input line 2240.
 (pdftex.def)             Requested size: 211.38832pt x 119.17639pt.
- [37]
-<figures/total_sales.png, id=500, 1080.1956pt x 608.9952pt>
+ [39 <./figures/intangible_value_per_firm.png (PNG copy)> <./figures/intangible
+_value_per_firm_median.png (PNG copy)>]
+<figures/total_sales.png, id=528, 1080.1956pt x 608.9952pt>
 File: figures/total_sales.png Graphic file (type png)
 <use figures/total_sales.png>
 Package pdftex.def Info: figures/total_sales.png  used on input line 2281.
 (pdftex.def)             Requested size: 211.38832pt x 119.17639pt.
-<figures/total_sales_unf.png, id=501, 1080.1956pt x 608.9952pt>
+<figures/total_sales_unf.png, id=529, 1080.1956pt x 608.9952pt>
 File: figures/total_sales_unf.png Graphic file (type png)
 <use figures/total_sales_unf.png>
 Package pdftex.def Info: figures/total_sales_unf.png  used on input line 2286.
 (pdftex.def)             Requested size: 211.38832pt x 119.17639pt.
-<figures/total_matches.png, id=502, 1080.1956pt x 608.9952pt>
+<figures/total_matches.png, id=530, 1080.1956pt x 608.9952pt>
 File: figures/total_matches.png Graphic file (type png)
 <use figures/total_matches.png>
 Package pdftex.def Info: figures/total_matches.png  used on input line 2292.
 (pdftex.def)             Requested size: 211.38832pt x 119.17639pt.
-<figures/total_matches_unf.png, id=503, 1080.1956pt x 608.9952pt>
+<figures/total_matches_unf.png, id=531, 1080.1956pt x 608.9952pt>
 File: figures/total_matches_unf.png Graphic file (type png)
 <use figures/total_matches_unf.png>
 Package pdftex.def Info: figures/total_matches_unf.png  used on input line 2297
 .
 (pdftex.def)             Requested size: 211.38832pt x 119.17639pt.
-<figures/total_firms.png, id=504, 1080.1956pt x 608.9952pt>
+<figures/total_firms.png, id=532, 1080.1956pt x 608.9952pt>
 File: figures/total_firms.png Graphic file (type png)
 <use figures/total_firms.png>
 Package pdftex.def Info: figures/total_firms.png  used on input line 2303.
 (pdftex.def)             Requested size: 211.38832pt x 119.17639pt.
-<figures/total_firms_unf.png, id=505, 1080.1956pt x 608.9952pt>
+<figures/total_firms_unf.png, id=533, 1080.1956pt x 608.9952pt>
 File: figures/total_firms_unf.png Graphic file (type png)
 <use figures/total_firms_unf.png>
 Package pdftex.def Info: figures/total_firms_unf.png  used on input line 2308.
 (pdftex.def)             Requested size: 211.38832pt x 119.17639pt.
-<figures/total_sales_pct.png, id=506, 1080.1956pt x 608.9952pt>
+<figures/total_sales_pct.png, id=534, 1080.1956pt x 608.9952pt>
 File: figures/total_sales_pct.png Graphic file (type png)
 <use figures/total_sales_pct.png>
 Package pdftex.def Info: figures/total_sales_pct.png  used on input line 2320.
 (pdftex.def)             Requested size: 211.38832pt x 119.17639pt.
-<figures/total_sales_pct_unf.png, id=507, 1080.1956pt x 608.9952pt>
+<figures/total_sales_pct_unf.png, id=535, 1080.1956pt x 608.9952pt>
 File: figures/total_sales_pct_unf.png Graphic file (type png)
 <use figures/total_sales_pct_unf.png>
 Package pdftex.def Info: figures/total_sales_pct_unf.png  used on input line 23
 25.
 (pdftex.def)             Requested size: 211.38832pt x 119.17639pt.
-<figures/total_matches_pct.png, id=508, 1080.1956pt x 608.9952pt>
+<figures/total_matches_pct.png, id=536, 1080.1956pt x 608.9952pt>
 File: figures/total_matches_pct.png Graphic file (type png)
 <use figures/total_matches_pct.png>
 Package pdftex.def Info: figures/total_matches_pct.png  used on input line 2331
 .
 (pdftex.def)             Requested size: 211.38832pt x 119.17639pt.
-<figures/total_matches_pct_unf.png, id=509, 1080.1956pt x 608.9952pt>
+<figures/total_matches_pct_unf.png, id=537, 1080.1956pt x 608.9952pt>
 File: figures/total_matches_pct_unf.png Graphic file (type png)
 <use figures/total_matches_pct_unf.png>
 Package pdftex.def Info: figures/total_matches_pct_unf.png  used on input line 
 2336.
 (pdftex.def)             Requested size: 211.38832pt x 119.17639pt.
-<figures/total_firms_pct.png, id=510, 1080.1956pt x 608.9952pt>
+<figures/total_firms_pct.png, id=538, 1080.1956pt x 608.9952pt>
 File: figures/total_firms_pct.png Graphic file (type png)
 <use figures/total_firms_pct.png>
 Package pdftex.def Info: figures/total_firms_pct.png  used on input line 2342.
 (pdftex.def)             Requested size: 211.38832pt x 119.17639pt.
-<figures/total_firms_pct_unf.png, id=511, 1080.1956pt x 608.9952pt>
+<figures/total_firms_pct_unf.png, id=539, 1080.1956pt x 608.9952pt>
 File: figures/total_firms_pct_unf.png Graphic file (type png)
 <use figures/total_firms_pct_unf.png>
 Package pdftex.def Info: figures/total_firms_pct_unf.png  used on input line 23
 47.
 (pdftex.def)             Requested size: 211.38832pt x 119.17639pt.
- [38 <./figures/intangible_value_per_firm.png (PNG copy)> <./figures/intangible
-_value_per_firm_median.png (PNG copy)>] [39 <./figures/total_sales.png (PNG cop
-y)> <./figures/total_sales_unf.png (PNG copy)> <./figures/total_matches.png (PN
-G copy)> <./figures/total_matches_unf.png (PNG copy)> <./figures/total_firms.pn
-g (PNG copy)> <./figures/total_firms_unf.png (PNG copy)>] [40 <./figures/total_
-sales_pct.png (PNG copy)> <./figures/total_sales_pct_unf.png (PNG copy)> <./fig
-ures/total_matches_pct.png (PNG copy)> <./figures/total_matches_pct_unf.png (PN
-G copy)> <./figures/total_firms_pct.png (PNG copy)> <./figures/total_firms_pct_
-unf.png (PNG copy)>] [41] [42] [43] [44]
+ [40] [41 <./figures/total_sales.png (PNG copy)> <./figures/total_sales_unf.png
+ (PNG copy)> <./figures/total_matches.png (PNG copy)> <./figures/total_matches_
+unf.png (PNG copy)> <./figures/total_firms.png (PNG copy)> <./figures/total_fir
+ms_unf.png (PNG copy)>] [42 <./figures/total_sales_pct.png (PNG copy)> <./figur
+es/total_sales_pct_unf.png (PNG copy)> <./figures/total_matches_pct.png (PNG co
+py)> <./figures/total_matches_pct_unf.png (PNG copy)> <./figures/total_firms_pc
+t.png (PNG copy)> <./figures/total_firms_pct_unf.png (PNG copy)>] [43] [44] [45
+]
 Overfull \hbox (1.91652pt too wide) in paragraph at lines 2585--2588
 []\OT1/cmr/m/n/12 Baldwin, Richard and Paul Krug-man (1989) "Trade Ef-fects if 
 Karge Ex-change Rate Shocks."
  []
 
-[45] [46]
+[46] [47]
 Overfull \hbox (1.47069pt too wide) in paragraph at lines 2672--2674
 []\OT1/cmr/m/n/12 Fitzgerald, Doire-ann, Ste-fanie Hallerz, and Yaniv Yedid-Lev
 i (2019) "How Ex-porters Grow."
  []
 
-[47] [48]
+[48] [49]
 Overfull \hbox (17.58313pt too wide) in paragraph at lines 2750--2773
  [][] 
  []
 
-[49] [50] [51] [52] [53] [54] [55]
+[50] [51] [52] [53] [54] [55] [56]
 
 LaTeX Font Warning: Command \small invalid in math mode on input line 3017.
 
@@ -907,11 +899,11 @@ LaTeX Font Warning: Command \small invalid in math mode on input line 3081.
 
 LaTeX Font Warning: Command \small invalid in math mode on input line 3081.
 
-[56] [57] [58] [59
+[57] [58] [59] [60
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3384.
- [60] [61] [62]
+ [61] [62] [63]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 3384.
  (./writeup.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 3384.
@@ -919,18 +911,14 @@ Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3384.
 
 Package rerunfilecheck Info: File `writeup.out' has not changed.
 (rerunfilecheck)             Checksum: 9F4CFBB6F17BAFAF9261137C1E4CD76E;2672.
-
-
-LaTeX Warning: There were undefined references.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 3384.
  )
 (\end occurred when \ifx on line 678 was incomplete) 
 Here is how much of TeX's memory you used:
- 10056 strings out of 481239
- 149101 string characters out of 5920377
- 477577 words of memory out of 5000000
- 24922 multiletter control sequences out of 15000+600000
+ 10101 strings out of 481239
+ 150339 string characters out of 5920377
+ 477944 words of memory out of 5000000
+ 24957 multiletter control sequences out of 15000+600000
  549703 words of font info for 94 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,19n,42p,814b,502s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1076,10 +1064,10 @@ re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/tex
 mf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/publi
 c/cm-super/sfrm0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.
 pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb>
-Output written on writeup.pdf (62 pages, 1606401 bytes).
+Output written on writeup.pdf (63 pages, 1751802 bytes).
 PDF statistics:
- 783 PDF objects out of 1000 (max. 8388607)
- 670 compressed objects within 7 object streams
- 178 named destinations out of 1000 (max. 500000)
- 372 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 809 PDF objects out of 1000 (max. 8388607)
+ 690 compressed objects within 7 object streams
+ 183 named destinations out of 1000 (max. 500000)
+ 397 words of extra memory for PDF output out of 10000 (max. 10000000)
 
