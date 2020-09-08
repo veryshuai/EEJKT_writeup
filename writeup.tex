@@ -253,7 +253,7 @@ formulation. In Albornoz et al (2012), firms choose to experiment in markets
 with low entry costs in order to learn about their product's appeal
 elsewhere. Similarly, in Nguyen (2012), firms learn about idiosyncratic
 demands for their products by "testing" a subset of markets, each of which
-generates a correlated signal about unexplored markets. Although we focus on
+generates a noisy signal about unexplored markets. Although we focus on
 a single destination market, our model resembles these in that exporters
 learn about their products' through early shipments, and when new exporters
 survive, their sales tend to grow rapidly. Aeberhardt et al. (2014)\ and
@@ -692,7 +692,7 @@ An alternative specification would introduce bilateral bargaining between
 buyer and seller.\medskip}
 
 \begin{equation}
-p_{jt}=\frac{\eta }{\eta -1}\frac{e_{t}w_{t}}{\varphi _{j}}  \label{price}
+p_{jt}=\frac{\eta }{(\eta -1)}\frac{e_{t}w_{t}}{\varphi _{j}}  \label{price}
 \end{equation}%
 By (\ref{unit profit}), (\ref{demand}), and (\ref{price}),\ an order from
 buyer $i$ at time $t$ therefore generates the following profits for seller $%
@@ -707,7 +707,7 @@ We can combine all the macroeconomic variables affecting the profit of any
 seller from this source selling in this destination, along with constants,
 as:%
 \begin{equation*}
-x_{t}=\frac{1}{\eta }\frac{\overline{X}_{t}}{e}\left( \frac{e_{t}w_{t}\eta
+x_{t}=\frac{1}{\eta }\frac{\overline{X}_{t}}{e_{t}}\left( \frac{e_{t}w_{t}\eta
 /(\eta -1)}{P_{t}}\right) ^{1-\eta },
 \end{equation*}%
 where $x\in \{x^{_{1}},..,x^{_{N_{x}}}\}$ is general to all potential buyers
@@ -1077,7 +1077,7 @@ functions, respectively:%
 \begin{eqnarray}
 \pi _{\varphi }^{f}(x^{f},y^{f}) &=&\Pi ^{f}x^{f}\varphi ^{\eta -1}y^{f},
 \label{profit3_f} \\
-\pi _{\varphi }^{h}(x^{h},y^{h}) &=&\Pi ^{h}x^{f}\varphi ^{\eta -1}y^{f}
+\pi _{\varphi }^{h}(x^{h},y^{h}) &=&\Pi ^{h}x^{h}\varphi ^{\eta -1}y^{h}
 \label{profit3_h}
 \end{eqnarray}
 
@@ -1183,11 +1183,11 @@ as well as movement in dollar-denominated expenditures.
 
 Our data are relatively uninformative about the rate of time discount $\rho $
 and the demand elasticity $\eta $, so we do not attempt to estimate either
-one$.$ For the former we follow convention and assume $\rho =0.05$. For the
+one$.$ For the former we follow convention and assume an annualized value of $\rho =0.05 $. For the
 latter, following many previous trade papers, we fix the demand elasticity
 at $\eta =5.$ Also, to limit the size of the estimated parameter vector, we
 take the exogenous match failure rate to be the observed match failure rate
-among matches at least 3 years old ($\delta =0.326$), we take the search
+among matches at least 5 years old ($\delta =0.326$), we take the search
 cost function to be quadratic in search intensity (${\small \kappa _{1}}=2$%
 ), and we assume that the hazard rate for the buyer is once per quarter ($%
 \lambda _{y}=4$).\footnote{%
@@ -1289,7 +1289,7 @@ matches are more likely to terminate when the idiosyncratic demand shock $%
 z_{ijt}$ and/or the firm's productivity level $\varphi _{j}$ is low. Neither
 variable is directly observable, so we use several of their correlates as
 explanatory variables: current match sales, $X_{ijt}^{f}$, age of the match, 
-$A_{ijt}$, and export market tenure, $\Delta _{ijt}$. All variables are
+$Age_{ijt}$, and export market tenure, $Tenure _{jt}$. All variables are
 expressed in logs and, given the patterns revealed by Table \ref%
 {tab:sep_rates}, we allow firms in their first year of exporting ($D^{new%
 \text{ }to\text{ }mkt}=1$) to experience particularly high failure rates.%
@@ -1306,7 +1306,7 @@ Failure rates are also affected by the volatility of $z_{ijt},$ which is
 governed by the jump size, $\lambda _{y}.$
 
 Not surprisingly, estimates of equation ($ii$) reflect the same patterns
-that we noted in connection with Table \ref{tab:client_dist}. Matches in
+that we noted in connection with Table \ref{tab:sep_rates}. Matches in
 their first year are relatively likely to fail, as are matches that start
 with relatively small sales volumes. The results also show that exporters
 with more experience in foreign markets tend to have longer-lived
@@ -1379,7 +1379,7 @@ using firm identifiers. This is done because the AMS has no export
 information for 1993-1999, and because the dynamics of aggregate exports
 reported in the EAM starting in 2004 differ substantially from aggregate
 reports from other sources.} Equations ($viii$) is an AR1 for home sales,
-and is thus informative about the extent which firms adjust their domestic
+and is thus informative about the extent to which firms adjust their domestic
 connections and their associated match specific sales in response to
 idiosyncratic shocks. Accordingly, the coefficients in this equation are
 particularly helpful in identifying $\kappa _{0}^{h}$ and $F^{h},$ and the
@@ -1427,7 +1427,7 @@ $ & $%
 \text{0.091} \\ 
 \text{(0.26e-3)} \\ 
 \end{array}%
-$ \\ 
+$ \\ \cline{2-5}
 $\ln (1+n_{ij})$ & \ \ \ \ \ \ -- & \ \ \ \ \ \ -- & $%
 \begin{array}{c}
 \text{0.093 } \\ 
@@ -1481,13 +1481,13 @@ $\ln X_{ijt}^{f}$ & \ \ \ \ \ \ -- & $%
 \text{(0.002)} \\ 
 \end{array}%
 $ & \ \ \ \ \ \ -- & \ \ \ \ \ \ -- \\ 
-$\ln A_{ijt}$ & \ \ \ \ \ \ -- & $%
+$\ln Age_{ijt}$ & \ \ \ \ \ \ -- & $%
 \begin{array}{c}
 \text{-0.054} \\ 
 \text{(0.009)} \\ 
 \end{array}%
 $ & \ \ \ \ \ \ -- & \ \ \ \ \ \ -- \\ 
-$\ln \Delta _{jt}$ & \ \ \ \ \ \ -- & $%
+$\ln Tenure _{jt}$ & \ \ \ \ \ \ -- & $%
 \begin{array}{c}
 \text{-0.028} \\ 
 \text{(0.007)} \\ 
@@ -1495,10 +1495,11 @@ $\ln \Delta _{jt}$ & \ \ \ \ \ \ -- & $%
 $ & \ \ \ \ \ \ -- & \ \ \ \ \ \ -- \\ \hline
 observations (rounded) & 38,500 & 23,500 & 35,800 & 35,800 \\ \hline
 \end{tabular}
+
 }\endcenter
 \par
 \begin{tablenotes}
-\item \textbf{Notes:} Unit of observation, columns $i$,  $iii$ and $iv$: seller $ j$'s $i^{th}$ match. Unit of observation, column $ii$: seller $ j$'s $i^{th}$ match in its $t^{th}$ year. $\lambda_{ij}=$ inverse of time interval between commencement of match $i$ and commencement of the next one for exporter $j$ $D_{ijt}^{exit match}=1$ if exporter $j^{\prime }s$ $i^{th}$ match dies in year $t$. $a_{ij} $ = cumulative number of successes for exporter $j$ at time of match $i$. $D_{ijt}^{new to mkt}=1$ if exporter $j^{\prime }s$ $i^{th}$ match is in its first year. $\ln A_{ijt}=$ log age of exporter $j^{\prime }s$ $i^{th}$  match. $\ln \Delta_{jt} =$ log age of exporter $j$ in year $t$. $X_{ijt}^{f}$ $=$ foreign sales volume generated by exporter $j^{\prime }s$ $i^{th}$ match.
+\item \textbf{Notes:} Intercepts were included in all regresssions. They were not targetted so they are not reported. Unit of observation, columns $i$,  $iii$ and $iv$: seller $ j$'s $i^{th}$ match. Unit of observation, column $ii$: seller $ j$'s $i^{th}$ match in its $t^{th}$ year. $\lambda_{ij}=$ inverse of time interval between commencement of match $i$ and commencement of the next one for exporter $j$ $D_{ijt}^{exit match}=1$ if exporter $j^{\prime }s$ $i^{th}$ match dies in year $t$. $a_{ij} $ = cumulative number of successes for exporter $j$ at time of match $i$. $D_{ijt}^{new to mkt}=1$ if exporter $j^{\prime }s$ $i^{th}$ match is in its first year. $\ln Age_{ijt}=$ log age of exporter $j^{\prime }s$ $i^{th}$  match. $\ln Tenure_{jt} =$ log age of exporter $j$ in year $t$. $X_{ijt}^{f}$ $=$ foreign sales volume generated by exporter $j^{\prime }s$ $i^{th}$ match.
 \end{tablenotes}
 \end{table}
 
@@ -1522,7 +1523,7 @@ $ & $%
 \text{0.971 } \\ 
 \text{(0.004)}%
 \end{array}%
-$ \\ 
+$ \\ \cline{2-3}
 $\ln (\ell )$ & $%
 \begin{array}{c}
 \text{-1.8813 } \\ 
@@ -1540,7 +1541,7 @@ observations & 43 & 87,000 \\ \hline
 \end{tabular}
 } \endcenter%
 \begin{tablenotes}
-\item \textbf{Notes:} $\ell$: number of active clients;  $\Phi ( ) = $ cumulative distribution of exporters in terms of  $\ell$;
+\item \textbf{Notes:} Intercepts were included in all regresssions. They were not targetted so they are not reported.  $\ell$: number of active clients;  $\Phi ( ) = $ cumulative distribution of exporters in terms of  $\ell$;
 $s_{ijt}=$ number of shipments per year to client $i$ by exporter $j$ in year $t$
 \end{tablenotes}
 \end{table}
@@ -1581,7 +1582,7 @@ $ & $%
 \text{0.127} \\ 
 \text{(0.002)} \\ 
 \end{array}%
-$ \\ 
+$ \\ \cline{2-6}
 $R_{ijt-1}$ & $%
 \begin{array}{c}
 \text{0.328} \\ 
@@ -1620,7 +1621,7 @@ observations & 25,400 & 99,300 & 11,600 & 119,800 & 12,500 \\ \hline
 \end{tabular}
 } \endcenter%
 \begin{tablenotes}
-\item \textbf{Notes:} $R_{ijt}=1$ if exporter $j^{\prime }s$ $i^{th}$ match is in its first
+\item \textbf{Notes:} Intercepts were included in all regresssions. They were not targetted so they are not reported. $R_{ijt}=1$ if exporter $j^{\prime }s$ $i^{th}$ match is in its first
 year. $\ln \Delta{jt} =$ log age of exporter $j$. $X_{ijt}^{f}$ $=$ foreign sales volume generated by exporter $j^{\prime }s$ $i^{th}$ match. $X_{jt}^{f}$ $=$ total foreign sales volume generated by firm $j$. $X_{jt}^{h}$ $=$ total home sales volume generated by firm $j$. $D_{jt}^{f}$ $=$ 1 if firm $j$ is an exporter.
 \end{tablenotes}
 \end{table}
