@@ -688,8 +688,9 @@ index as $P$ as reflected in $y_{ijt}.\medskip $}
 For simplicity, and to keep the analysis as close as possible to other
 heterogenous firm models, we assume that the seller posts a non-negotiable
 price, charging the optimal markup over unit cost:\footnote{%
-An alternative specification would introduce bilateral bargaining between
-buyer and seller.\medskip}
+Alternative specifications include bilateral bargaining between
+buyer and seller, as in Eaton et al. (2016), and pricing rules that recognize a link between current sales volume and futrure growth in customer base, as in  Fitzgerald et al.
+(2019) and PIveteau (forthcoming). To keep our model tractable, and in view of Fitzgerald et al.'s (2019) finding that exporters' prices don't covary with market tenure, we opt for constant mark-up pricing.\medskip}
 
 \begin{equation}
 p_{jt}=\frac{\eta }{\eta -1}\frac{e_{t}w_{t}}{\varphi _{j}}  \label{price}
@@ -2085,7 +2086,7 @@ productivity firm with four failed matches, at US\$ 5,669.
     \caption*{\small{Notes: Beliefs of a firm with productivity in the 90th percentile of exporters over success probability.  Top line is five success followed by five failures.  Bottom line is five failures followed by five successes.}}
 \end{figure}
 
-In addition to continuation values, match histories affect the intensity
+Because match histories affect continuation values, they also affect the intensity
 with which firms search for new clients. We explore this dependence in
 Figure \ref{fig:success_beliefs}, which plots beliefs regarding $\theta ^{f}$
 over time for a firm in the 90th percentile of productivity. Here we assume
@@ -2188,30 +2189,10 @@ it has a close to 100\% success rate, it would only take a few years to
 reach 10 meetings.} So here again we see that learning effects and network
 effects both matter, but the former are more important.
 
-\subsection{Macroeconomic adjustment dynamics}
+\subsubsection{Exchange rate shocks and relationship values}
 
-If there were no sources of friction in our model, and if the effects of
-idiosyncratic shocks were ignorable by the law of large numbers, aggregate
-exports would be static functions of the aggregate shocks that affect all
-firms' export revenues ($x^f$). We conclude our analysis by asking how much
-our model's predictions for aggregate export trajectories deviate from this
-hypothetical reference case, and why.\footnote{%
-Since we are using a single-agent model, we caution that these simulations
-miss interactions between exporters in the foreign market. However, they may
-be a reasonable approximation to the aggregate exports responses of a small
-country shipping to a large one, where its products constitute a small
-fraction of total supply.}
-
-To do so, we simulate permanent (but unanticipated) Colombian peso exchange
-rate shocks to total export trajectories under two alternative scenarios: a
-20\% Colombian peso devaluation, and a 20\% Colombian peso appreciation. To
-remove the effect of the unrelated random sequences of aggregate shocks, in
-each scenario, we simulate the model 500 times with sequences of
-randomly-generated aggregate shocks, and then report means across these
-series. The exchange rate shocks are modeled as simply increasing or
-decreasing the value of the random aggregate shocks by 20\% after a
-particular date, which will be year 25 in the plots below.\footnote{%
-We additionally let the firms burn in for 25 years before the plots start.} 
+Finally, to inform our discussion of aggregate export dynamics below, we investigate how the values of firms' exporting operations respond to exchange rate shocks. Specifically, we track transitions in these values over a 25 year period after a 20 percent permanent but unanticipated Colombian peso devaluation, and we repeat the exercise for a permanent but unanticipated 20 percent revaluation. For each experiment we simulate the model 500 times with sequences of randomly-generated aggregate shocks, scaling the value of the random aggregate shocks by 1.20 (for devaluation) or 0.8 (for revaluation) in period 0 and thereafter. The preceeding 25 periods serve as a burn-in.
+ 
 \begin{figure}[tbp]
 \centering
 \begin{subfigure}[b]{0.45\textwidth}
@@ -2224,11 +2205,9 @@ We additionally let the firms burn in for 25 years before the plots start.}
         \includegraphics[width=\textwidth]{figures/intangible_value_per_firm_median}
         \caption{Median value of experience}
     \end{subfigure} \newline
-\caption{Value of exporter experience}
+\caption{Exchange rate shocks and exporter value}
 \label{fig:avg_value}
 \end{figure}
-
-\subsubsection{The value of connections}
 
 In Figure \ref{fig:avg_value} we plot the average and median value of firms' exporting experience during pre- and post-shock periods.\footnote{%
 Both the means (panel a) and the medians (panel b) are averages across 500 simulations.} At each point in time, these series indicate how much a typical exporter would lose if we returned it to the state it was in before it began meeting foreign clients. Thus they represent the value of the information it has learned about its success rate $\theta ^{f}$, plus the value of the market visibility it has built through previous matches, plus the expected profits yet to be generated by its current portfolio of clients. These series were calculated under the presumption that firms are free to re-enter export markets after their exporting histories are wiped out, so they substantially understate the capital losses that would result from a permanent move to autarky.
@@ -2240,6 +2219,20 @@ around 20 percent higher or lower than before the shock, but the change in
 value on impact is larger. For the positive shock, this pattern reflects the lagged entry of marginally productive firms that were induced to search for clients more intensively. For the negative shock, the pattern reflects the eventual termination of all matches at some marginally productive firms.
 
 For a back-of-the-envelope calculation of the total (pre-shock) value of Colombian manufacturers' exporting experience, we multiply 1.7 million dollars by the approximately 3000 Colombian exporters we observe each year, obtaining a figure of roughly 5.1 billion dollars. This is about 18 percent of the total value of being able to export, 28.3 billion dollars. 
+
+\subsection{Macroeconomic adjustment dynamics}
+
+\subsubsection{Margins of adjustment}
+
+How do these changes in value translate into aggregate export dynamics? We conclude our counterfactual analysis by simulating the aggregate export sales trajectories associated with the exchange rate shocks described above, disaggregating total responses into contributions from (1) buyer-seller relationships that existed at or before the time of the shock, (2) new relationships with exporters that were already in the market at the time of shock, and (3) relationships with exporters that were not in the market at the time of the
+shock.  \footnote{%
+Since we are using a single-agent model, we caution that these simulations
+miss interactions between exporters in the foreign market. However, they may
+be a reasonable approximation to the aggregate exports responses of a small
+country shipping to a large one, where its products constitute a small
+fraction of total supply.}
+Then, to isolate margins of adjustment, we repeat this excercise for the total number of exporters and the total number of buyer-seller matches.
+
 
 \begin{figure}[tbp]
 \centering
@@ -2282,15 +2275,9 @@ outcomes}
 
 
 
-
-\subsubsection{Margins of adjustment}
-
 Earlier we discussed the processes through which new cohorts mature. Some members ramp up to their desired size by expanding their client portfolio, while others lose market share and/or exit by failing to replace their expiring business relationships. Figure \ref{fig:export_dynamics_macro} summarizes these processes for a simulated cohort that enters simultaneously with a permanent exchange shock. The panels in the left-hand column correspond to a permanent 20 percent peso devaluation and the panels in the right-hand column correspond to a 20 percent peso appreciation, each occuring in period 25. 
 
-The shaded ares in these figures break down the total value of an export aggregate---sales, matches, or exporters---into the contribution from (1) buyer-seller relationships that existed at or before the time of the shock (yellow), (2) new relationships with exporters
-that were already in the market at the time of shock (orange), and
-relationships with exporters that were not in the market at the time of the
-shock (blue). Each panel also includes a set of thin lines that show how the boundaries between the shaded areas would have been different if there had been no permanent shock.%
+The shaded ares in these figures break down the total value of an export aggregate---sales, matches, or exporters---into Each panel also includes a set of thin lines that show how the boundaries between the shaded areas would have been different if there had been no permanent shock.%
 \footnote{% 
 These figures are inspired by similar graphs in Piveteau (forthcoming), but to
 highlight the role of learning and endogenous match separations, we use a
