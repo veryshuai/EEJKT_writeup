@@ -2229,7 +2229,7 @@ For a back-of-the-envelope calculation of the total (pre-shock) value of Colombi
 \subsection{Macroeconomic adjustment dynamics}
 
 \subsubsection{Margins of adjustment}
-
+\label{sec:margins}
 How do these changes in value translate into aggregate export dynamics? We conclude our counterfactual analysis by simulating the aggregate export trajectories associated with the exchange rate shocks described above.\footnote{%
 Since we are using a single-agent model, we caution that these simulations
 miss interactions between exporters in the foreign market. However, they may
@@ -2333,9 +2333,11 @@ Despite rapid match turnover, adjustments to a new exchange rate regime take tim
 \end{figure}
 
 
-It is noteworthy that the post shock transition patterns in all figures coincide very closely with the no-shock (thin line) patterns. Hence we were only interested in the rate at which new exporters displace incumbent exporters, or the rate at which new matches displace incumbent matches, it would matter very little whether we were analyzing the aftermath of a permanant devaluation, a permanent revaluation, or a period without any regime swithing. This is apparent from Figure \ref{fig:export_dynamics_average}, which plots the percentage contribution of each type of match to each of the export aggregates.  
+Figure \ref{fig:export_dynamics_average} describes the same experiment as Figure \ref{fig:export_dynamics_macro}, but instead of showing the levels of each aggregate through time, it plots the percentage contribution of each type of match. Remarkably, the post shock transition patterns in all figures coincide very closely with the no-shock (thin line) patterns, implying that cohort composition of active matches is nearly invariant to aggregate shocks. Hence, if we were only interested in the rate at which new exporters displace incumbent exporters, or the rate at which new matches displace incumbent matches, it would matter very little whether we were analyzing the aftermath of a permanant devaluation, a permanent revaluation, or a period without any regime switching.  
 
 \subsubsection{Learning, networks and aggregate export dynamics}
+
+
 Nonetheless, the relative contributions of the different types of matches \emph{do} depend upon the learning effects and visibility effects captured by our model. To demonstrate how, we next contrast the post-shock evolution pattern implied by our benchmark model (column 1 of Table \ref{tab:struct_param}) with the pattern implied by the known-$\theta ^{f}$ version of the model (column 3 of Table \ref{tab:struct_param}), normalizing the predicted values of each aggregate to unity in the initial shock period. And we contrast the dynamic implications of the known-$\theta ^{f}$ version of the model with those of a model in which $\theta ^{f}$'s are known \emph{and} all firms have maximum visibility, regardless of their exporting history. \footnote{%
 By construction, the visibility effect maxes out at $m = 40$ successful matches, so this amounts to repacing equation (\ref{cost of effort}) with \begin{equation}
 c^{m}(s^{m},a^{m})=\kappa _{0}^{m}\frac{\left[ (1+s^{m})\right] ^{\kappa
@@ -2383,54 +2385,24 @@ _{1}}-1}{\kappa _{1}\left[ 1+\ln (1+a^{40})\right] ^{\gamma }}.
 \label{fig:export_dynamics_average_alt}
 \end{figure}
 
-Figure \ref{fig:export_dynamics_average_alt} depicts the simulated responses of total sales, total matches, and number of exporters to a 20 percent exchange rate appreciation (left-hand panels) and a 20 percent exchange rate depeciation (right-hand panels). As in figure \ref{fig:export_dynamics_average}, each panel distinguishes the contributions of icumbent matches (yellow region), new matches with incumbent exporters (orange region) and new matches with new exporters (blue region). But in this figure, we have superimposed lines that show how the shaded areas would have shifted if firms knew their $\theta ^{f}$ draws with certainty (dashed red lines), and if they not only knew their $\theta ^{f}$ values, but also had "full" visibility (dashed green lines).
+Our findings are summarized by Figure \ref{fig:export_dynamics_average_alt}. As in figure \ref{fig:export_dynamics_average}, each panel describes the market share of icumbent matches (yellow region), new matches with incumbent exporters (orange region) and new matches with new exporters (blue region) after an exchange regime shock. But in this figure, we have superimposed lines that show how the shaded areas would have shifted if firms knew their $\theta ^{f}$ draws with certainty (dashed red lines), and if they not only knew their $\theta ^{f}$ values, but also had maximum visibility (dashed green lines).
 
+Several messages emerge from this exercise. Most notably, when firms without experience know their true $\theta^{f}$ values, the share of new matches that goes to new exporters is substantially higher. Why? When potential exporters know their product appeal, entering cohorts are dominanted by firms with high $\theta^{f}$'s, and these firms invest relatively heavily in search. Of course, firms that were incumbent in period 0 also tend to have high $\theta^{f}$'s and invest heavily in search, but since many of these firms were already well established, revealing their $\theta^{f}$ draws to them doesn't change their behavior as much.
 
-Several clear messages emerge from this exercise. First, as with Figure \ref{fig:export_dynamics_average}, none of the patterns in Figure \ref{fig:export_dynamics_average_alt} depends qualitatively upon whether we are considering a permanent devaluation or a permanent revaluation--the rates at which the different types of matches change market shares are general features of the new cohort maturation processes. Quantitatively, however, giving all firms total visibility and/or perfect knowledge of their products' appeal increases new firms' share of sales relatively more when the shock is negative. The dominant effect appears to be that, with more selection on the entry margin, fewer new firms are close to the exit threshold. \textbf{[JT: how can we confirm this?]}
+Second, when firms always know their $\theta^{f}$ draws, giving everyone maximum visibility tends to increase the relative importance of new matches with new exporters. (Note that the green lies above the red dotted line in panels $a$ through $d$ of Figure \ref{fig:export_dynamics_average}.) The simple reason is that new exporters typically have less visibility than incumbent exporters, and this experiment eliminates their associated cost disadvantage. Note, however, just as we found in Section \ref{sec:value_of_rel} above, visibility effects are not as important as learning effects. 
 
-Second, regardless of whether visibility and/or knowledge of $\theta^{f}$ improve with experience, the matches of entering cohorts displace the matches that existed at the time of the shock at almost exactly the same pace. That is, the border between the orange and yellow regions nearly coincides with the dashed red and green lines in all panels. 
-
-Third, however, when firms without experience know their true $\theta^{f}$ values, the share of new matches that goes to new exporters is substantially higher. Why? When potential exporters know their product appeal, entering cohorts are dominanted by firms with high $\theta^{f}$'s, and these firms invest relatively heavily in search. Firms that were incumbent in period 0 also tend to have high $\theta^{f}$'s and invest heavily in search, but since many of these firms were already well established, revealing their $\theta^{f}$ draws to them doesn't change their behavior as much.
-
-Finally, when firms always know their $\theta^{f}$ draws, full visibility matters a bit, especially when predicting the shares of the different types of matches. Full visibility reduces marginal search cost and this encourages relatively more matching among high productivity (high  $\varphi$) firms, which tend to be common in cohorts that have survived a shakedown period. Accordingly, this effect becomes more important over time as the share of post-shock entrants in the population of exporters grows (refer to panels e and f). Nonetheless, just as we found in Section \ref{sec:value_of_rel} above, visibility effects are not as important as learning effects. 
-
+Finally, regardless of whether all firms have maximum visibility and/or full knowledge of their $\theta^{f}$, the matches of entering cohorts displace incumbent matches at almost exactly the same pace. That is, the border between the orange and yellow regions nearly coincides with the dashed red and green lines in all panels. This reflects the fact that incumbent matches are unaffected by either $\theta^{f}$ beliefs or search costs.
 
 \subsubsection{Trade elasticities}
 
-Finally, we present short and long-run simulated trade elasticities in Table %
-\ref{tab:elasticities}, with cross-simulation standard deviations in
-parentheses. Based on the point estimates alone, total sales react more to
-the favorable exchange rate shock. The 25 year elasticity of sales to the
-favorable exchange rate shock is 2.22, while the 25 year elasticity of sales
-to the unfavorable exchange rate shock is 1.62. The elasticities for matches
-are around one unit smaller than those for sales, since there is no
-mechanical change in matches from the exchange rate shock. These patterns reflect the relatively small downside adjustments by new exporters that we discussed in the previous section.
+To conclude our analysis of export aggregates, we present short and long-run simulated trade elasticities in Table 
+\ref{tab:elasticities}, with cross-simulation standard deviations in parentheses. Based on the point estimates alone, total sales react more to the favorable exchange rate shock. The 25 year elasticity of sales to the favorable exchange rate shock is 2.22, while the 25 year elasticity of sales to the unfavorable exchange rate shock is 1.62. The elasticities for matches are around one unit smaller than those for sales, since there is no mechanical change in matches from the exchange rate shock. 
 
-Several features of these estimates merit comment. First, while our long run
-elasticity estimate for favorable shocks resembles Piveteau's (forthcoming), we
-find a much longer transition period. This is likely due to the frictions in
-our model that derive from convex search costs and learning effects. Second,
-for similar reasons, and because ours is a single agent model, our figures
-are substantially lower than the long run elasticities typically generated
-by calibrated general equilibrium models (e.g., Alessandria and Choi, 2014;
-Alessandria, et al., 2018).\footnote{%
-Alessandria and Choi (2014) use a symmetric 2-country dynamic model with
-endogenous firm creation, capital accumulation, fixed exporting costs, and
-iceberg costs but no other trade frictions or factor adjustment costs.
-Analyzing movement from a global 8 percent tariff to free trade, they find
-the trade elasticity rises from about 5 in the short run to 8 in the long
-run, which is reached in 5-8 years. In a similar model, but with firms'
-exporting costs depending upon their incumbency, Alessandria et al. (2018)
-estimate a short-run trade elasticity of 4 and a long-run elasticity of
-11.55. This model generates transition dynamics over a period of 10-15 years.%
-\medskip}\textbf{\ }\ Finally, the asymmetry between responses to favorable and
-unfavorable shocks is significant. This most likely reflects learning
-effects and convex search costs, as discussed above.\footnote{%
-An early literature noted the phenomenon of export hystersis, and attributed
-it to sunk market entry costs (Dixit, 1989; Baldwin and Krugman, 1989). While
-search costs are sunk, that explanation does not explain the differences in
-long run elasticities our model generates. The reason is that matches are
-short-lived, and search costs must be continuously incurred.\medskip}
+\textbf{[JT: would it be easy to add elasticities with known $\theta^{f}$ and/or maximum visibilities to Table \ref{tab:elasticities}?]}
+
+Interestingly, the difference between expansion and contraction elasticities does not derive from differences in match elasticities. These are symmetric in both dimentions, regardless of what time horizon we consider. Rather, it traces mainly to sales per match, implying that selection effects are in play. Specifically, expansion appears to shift the composition of matches toward high productivity firms, which tend to make matches that generate large volumes of sales. And since we know from Section  \ref{sec:margins} that compositional effects do not come from a reallocation of matches between new and incumbent exporters, it must be that positive exchange rate shocks favor high-sales matches more than negative shocks disfavor them. One interpretation is that the smallest, least profitable matches are dropped in a downturn. But in an upturn, there is no selection on idiosyncratic match productivities, since these are unseen until the match is consummated. [\textbf{JT: can we confirm this?}] 
+
+Several other features of these estimates merit comment. First, while our long run elasticity estimate for favorable shocks resembles Piveteau's (forthcoming), we find a much longer transition period. This is likely due to the frictions in our model that derive from convex search costs and learning effects. Second, for similar reasons, and because ours is a single agent model, our figures are substantially lower than the long run elasticities typically generated by calibrated general equilibrium models (e.g., Alessandria and Choi, 2014; Alessandria, et al., 2018).\footnote{Alessandria and Choi (2014) use a symmetric 2-country dynamic model with endogenous firm creation, capital accumulation, fixed exporting costs, and iceberg costs but no other trade frictions or factor adjustment costs. Analyzing movement from a global 8 percent tariff to free trade, they find the trade elasticity rises from about 5 in the short run to 8 in the long run, which is reached in 5-8 years. In a similar model, but with firms' exporting costs depending upon their incumbency, Alessandria et al. (2018) estimate a short-run trade elasticity of 4 and a long-run elasticity of 11.55. This model generates transition dynamics over a period of 10-15 years. \medskip}\textbf{\ }\ Finally, the asymmetry between responses to favorable and unfavorable shocks is significant. This most likely reflects learning effects and convex search costs, as discussed above.\footnote{An early literature noted the phenomenon of export hystersis, and attributed it to sunk market entry costs (Dixit, 1989; Baldwin and Krugman, 1989). While search costs are sunk, that explanation does not explain the differences in long run elasticities our model generates. The reason is that matches are short-lived, and search costs must be continuously incurred.\medskip}
 
 \begin{table}[tbp]
 \caption{\textbf{Simulated Trade Elasticities}}
