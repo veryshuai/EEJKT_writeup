@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.4.25)  8 DEC 2020 00:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.4.25)  8 DEC 2020 00:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -577,80 +577,80 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4] [5] [6] [7] [8
 ]
 LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 4
-98.
+59.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 498.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 459.
  [9] [10] [11]
 <figures/Figure_1_quadrants_v2.png, id=257, 681.86745pt x 407.96416pt>
 File: figures/Figure_1_quadrants_v2.png Graphic file (type png)
 <use figures/Figure_1_quadrants_v2.png>
 Package pdftex.def Info: figures/Figure_1_quadrants_v2.png  used on input line 
-620.
+581.
 (pdftex.def)             Requested size: 469.75502pt x 281.05981pt.
  [12 <./figures/Figure_1_quadrants_v2.png>] [13] [14]
-Overfull \hbox (12.08257pt too wide) in alignment at lines 785--797
+Overfull \hbox (12.08257pt too wide) in alignment at lines 746--758
  [][][] []
  []
 
 [15] [16] [17] [18] [19] [20] [21]
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 1192.
+LaTeX Font Warning: Command \small invalid in math mode on input line 1153.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 1201.
+LaTeX Font Warning: Command \small invalid in math mode on input line 1162.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 1201.
+LaTeX Font Warning: Command \small invalid in math mode on input line 1162.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 1203.
+LaTeX Font Warning: Command \small invalid in math mode on input line 1164.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 1203.
+LaTeX Font Warning: Command \small invalid in math mode on input line 1164.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 1203.
+LaTeX Font Warning: Command \small invalid in math mode on input line 1164.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 1206.
+LaTeX Font Warning: Command \small invalid in math mode on input line 1167.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 1208.
+LaTeX Font Warning: Command \small invalid in math mode on input line 1169.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 1208.
+LaTeX Font Warning: Command \small invalid in math mode on input line 1169.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 1211.
+LaTeX Font Warning: Command \small invalid in math mode on input line 1172.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 1211.
+LaTeX Font Warning: Command \small invalid in math mode on input line 1172.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 1211.
+LaTeX Font Warning: Command \small invalid in math mode on input line 1172.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 1212.
+LaTeX Font Warning: Command \small invalid in math mode on input line 1173.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 1212.
+LaTeX Font Warning: Command \small invalid in math mode on input line 1173.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 1213.
+LaTeX Font Warning: Command \small invalid in math mode on input line 1174.
 
 [22] [23] [24]
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 1362.
+LaTeX Font Warning: Command \small invalid in math mode on input line 1323.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 1362.
+LaTeX Font Warning: Command \small invalid in math mode on input line 1323.
 
 [25]
-Underfull \hbox (badness 10000) in paragraph at lines 1422--1431
+Underfull \hbox (badness 10000) in paragraph at lines 1383--1392
 
  []
 
@@ -658,79 +658,79 @@ Underfull \hbox (badness 10000) in paragraph at lines 1422--1431
 <figures/val_f_three_types.png, id=477, 429.2838pt x 338.7054pt>
 File: figures/val_f_three_types.png Graphic file (type png)
 <use figures/val_f_three_types.png>
-Package pdftex.def Info: figures/val_f_three_types.png  used on input line 2046
+Package pdftex.def Info: figures/val_f_three_types.png  used on input line 2007
 .
 (pdftex.def)             Requested size: 214.64137pt x 169.35228pt.
  [35]
 <figures/success_beliefs.png, id=486, 429.2838pt x 338.7054pt>
 File: figures/success_beliefs.png Graphic file (type png)
 <use figures/success_beliefs.png>
-Package pdftex.def Info: figures/success_beliefs.png  used on input line 2089.
+Package pdftex.def Info: figures/success_beliefs.png  used on input line 2050.
 (pdftex.def)             Requested size: 214.64137pt x 169.35228pt.
  [36 <./figures/val_f_three_types.png (PNG copy)>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 2113.
+(hyperref)                removing `math shift' on input line 2074.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\setbox' on input line 2113.
+(hyperref)                removing `\setbox' on input line 2074.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\hbox' on input line 2113.
+(hyperref)                removing `\hbox' on input line 2074.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 2113.
+(hyperref)                removing `math shift' on input line 2074.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\global' on input line 2113.
+(hyperref)                removing `\global' on input line 2074.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 2113.
+(hyperref)                removing `\<def>-command' on input line 2074.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\theboldgroup' on input line 2113.
+(hyperref)                removing `\theboldgroup' on input line 2074.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 2113.
+(hyperref)                removing `math shift' on input line 2074.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathchar' on input line 2113.
+(hyperref)                removing `\mathchar' on input line 2074.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 2113.
+(hyperref)                removing `superscript' on input line 2074.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 2113.
+(hyperref)                removing `math shift' on input line 2074.
 
 <figures/val_f_three_types_nl.png, id=494, 429.2838pt x 338.7054pt>
 File: figures/val_f_three_types_nl.png Graphic file (type png)
 <use figures/val_f_three_types_nl.png>
 Package pdftex.def Info: figures/val_f_three_types_nl.png  used on input line 2
-118.
+079.
 (pdftex.def)             Requested size: 214.64137pt x 169.35228pt.
 <figures/success_order.png, id=500, 429.2838pt x 338.7054pt>
 File: figures/success_order.png Graphic file (type png)
 <use figures/success_order.png>
-Package pdftex.def Info: figures/success_order.png  used on input line 2151.
+Package pdftex.def Info: figures/success_order.png  used on input line 2112.
 (pdftex.def)             Requested size: 234.8775pt x 185.31691pt.
 <figures/success_order_nl.png, id=501, 429.2838pt x 338.7054pt>
 File: figures/success_order_nl.png Graphic file (type png)
 <use figures/success_order_nl.png>
-Package pdftex.def Info: figures/success_order_nl.png  used on input line 2157.
+Package pdftex.def Info: figures/success_order_nl.png  used on input line 2118.
 
 (pdftex.def)             Requested size: 234.8775pt x 185.31691pt.
 
-Overfull \hbox (5.22215pt too wide) in paragraph at lines 2149--2160
+Overfull \hbox (5.22215pt too wide) in paragraph at lines 2110--2121
  [][]  [] 
  []
 
@@ -741,224 +741,235 @@ s_order_nl.png (PNG copy)>]
 File: figures/intangible_value_per_firm.png Graphic file (type png)
 <use figures/intangible_value_per_firm.png>
 Package pdftex.def Info: figures/intangible_value_per_firm.png  used on input l
-ine 2206.
+ine 2167.
 (pdftex.def)             Requested size: 211.38832pt x 126.36566pt.
 <figures/intangible_value_per_firm_median.png, id=520, 1184.7462pt x 708.246pt>
 
 File: figures/intangible_value_per_firm_median.png Graphic file (type png)
 <use figures/intangible_value_per_firm_median.png>
 Package pdftex.def Info: figures/intangible_value_per_firm_median.png  used on 
-input line 2211.
+input line 2172.
 (pdftex.def)             Requested size: 211.38832pt x 126.36566pt.
- [39] [40 <./figures/intangible_value_per_firm.png (PNG copy)> <./figures/intan
-gible_value_per_firm_median.png (PNG copy)>]
+ [39]
+
+LaTeX Warning: Reference `sec:macro_dynamics' on page 40 undefined on input lin
+e 2185.
+
+[40 <./figures/intangible_value_per_firm.png (PNG copy)> <./figures/intangible_
+value_per_firm_median.png (PNG copy)>]
 <figures/total_sales.png, id=537, 1184.7462pt x 708.246pt>
 File: figures/total_sales.png Graphic file (type png)
 <use figures/total_sales.png>
-Package pdftex.def Info: figures/total_sales.png  used on input line 2253.
+Package pdftex.def Info: figures/total_sales.png  used on input line 2213.
 (pdftex.def)             Requested size: 211.38832pt x 126.36566pt.
 <figures/total_sales_unf.png, id=538, 1184.7462pt x 708.246pt>
 File: figures/total_sales_unf.png Graphic file (type png)
 <use figures/total_sales_unf.png>
-Package pdftex.def Info: figures/total_sales_unf.png  used on input line 2258.
+Package pdftex.def Info: figures/total_sales_unf.png  used on input line 2218.
 (pdftex.def)             Requested size: 211.38832pt x 126.36566pt.
 <figures/total_matches.png, id=539, 1184.7462pt x 708.246pt>
 File: figures/total_matches.png Graphic file (type png)
 <use figures/total_matches.png>
-Package pdftex.def Info: figures/total_matches.png  used on input line 2264.
+Package pdftex.def Info: figures/total_matches.png  used on input line 2224.
 (pdftex.def)             Requested size: 211.38832pt x 126.36566pt.
 <figures/total_matches_unf.png, id=540, 1184.7462pt x 708.246pt>
 File: figures/total_matches_unf.png Graphic file (type png)
 <use figures/total_matches_unf.png>
-Package pdftex.def Info: figures/total_matches_unf.png  used on input line 2269
+Package pdftex.def Info: figures/total_matches_unf.png  used on input line 2229
 .
 (pdftex.def)             Requested size: 211.38832pt x 126.36566pt.
 <figures/total_firms.png, id=541, 1184.7462pt x 708.246pt>
 File: figures/total_firms.png Graphic file (type png)
 <use figures/total_firms.png>
-Package pdftex.def Info: figures/total_firms.png  used on input line 2275.
+Package pdftex.def Info: figures/total_firms.png  used on input line 2235.
 (pdftex.def)             Requested size: 211.38832pt x 126.36566pt.
 <figures/total_firms_unf.png, id=542, 1184.7462pt x 708.246pt>
 File: figures/total_firms_unf.png Graphic file (type png)
 <use figures/total_firms_unf.png>
-Package pdftex.def Info: figures/total_firms_unf.png  used on input line 2280.
+Package pdftex.def Info: figures/total_firms_unf.png  used on input line 2240.
 (pdftex.def)             Requested size: 211.38832pt x 126.36566pt.
-<figures/total_sales_pct.png, id=543, 1124.0394pt x 702.9462pt>
+ [41] [42 <./figures/total_sales.png (PNG copy)> <./figures/total_sales_unf.png
+ (PNG copy)> <./figures/total_matches.png (PNG copy)> <./figures/total_matches_
+unf.png (PNG copy)> <./figures/total_firms.png (PNG copy)> <./figures/total_fir
+ms_unf.png (PNG copy)>]
+<figures/total_sales_pct.png, id=554, 1124.0394pt x 702.9462pt>
 File: figures/total_sales_pct.png Graphic file (type png)
 <use figures/total_sales_pct.png>
-Package pdftex.def Info: figures/total_sales_pct.png  used on input line 2301.
+Package pdftex.def Info: figures/total_sales_pct.png  used on input line 2258.
 (pdftex.def)             Requested size: 211.38832pt x 132.18822pt.
-<figures/total_sales_pct_unf.png, id=544, 1184.7462pt x 708.246pt>
+<figures/total_sales_pct_unf.png, id=555, 1184.7462pt x 708.246pt>
 File: figures/total_sales_pct_unf.png Graphic file (type png)
 <use figures/total_sales_pct_unf.png>
-Package pdftex.def Info: figures/total_sales_pct_unf.png  used on input line 23
-06.
+Package pdftex.def Info: figures/total_sales_pct_unf.png  used on input line 22
+63.
 (pdftex.def)             Requested size: 211.38832pt x 126.36566pt.
-<figures/total_matches_pct.png, id=545, 1124.0394pt x 702.9462pt>
+<figures/total_matches_pct.png, id=556, 1124.0394pt x 702.9462pt>
 File: figures/total_matches_pct.png Graphic file (type png)
 <use figures/total_matches_pct.png>
-Package pdftex.def Info: figures/total_matches_pct.png  used on input line 2312
+Package pdftex.def Info: figures/total_matches_pct.png  used on input line 2269
 .
 (pdftex.def)             Requested size: 211.38832pt x 132.18822pt.
-<figures/total_matches_pct_unf.png, id=546, 1184.7462pt x 708.246pt>
+<figures/total_matches_pct_unf.png, id=557, 1184.7462pt x 708.246pt>
 File: figures/total_matches_pct_unf.png Graphic file (type png)
 <use figures/total_matches_pct_unf.png>
 Package pdftex.def Info: figures/total_matches_pct_unf.png  used on input line 
-2317.
+2274.
 (pdftex.def)             Requested size: 211.38832pt x 126.36566pt.
-<figures/total_firms_pct.png, id=547, 1124.0394pt x 702.9462pt>
+<figures/total_firms_pct.png, id=558, 1124.0394pt x 702.9462pt>
 File: figures/total_firms_pct.png Graphic file (type png)
 <use figures/total_firms_pct.png>
-Package pdftex.def Info: figures/total_firms_pct.png  used on input line 2323.
+Package pdftex.def Info: figures/total_firms_pct.png  used on input line 2280.
 (pdftex.def)             Requested size: 211.38832pt x 132.18822pt.
-<figures/total_firms_pct_unf.png, id=548, 1184.7462pt x 708.246pt>
+<figures/total_firms_pct_unf.png, id=559, 1184.7462pt x 708.246pt>
 File: figures/total_firms_pct_unf.png Graphic file (type png)
 <use figures/total_firms_pct_unf.png>
-Package pdftex.def Info: figures/total_firms_pct_unf.png  used on input line 23
-28.
+Package pdftex.def Info: figures/total_firms_pct_unf.png  used on input line 22
+85.
 (pdftex.def)             Requested size: 211.38832pt x 126.36566pt.
-
-[41] [42 <./figures/total_sales.png (PNG copy)> <./figures/total_sales_unf.png 
-(PNG copy)> <./figures/total_matches.png (PNG copy)> <./figures/total_matches_u
-nf.png (PNG copy)> <./figures/total_firms.png (PNG copy)> <./figures/total_firm
-s_unf.png (PNG copy)>] [43 <./figures/total_sales_pct.png (PNG copy)> <./figure
-s/total_sales_pct_unf.png (PNG copy)> <./figures/total_matches_pct.png (PNG cop
-y)> <./figures/total_matches_pct_unf.png (PNG copy)> <./figures/total_firms_pct
-.png (PNG copy)> <./figures/total_firms_pct_unf.png (PNG copy)>]
-<figures/total_sales_pct_comb.png, id=572, 1094.6496pt x 630.6762pt>
+<figures/total_sales_pct_comb.png, id=566, 1094.6496pt x 630.6762pt>
 File: figures/total_sales_pct_comb.png Graphic file (type png)
 <use figures/total_sales_pct_comb.png>
 Package pdftex.def Info: figures/total_sales_pct_comb.png  used on input line 2
-354.
+311.
 (pdftex.def)             Requested size: 211.38832pt x 121.78325pt.
-<figures/total_sales_pct_unf_comb.png, id=573, 1094.6496pt x 630.6762pt>
+<figures/total_sales_pct_unf_comb.png, id=567, 1094.6496pt x 630.6762pt>
 File: figures/total_sales_pct_unf_comb.png Graphic file (type png)
 <use figures/total_sales_pct_unf_comb.png>
 Package pdftex.def Info: figures/total_sales_pct_unf_comb.png  used on input li
-ne 2359.
+ne 2316.
 (pdftex.def)             Requested size: 211.38832pt x 121.78325pt.
-<figures/total_matches_pct_comb.png, id=574, 1094.6496pt x 630.6762pt>
+<figures/total_matches_pct_comb.png, id=568, 1094.6496pt x 630.6762pt>
 File: figures/total_matches_pct_comb.png Graphic file (type png)
 <use figures/total_matches_pct_comb.png>
 Package pdftex.def Info: figures/total_matches_pct_comb.png  used on input line
- 2365.
+ 2322.
 (pdftex.def)             Requested size: 211.38832pt x 121.78325pt.
-<figures/total_matches_pct_unf_comb.png, id=575, 1094.6496pt x 630.6762pt>
+<figures/total_matches_pct_unf_comb.png, id=569, 1094.6496pt x 630.6762pt>
 File: figures/total_matches_pct_unf_comb.png Graphic file (type png)
 <use figures/total_matches_pct_unf_comb.png>
 Package pdftex.def Info: figures/total_matches_pct_unf_comb.png  used on input 
-line 2370.
+line 2327.
 (pdftex.def)             Requested size: 211.38832pt x 121.78325pt.
-<figures/total_firms_pct_comb.png, id=576, 1094.6496pt x 630.6762pt>
+<figures/total_firms_pct_comb.png, id=570, 1094.6496pt x 630.6762pt>
 File: figures/total_firms_pct_comb.png Graphic file (type png)
 <use figures/total_firms_pct_comb.png>
 Package pdftex.def Info: figures/total_firms_pct_comb.png  used on input line 2
-376.
+333.
 (pdftex.def)             Requested size: 211.38832pt x 121.78325pt.
-<figures/total_firms_pct_unf_comb.png, id=577, 1094.6496pt x 630.6762pt>
+<figures/total_firms_pct_unf_comb.png, id=571, 1094.6496pt x 630.6762pt>
 File: figures/total_firms_pct_unf_comb.png Graphic file (type png)
 <use figures/total_firms_pct_unf_comb.png>
 Package pdftex.def Info: figures/total_firms_pct_unf_comb.png  used on input li
-ne 2381.
+ne 2338.
 (pdftex.def)             Requested size: 211.38832pt x 121.78325pt.
- [44] [45 <./figures/total_sales_pct_comb.png (PNG copy)> <./figures/total_sale
-s_pct_unf_comb.png (PNG copy)> <./figures/total_matches_pct_comb.png (PNG copy)
-> <./figures/total_matches_pct_unf_comb.png (PNG copy)> <./figures/total_firms_
-pct_comb.png (PNG copy)> <./figures/total_firms_pct_unf_comb.png (PNG copy)>] [
-46]
-Overfull \hbox (18.10716pt too wide) in paragraph at lines 2413--2432
+ [43] [44 <./figures/total_sales_pct.png (PNG copy)> <./figures/total_sales_pct
+_unf.png (PNG copy)> <./figures/total_matches_pct.png (PNG copy)> <./figures/to
+tal_matches_pct_unf.png (PNG copy)> <./figures/total_firms_pct.png (PNG copy)> 
+<./figures/total_firms_pct_unf.png (PNG copy)>] [45 <./figures/total_sales_pct_
+comb.png (PNG copy)> <./figures/total_sales_pct_unf_comb.png (PNG copy)> <./fig
+ures/total_matches_pct_comb.png (PNG copy)> <./figures/total_matches_pct_unf_co
+mb.png (PNG copy)> <./figures/total_firms_pct_comb.png (PNG copy)> <./figures/t
+otal_firms_pct_unf_comb.png (PNG copy)>] [46]
+Overfull \hbox (18.10716pt too wide) in paragraph at lines 2370--2389
  [][] 
  []
 
 [47] [48]
-Overfull \hbox (1.91652pt too wide) in paragraph at lines 2534--2537
+Overfull \hbox (1.91652pt too wide) in paragraph at lines 2465--2468
 []\OT1/cmr/m/n/12 Baldwin, Richard and Paul Krug-man (1989) "Trade Ef-fects if 
 Karge Ex-change Rate Shocks."
  []
 
 [49] [50]
-Overfull \hbox (1.47069pt too wide) in paragraph at lines 2611--2613
+Overfull \hbox (1.47069pt too wide) in paragraph at lines 2544--2546
 []\OT1/cmr/m/n/12 Fitzgerald, Doire-ann, Ste-fanie Hallerz, and Yaniv Yedid-Lev
 i (2019) "How Ex-porters Grow."
  []
 
 [51] [52]
-Overfull \hbox (17.58313pt too wide) in paragraph at lines 2682--2705
+Overfull \hbox (17.58313pt too wide) in paragraph at lines 2615--2638
  [][] 
  []
 
 [53] [54] [55] [56] [57] [58] [59]
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 2949.
+LaTeX Font Warning: Command \small invalid in math mode on input line 2882.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 2949.
+LaTeX Font Warning: Command \small invalid in math mode on input line 2882.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 2949.
+LaTeX Font Warning: Command \small invalid in math mode on input line 2882.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 2949.
+LaTeX Font Warning: Command \small invalid in math mode on input line 2882.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 2949.
+LaTeX Font Warning: Command \small invalid in math mode on input line 2882.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 2949.
+LaTeX Font Warning: Command \small invalid in math mode on input line 2882.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 2949.
+LaTeX Font Warning: Command \small invalid in math mode on input line 2882.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 2949.
+LaTeX Font Warning: Command \small invalid in math mode on input line 2882.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 3013.
+LaTeX Font Warning: Command \small invalid in math mode on input line 2946.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 3013.
+LaTeX Font Warning: Command \small invalid in math mode on input line 2946.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 3013.
+LaTeX Font Warning: Command \small invalid in math mode on input line 2946.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 3013.
+LaTeX Font Warning: Command \small invalid in math mode on input line 2946.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 3013.
+LaTeX Font Warning: Command \small invalid in math mode on input line 2946.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 3013.
+LaTeX Font Warning: Command \small invalid in math mode on input line 2946.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 3013.
+LaTeX Font Warning: Command \small invalid in math mode on input line 2946.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 3013.
+LaTeX Font Warning: Command \small invalid in math mode on input line 2946.
 
 [60] [61] [62] [63
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3316.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3249.
  [64] [65] [66]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 3316.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 3249.
  (./writeup.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 3316.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3316.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 3249.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3249.
 
 Package rerunfilecheck Info: File `writeup.out' has not changed.
 (rerunfilecheck)             Checksum: C860FE20A2EE8C124C88EF0188F8D3F6;2800.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 3316.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 3249.
  )
 (\end occurred when \ifx on line 678 was incomplete) 
 Here is how much of TeX's memory you used:
- 10159 strings out of 481239
- 152200 string characters out of 5920377
+ 10160 strings out of 481239
+ 152220 string characters out of 5920377
  478163 words of memory out of 5000000
- 25003 multiletter control sequences out of 15000+600000
+ 25004 multiletter control sequences out of 15000+600000
  549703 words of font info for 94 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,19n,42p,1863b,502s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,19n,42p,1235b,502s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name
 {Hfootnote.39} has been referenced but does not exist, replaced by a fixed one
 
@@ -1103,10 +1114,10 @@ f-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf/fonts/type1/
 public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm
 0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share
 /texmf/fonts/type1/public/cm-super/sfrm1440.pfb>
-Output written on writeup.pdf (66 pages, 2419432 bytes).
+Output written on writeup.pdf (66 pages, 2419898 bytes).
 PDF statistics:
- 850 PDF objects out of 1000 (max. 8388607)
- 719 compressed objects within 8 object streams
+ 849 PDF objects out of 1000 (max. 8388607)
+ 718 compressed objects within 8 object streams
  189 named destinations out of 1000 (max. 500000)
  435 words of extra memory for PDF output out of 10000 (max. 10000000)
 
