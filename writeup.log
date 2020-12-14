@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.4.25)  8 DEC 2020 00:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.4.25)  14 DEC 2020 13:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -750,113 +750,109 @@ File: figures/intangible_value_per_firm_median.png Graphic file (type png)
 Package pdftex.def Info: figures/intangible_value_per_firm_median.png  used on 
 input line 2172.
 (pdftex.def)             Requested size: 211.38832pt x 126.36566pt.
- [39]
-
-LaTeX Warning: Reference `sec:macro_dynamics' on page 40 undefined on input lin
-e 2185.
-
-[40 <./figures/intangible_value_per_firm.png (PNG copy)> <./figures/intangible_
-value_per_firm_median.png (PNG copy)>]
-<figures/total_sales.png, id=537, 1184.7462pt x 708.246pt>
+ [39] [40 <./figures/intangible_value_per_firm.png (PNG copy)> <./figures/intan
+gible_value_per_firm_median.png (PNG copy)>]
+<figures/total_sales.png, id=538, 1184.7462pt x 708.246pt>
 File: figures/total_sales.png Graphic file (type png)
 <use figures/total_sales.png>
 Package pdftex.def Info: figures/total_sales.png  used on input line 2213.
 (pdftex.def)             Requested size: 211.38832pt x 126.36566pt.
-<figures/total_sales_unf.png, id=538, 1184.7462pt x 708.246pt>
+<figures/total_sales_unf.png, id=539, 1184.7462pt x 708.246pt>
 File: figures/total_sales_unf.png Graphic file (type png)
 <use figures/total_sales_unf.png>
 Package pdftex.def Info: figures/total_sales_unf.png  used on input line 2218.
 (pdftex.def)             Requested size: 211.38832pt x 126.36566pt.
-<figures/total_matches.png, id=539, 1184.7462pt x 708.246pt>
+<figures/total_matches.png, id=540, 1184.7462pt x 708.246pt>
 File: figures/total_matches.png Graphic file (type png)
 <use figures/total_matches.png>
 Package pdftex.def Info: figures/total_matches.png  used on input line 2224.
 (pdftex.def)             Requested size: 211.38832pt x 126.36566pt.
-<figures/total_matches_unf.png, id=540, 1184.7462pt x 708.246pt>
+<figures/total_matches_unf.png, id=541, 1184.7462pt x 708.246pt>
 File: figures/total_matches_unf.png Graphic file (type png)
 <use figures/total_matches_unf.png>
 Package pdftex.def Info: figures/total_matches_unf.png  used on input line 2229
 .
 (pdftex.def)             Requested size: 211.38832pt x 126.36566pt.
-<figures/total_firms.png, id=541, 1184.7462pt x 708.246pt>
+<figures/total_firms.png, id=542, 1184.7462pt x 708.246pt>
 File: figures/total_firms.png Graphic file (type png)
 <use figures/total_firms.png>
 Package pdftex.def Info: figures/total_firms.png  used on input line 2235.
 (pdftex.def)             Requested size: 211.38832pt x 126.36566pt.
-<figures/total_firms_unf.png, id=542, 1184.7462pt x 708.246pt>
+<figures/total_firms_unf.png, id=543, 1184.7462pt x 708.246pt>
 File: figures/total_firms_unf.png Graphic file (type png)
 <use figures/total_firms_unf.png>
 Package pdftex.def Info: figures/total_firms_unf.png  used on input line 2240.
 (pdftex.def)             Requested size: 211.38832pt x 126.36566pt.
- [41] [42 <./figures/total_sales.png (PNG copy)> <./figures/total_sales_unf.png
- (PNG copy)> <./figures/total_matches.png (PNG copy)> <./figures/total_matches_
-unf.png (PNG copy)> <./figures/total_firms.png (PNG copy)> <./figures/total_fir
-ms_unf.png (PNG copy)>]
-<figures/total_sales_pct.png, id=554, 1124.0394pt x 702.9462pt>
+
+[41] [42 <./figures/total_sales.png (PNG copy)> <./figures/total_sales_unf.png 
+(PNG copy)> <./figures/total_matches.png (PNG copy)> <./figures/total_matches_u
+nf.png (PNG copy)> <./figures/total_firms.png (PNG copy)> <./figures/total_firm
+s_unf.png (PNG copy)>]
+<figures/total_sales_pct.png, id=555, 1124.0394pt x 702.9462pt>
 File: figures/total_sales_pct.png Graphic file (type png)
 <use figures/total_sales_pct.png>
 Package pdftex.def Info: figures/total_sales_pct.png  used on input line 2258.
 (pdftex.def)             Requested size: 211.38832pt x 132.18822pt.
-<figures/total_sales_pct_unf.png, id=555, 1184.7462pt x 708.246pt>
+<figures/total_sales_pct_unf.png, id=556, 1184.7462pt x 708.246pt>
 File: figures/total_sales_pct_unf.png Graphic file (type png)
 <use figures/total_sales_pct_unf.png>
 Package pdftex.def Info: figures/total_sales_pct_unf.png  used on input line 22
 63.
 (pdftex.def)             Requested size: 211.38832pt x 126.36566pt.
-<figures/total_matches_pct.png, id=556, 1124.0394pt x 702.9462pt>
+<figures/total_matches_pct.png, id=557, 1124.0394pt x 702.9462pt>
 File: figures/total_matches_pct.png Graphic file (type png)
 <use figures/total_matches_pct.png>
 Package pdftex.def Info: figures/total_matches_pct.png  used on input line 2269
 .
 (pdftex.def)             Requested size: 211.38832pt x 132.18822pt.
-<figures/total_matches_pct_unf.png, id=557, 1184.7462pt x 708.246pt>
+<figures/total_matches_pct_unf.png, id=558, 1184.7462pt x 708.246pt>
 File: figures/total_matches_pct_unf.png Graphic file (type png)
 <use figures/total_matches_pct_unf.png>
 Package pdftex.def Info: figures/total_matches_pct_unf.png  used on input line 
 2274.
 (pdftex.def)             Requested size: 211.38832pt x 126.36566pt.
-<figures/total_firms_pct.png, id=558, 1124.0394pt x 702.9462pt>
+<figures/total_firms_pct.png, id=559, 1124.0394pt x 702.9462pt>
 File: figures/total_firms_pct.png Graphic file (type png)
 <use figures/total_firms_pct.png>
 Package pdftex.def Info: figures/total_firms_pct.png  used on input line 2280.
 (pdftex.def)             Requested size: 211.38832pt x 132.18822pt.
-<figures/total_firms_pct_unf.png, id=559, 1184.7462pt x 708.246pt>
+<figures/total_firms_pct_unf.png, id=560, 1184.7462pt x 708.246pt>
 File: figures/total_firms_pct_unf.png Graphic file (type png)
 <use figures/total_firms_pct_unf.png>
 Package pdftex.def Info: figures/total_firms_pct_unf.png  used on input line 22
 85.
 (pdftex.def)             Requested size: 211.38832pt x 126.36566pt.
-<figures/total_sales_pct_comb.png, id=566, 1094.6496pt x 630.6762pt>
+<figures/total_sales_pct_comb.png, id=567, 1094.6496pt x 630.6762pt>
 File: figures/total_sales_pct_comb.png Graphic file (type png)
 <use figures/total_sales_pct_comb.png>
 Package pdftex.def Info: figures/total_sales_pct_comb.png  used on input line 2
 311.
 (pdftex.def)             Requested size: 211.38832pt x 121.78325pt.
-<figures/total_sales_pct_unf_comb.png, id=567, 1094.6496pt x 630.6762pt>
+<figures/total_sales_pct_unf_comb.png, id=568, 1094.6496pt x 630.6762pt>
 File: figures/total_sales_pct_unf_comb.png Graphic file (type png)
 <use figures/total_sales_pct_unf_comb.png>
 Package pdftex.def Info: figures/total_sales_pct_unf_comb.png  used on input li
 ne 2316.
 (pdftex.def)             Requested size: 211.38832pt x 121.78325pt.
-<figures/total_matches_pct_comb.png, id=568, 1094.6496pt x 630.6762pt>
+<figures/total_matches_pct_comb.png, id=569, 1094.6496pt x 630.6762pt>
 File: figures/total_matches_pct_comb.png Graphic file (type png)
 <use figures/total_matches_pct_comb.png>
 Package pdftex.def Info: figures/total_matches_pct_comb.png  used on input line
  2322.
 (pdftex.def)             Requested size: 211.38832pt x 121.78325pt.
-<figures/total_matches_pct_unf_comb.png, id=569, 1094.6496pt x 630.6762pt>
+<figures/total_matches_pct_unf_comb.png, id=570, 1094.6496pt x 630.6762pt>
 File: figures/total_matches_pct_unf_comb.png Graphic file (type png)
 <use figures/total_matches_pct_unf_comb.png>
 Package pdftex.def Info: figures/total_matches_pct_unf_comb.png  used on input 
 line 2327.
 (pdftex.def)             Requested size: 211.38832pt x 121.78325pt.
-<figures/total_firms_pct_comb.png, id=570, 1094.6496pt x 630.6762pt>
+<figures/total_firms_pct_comb.png, id=571, 1094.6496pt x 630.6762pt>
 File: figures/total_firms_pct_comb.png Graphic file (type png)
 <use figures/total_firms_pct_comb.png>
 Package pdftex.def Info: figures/total_firms_pct_comb.png  used on input line 2
 333.
 (pdftex.def)             Requested size: 211.38832pt x 121.78325pt.
-<figures/total_firms_pct_unf_comb.png, id=571, 1094.6496pt x 630.6762pt>
+<figures/total_firms_pct_unf_comb.png, id=572, 1094.6496pt x 630.6762pt>
 File: figures/total_firms_pct_unf_comb.png Graphic file (type png)
 <use figures/total_firms_pct_unf_comb.png>
 Package pdftex.def Info: figures/total_firms_pct_unf_comb.png  used on input li
@@ -952,20 +948,13 @@ Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3249.
 
 Package rerunfilecheck Info: File `writeup.out' has not changed.
 (rerunfilecheck)             Checksum: C860FE20A2EE8C124C88EF0188F8D3F6;2800.
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 3249.
  )
 (\end occurred when \ifx on line 678 was incomplete) 
 Here is how much of TeX's memory you used:
  10160 strings out of 481239
  152220 string characters out of 5920377
- 478163 words of memory out of 5000000
+ 478227 words of memory out of 5000000
  25004 multiletter control sequences out of 15000+600000
  549703 words of font info for 94 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1114,10 +1103,10 @@ f-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf/fonts/type1/
 public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm
 0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share
 /texmf/fonts/type1/public/cm-super/sfrm1440.pfb>
-Output written on writeup.pdf (66 pages, 2419898 bytes).
+Output written on writeup.pdf (66 pages, 2419768 bytes).
 PDF statistics:
- 849 PDF objects out of 1000 (max. 8388607)
- 718 compressed objects within 8 object streams
+ 850 PDF objects out of 1000 (max. 8388607)
+ 719 compressed objects within 8 object streams
  189 named destinations out of 1000 (max. 500000)
  435 words of extra memory for PDF output out of 10000 (max. 10000000)
 
