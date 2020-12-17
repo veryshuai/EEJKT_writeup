@@ -1145,18 +1145,13 @@ We construct our estimator for $\Lambda $ using the method of indirect inference
 \hat{\Lambda}=\min_{\Lambda }\left[ \bar{m}-m(\Lambda )\right] ^{\prime }W%
 \left[ \bar{m}-m(\Lambda )\right] ,
 \end{equation*}%
-where $\bar{m}$ is a column vector of regression coefficients obtained from
-sample data, $m(\Lambda )$ is the analogous vector of regression
-coefficients based on data simulated at $\Lambda ,$ and $W$ is a compatible
-non-singular weighting matrix. Setting $W^{-1}=var(\bar{m}-m(\Lambda ))$
-maximizes the efficiency of this estimator, but any non-singular $W$ will
-yield consistent estimates. We use a block-diagonal version of $var(\bar{m}%
--m(\Lambda )),$ with each block corresponding to the moments from a
-particular regression.
+where $\bar{m}$ is a column vector of regression coefficients obtained from sample data, $m(\Lambda )$ is the analogous vector of regression coefficients based on data simulated at $\Lambda ,$ and $W$ is a compatible non-singular weighting matrix. Setting $W^{-1}=var(\bar{m}-m(\Lambda ))$ maximizes the efficiency of this estimator, but any non-singular $W$ will
+yield consistent estimates. We use a block-diagonal version of $var(\bar{m}-m(\Lambda )),$ with each block corresponding to the moments from a particular regression.
 
 The regressions themselves are reported in Tables \ref{tab:haz_reg}, \ref{tab:client_dist} and \ref{tab:hf_sales}. In each table, the data-based regression estimates are reported, and their standard errors are reported below them in parentheses. To facilitate comparisons between the sample and the simulated data, and with no loss of information, we have replaced the intercept of each regression with the mean value of the dependent variable in cases where that was possible.\footnote{%
-Several regressions were done in real pesos within the Colombian national statistical agency (DANE). We are not confident that they can be expressed in units that are strictly comparable to the real dollar units in which U.S.
-customs records were expressed.\medskip} We now briefly describe these regressions, our reasoning in choosing them, and the parameters they help most to identify. These observations regarding identification are based partly on our calculation of Andrews et al.'s (2017) sensitivity matrix, which we report in full in Appendix C.
+Several regressions were done in real pesos within the Colombian national statistical agency (DANE). We are not confident that they can be expressed in units that are strictly comparable to the real dollar units in which U.S. customs records were  expressed.\medskip} We now briefly describe these regressions, our reasoning in choosing them, and the parameters they help most to identify. Our observations regarding identification are based partly on our calculation of Andrews et al.'s (2017) sensitivity matrix, which we report in full in Appendix  \ref{sec:sensitivity}.\footnote{%
+Andrews et al. (2017) propose using the sample analog to the matrix $(G^{\prime }WG)^{-1}G^{\prime }W$, where $G=\frac{-\partial \left[m(\Lambda )\right] }{\partial \Lambda ^{\prime }}$ is the Jacobian for the vector of simulated moments. "Intuitively, this matrix is a local approximation to the mapping from moments to estimated parameters." (p. 1555) The results of this calculation at our benchmark estimates (to be discussed), are reported in elasticity form in Appendix \ref{sec:sensitivity}.}
+
 
 \textbf{Search policy}. The first regression in Table \ref{tab:haz_reg} summarizes the effects of firms' market experiences on their search intensity ($s$). Roughly speaking, this equation can be viewed as a second order approximation to the foreign market policy function (\ref{FOC_MS_learning}).There is no simple mapping from its coefficients to particular elements of $\Lambda$. Nonetheless, our sensitivity matrix suggests that this equation is most helpful in identifying the fixed costs of maintaining a relationship, $F^{h}$ and $F^{f}$, the parameters of the success rate ($\theta$) distribution, $\alpha$ and $\beta$, and the network/congestion parameter, $\gamma$. 
 
@@ -1189,64 +1184,17 @@ Equation ($vi$), the other regression in Table \ref{tab:client_dist}, simply est
 \sigma _{\varphi },\Delta _{y}\right) .$ Equation ($vii$) is an AR1 in log match revenues, conditioned on match age and a dummy to control for first-year effects. By the logic reviewed in section 5.1 above, the root (0.826) and root mean square error (1.208) in this AR1 identify the jump size, $\Delta _{y}$ and the cross-firm variance in productivity, $\sigma_{\varphi },$ up to selection effects. Also, together with equation ($ii$), the mean log annual revenue per match (10.67) essentially pins down the
 profit function scalar and the fixed cost of maintaining a foreign match ($\Pi _{f},F^{f})$.
 
-The last four equations in Table \ref{tab:hf_sales} involve domestic sales.
-Since we don't observe firms' individual matches in the domestic market,
-these regressions describe establishment-level panel data merged with
-Colombian customs records.\footnote{%
-More precisely, regressions ($viii$) through ($x$) in Table \ref%
-{tab:hf_sales} are done using a combination of the Colombian Annual
-Manufacturing Survey (AMS) and Colombian administrative records of exports
-transactions. The data used cover 1993-2007. Exports are merged into the AMS
-using firm identifiers. This is done because the AMS has no export
-information for 1993-1999, and because the dynamics of aggregate exports
-reported in the EAM starting in 2004 differ substantially from aggregate
-reports from other sources.\medskip} Equations ($viii$) is an AR1 for home sales,
-and is thus informative about the extent which firms adjust their domestic
-connections and their associated match specific sales in response to
-idiosyncratic shocks. Accordingly, the coefficients in this equation are
-particularly helpful in identifying $\kappa _{0}^{h}$ and $F^{h},$ and the
-mean squared error helps identify $\sigma _{\varphi }$ and $\alpha /(\alpha
-+\beta )$. Equation ($ix$) is a simple projection of firm level exports on
-firm-level domestic sales. It serves to distinguish market-specific
-variation in revenues from variation in revenues that is common to both
-markets. Thus the estimated parameters of this equation, including its mean
-squared error, are informative about the variance of productivity shocks ($%
-\sigma _{\varphi }^{2})$, which are common to both markets, relative to the
-variance of market-specific appeal draws, $\theta ^{h}$ and $\theta ^{f}$.%
+The last four equations in Table \ref{tab:hf_sales} involve domestic sales. Since we don't observe firms' individual matches in the domestic market, these regressions describe establishment-level panel data merged with Colombian customs records.\footnote{%
+More precisely, regressions ($viii$) through ($x$) in Table \ref{tab:hf_sales} are done using a combination of the Colombian Annual Manufacturing Survey (AMS) and Colombian administrative records of exports transactions. The data used cover 1993-2007. Exports are merged into the AMS using firm identifiers. This is done because the AMS has no export information for 1993-1999, and because the dynamics of aggregate exports reported in the EAM starting in 2004 differ substantially from aggregate reports from other sources.\medskip} Equations ($viii$) is an AR1 for home sales, and is thus informative about the extent which firms adjust their domestic connections and their associated match specific sales in response to idiosyncratic shocks. Accordingly, the coefficients in this equation are particularly helpful in identifying $\kappa _{0}^{h}$ and $F^{h},$ and the mean squared error helps identify $\sigma _{\varphi }$ and $\alpha /(\alpha+\beta )$. Equation ($ix$) is a simple projection of firm level exports on firm-level domestic sales. The estimated coefficient of this equation is informative about the variance of productivity shocks ($\sigma _{\varphi }^{2})$, which are common to both markets, relative to the variance of market-specific appeal draws, $\theta ^{h}$ and $\theta ^{f}$. It also reflects the size of match-specific (and thus market-specific) idiosyncratic shocks, $\Delta_{y}$%
 \footnote{%
 Given the average success rate, $\alpha /(\alpha +\beta )$, the variances of 
 $\theta ^{h}$ and $\theta ^{f}$depend only on $\alpha +\beta $.\medskip}
 
 
-Finally, equations ($x$) and ($xi$) describe the relative importance of home
-versus foreign sales. The former gives the share of firms that participate
-in the foreign market and thereby speaks to the relative return to
-maintaining foreign versus domestic business connections, that is $(\Pi
-^{f}, $ $F^{f},\kappa _{0}^{f})$ versus $(\Pi ^{h},$ $F^{h},\kappa _{0}^{h})$%
-. The latter gives the average share of exports to the U.S. in total sales
-of exporting firms. Accordingly, it largely reflects the number of clients
-in each market, and thus responds especially to differences between $\kappa
+Finally, equations ($x$) and ($xi$) describe the relative importance of home versus foreign sales. The former gives the share of firms that participate in the foreign market and thereby speaks to the relative return to
+maintaining foreign versus domestic business connections, that is $(\Pi^{f}, $ $F^{f},\kappa _{0}^{f})$ versus $(\Pi ^{h},$ $F^{h},\kappa _{0}^{h})$. The latter gives the average share of exports to the U.S. in total sales of exporting firms. Accordingly, it largely reflects the number of clients in each market, and thus responds especially to differences between $\kappa
 _{0}^{f}$ and $\kappa _{0}^{h}.$
 
-\textbf{Sensitivity analysis }As suggested by Andrews et al. (2017), we
-check which moments are important using the sample analog to the matrix $%
-(G^{\prime }WG)^{-1}G^{\prime }W$ \ where $G=\frac{-\partial \left[
-m(\Lambda )\right] }{\partial \Lambda ^{\prime }}$ is the Jacobian for the
-vector of simulated moments. "Intuitively, this matrix is a local
-approximation to the mapping from moments to estimated parameters."
-(Andrews, et al., 2017, p. 1555) Evaluated at our benchmark estimates (to be
-discussed), we obtain the results reported in detail in Appendix \ref%
-{sec:sensitivity}. Here we summarize the patterns that emerge.
-
-First, most parameters respond to many moments rather than one or several.
-Limiting our attention to elasticities with absolute value greater than 0.1,
-most parameters show significant responses to at least 5 moments, and
-several ($F^{f},$ $F^{h},\gamma )$ respond to more than 15. All parameters
-respond to at least 2. The moments that affect the most parameters are those
-generated by the match sales autogression (equation $vii$), the shipping
-rate regression (equation $vi$), the domestic sales autoregression (equation 
-$viii$), the regression explaining the variance in success rates (equation $%
-iv$), and the fraction of firms that export (equation $x$).\linebreak
 
 \begin{table}[tbp]
 \caption{\textbf{Match hazards, success rates, and endurance}}
@@ -2677,74 +2625,8 @@ reduction in data entry errors.\newline
 \section{Identification}
 
 \label{sec:sensitivity}
-
-\begin{table}[tbp]
-\caption{\textbf{Sensitivity matrix} }%
-\resizebox{\textwidth}{!}{
-\bigskip
-
-\begin{tabular}{rrrrrrrrrrrrr}
-& $\ln {\small \Pi }^{h}$ & $F^{h}$ & $F^{f}$ & $\ln {\small \Pi }^{f}$ & ${\small \alpha }$ & ${\small \beta }$ & $\Delta _{y}$ & ${\small \lambda }_{b}$ & ${\small \gamma }$ & $\ln {\small \kappa _{0}^{h}}$ & $\ln {\small \kappa _{0}^{f}}$ & $\sigma _{\varphi }$ \\ 
-\textbf{avg. mat death} & -0.112 & 0.007 & 0.011 & -0.111 & -0.019 & 0.127 & 
-0.006 & 0.068 & -0.045 & -0.097 & -0.119 & 0.000 \\ 
-new to mkt & -0.841 & -0.034 & 0.420 & -0.656 & -0.283 & 0.772 & 1.199 & 
--0.325 & -0.482 & 0.329 & 0.131 & 0.040 \\ 
-current sales & -2.164 & 0.294 & 2.080 & 2.905 & 0.003 & 0.454 & 11.016 & 
-4.386 & -2.072 & -12.437 & -3.520 & -0.326 \\ 
-exporter age & 1.027 & 0.092 & -0.745 & 1.029 & 0.411 & -1.124 & -1.216 & 
-1.074 & 0.586 & -0.966 & -0.726 & -0.089 \\ 
-match age & -0.876 & 0.117 & -0.216 & -0.557 & 0.068 & 0.868 & -0.389 & 1.422
-& -0.136 & -2.108 & -1.579 & -0.045 \\ 
-\textbf{avg. match sales} & 0.190 & -0.012 & -0.042 & 0.075 & 0.040 & -0.045
-& -0.228 & -0.176 & 0.072 & 0.256 & 0.214 & 0.011 \\ 
-1st yr dummy & 1.616 & -0.096 & 0.462 & 5.391 & 0.419 & -4.141 & 6.635 & 
-1.058 & 0.501 & -2.377 & 2.464 & -0.175 \\ 
-match sales, t-1 & -0.683 & 0.058 & -0.097 & -1.127 & -0.183 & 1.293 & 0.170
-& 0.742 & -0.469 & -0.082 & -1.077 & 0.012 \\ 
-exporter age & 0.428 & -0.047 & 0.196 & 1.050 & 0.169 & -1.178 & -0.081 & 
--0.493 & 0.410 & -0.419 & 0.891 & -0.018 \\ 
-MSE, match AR1 & -0.349 & 0.015 & -0.132 & -0.122 & -0.043 & 0.105 & 0.091 & 
--0.045 & -0.017 & -0.019 & -0.204 & -0.003 \\ 
-degree dist. slope & 0.033 & -0.002 & 0.001 & 0.136 & 0.071 & 0.757 & -0.020
-& -0.502 & -0.038 & 0.237 & -0.142 & -0.016 \\ 
-degree dist. curv. & 0.509 & -0.016 & 0.059 & 0.830 & 0.287 & 1.327 & 0.246
-& -0.858 & 0.006 & 0.377 & -0.403 & -0.068 \\ 
-avg. ln \#shipments & 0.206 & -0.020 & 0.237 & 0.177 & 0.046 & -0.063 & 
--0.803 & 10.713 & -0.144 & 0.359 & -0.001 & -0.021 \\ 
-export/dom coef. & -0.442 & 0.021 & 0.069 & 0.714 & 0.009 & -0.302 & 1.730 & 
-0.672 & -0.067 & -1.311 & -0.135 & -0.045 \\ 
-dom. sales AR1 & 2.835 & 0.051 & -4.213 & -2.908 & -0.602 & 3.213 & 1.311 & 
--1.069 & -1.155 & 14.694 & -0.998 & 0.174 \\ 
-\textbf{avg. match hazard} & -0.002 & 0.007 & 0.205 & 0.005 & -0.006 & 0.037
-& 0.055 & -0.083 & -0.223 & -0.418 & 0.013 & 0.105 \\ 
-$\ln (1+a)$ & -0.040 & 0.002 & 0.004 & -0.071 & -0.003 & 0.093 & -0.044 & 
-0.003 & -0.016 & -0.033 & -0.037 & 0.002 \\ 
-$\ln (1+a)^{2}$ & -0.066 & -0.003 & 0.212 & 0.770 & 0.035 & -0.790 & 0.746 & 
-0.402 & 0.081 & -0.890 & 0.169 & -0.039 \\ 
-$\ln (1+\frac{1}{n})$ & 0.018 & -0.001 & -0.003 & 0.029 & 0.000 & -0.036 & 
-0.024 & -0.002 & 0.004 & 0.025 & 0.016 & -0.001 \\ 
-$\ln (1+\frac{1}{n})^{2}$ & -0.027 & 0.001 & 0.008 & -0.027 & -0.001 & 0.037
-& -0.013 & 0.011 & -0.007 & -0.043 & -0.020 & 0.000 \\ 
-$\ln (1+\frac{1}{n})\cdot \ln (1+a)$ & 0.089 & -0.003 & -0.035 & 0.041 & 
-0.006 & -0.063 & -0.003 & -0.065 & 0.020 & 0.164 & 0.057 & 0.001 \\ 
-\textbf{avg. succ. rate, }$\frac{a}{n}$ & -0.181 & -0.035 & -0.547 & -2.688
-& 1.697 & -0.361 & 1.759 & -2.682 & -0.563 & 1.323 & 0.037 & 0.095 \\ 
-coef., $\ln n$ & -1.121 & 0.020 & 2.076 & -3.493 & -0.655 & -2.049 & -7.981
-& -0.494 & 0.032 & -0.423 & -2.017 & 0.023 \\ 
-$var(\frac{a}{n}|n)$ & 14.085 & -0.180 & 5.673 & 33.822 & 8.725 & -29.932 & 
--12.829 & -3.497 & -5.688 & -1.592 & 15.193 & -1.119 \\ 
-coef., $\ln n$ & 11.610 & -0.994 & 9.961 & 17.641 & -2.014 & -42.636 & 19.778
-& 9.299 & 7.756 & -4.401 & 9.615 & -0.933 \\ 
-$\frac{foreign\text{ }sales}{total\text{ }sales}$ & -9.785 & -0.068 & 1.997
-& 1.591 & 0.443 & -2.183 & -1.189 & 2.443 & 1.057 & -10.317 & 1.247 & -0.052
-\\ 
-$\frac{\#exporters}{\#firms}$ & -3.256 & 0.110 & -3.178 & -2.103 & -1.139 & 
-0.187 & 3.049 & 2.308 & -0.959 & 9.688 & -2.247 & 0.034\end{tabular}}
-\end{table}
-
-%\begin{table}[]
-
-\begin{table}[tbp]
+\begin{sidewaystable}[bph]
+%\begin{table}[tbp]
 \caption{\textbf{Sensitivity matrix, elasticity form} }
 \label{tab:sensitivity_matrix_elas}%
 \resizebox{\textwidth}{!} {\begin{tabular}{rrrrrrrrrrrrr}
@@ -2804,7 +2686,14 @@ $\frac{foreign\text{ }sales}{total\text{ }sales}$ & 0.157 & -0.155 & 0.419 &
 \\ 
 $\frac{\#exporters}{\#firms}$ & 0.118 & 0.572 & -1.517 & 0.048 & -0.282 & 
 0.014 & 0.229 & 0.021 & -0.354 & 0.117 & -0.024 & 0.003\end{tabular}}
-\end{table}
+%\end{table}
+\end{sidewaystable}
+
+Following Andrews, et al. (2017), Table \ref{tab:sensitivity_matrix_elas} below reports estimates of ($G^{\prime }WG)^{-1}G^{\prime }W$, where $G=\frac{-\partial \left[
+m(\Lambda )\right] }{\partial \Lambda ^{\prime }}$ is the Jacobian for the vector of simulated moments. It was constructed using our benchmark parameter estimates and all elements have been converted to elasticity form in order to make them unit-free.
+
+Results associated with particular equations are discussed in the text, here here we make several general observations. First, most parameters respond to many moments rather than one or several. Limiting our attention to elasticities with absolute value greater than 0.1, most parameters show significant responses to at least 5 moments, and several ($F^{f},$ $F^{h},\gamma )$ respond to more than 15. All parameters respond to at least 2. The moments that affect the most parameters are those
+generated by the match sales autogression (equation $vii$), the shipping rate regression (equation $vi$), the domestic sales autoregression (equation $viii$), the regression explaining the variance in success rates (equation $iv$), and the fraction of firms that export (equation $x$).
 
 \section{Model Fit}
 
