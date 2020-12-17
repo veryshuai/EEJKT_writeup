@@ -98,11 +98,7 @@ buyer-seller relationships, and for a given firm, the time gap between its
 new meetings with potential buyers reflects its search intensity (up to a
 random shock).
 
-Qualitatively, the model replicates a large set of patterns in the customs
-records regarding exporter maturation, transitions across states, and the
-distribution of partner counts across firms. It also provides a basis for
-assessing the value of business relationships, the importance of both types
-of learning, the role of luck in market penetration, and the key drivers of aggregate export dynamics. Learning and visibility effects both prove to be statistically significant, but the former are more important than the latter, and while they both affect the maturation processes of new exporters, neither matters as much as search frictions in shaping aggregate export dynamics.
+Qualitatively, the model replicates a large set of patterns in the customs records regarding exporter maturation, transitions across states, and the distribution of partner counts across firms. It also provides a basis for assessing the value of business relationships, the importance of both types of learning, the role of luck in market penetration, and the key drivers of aggregate export dynamics. Inter alia, we find that learning and visibility effects are both statistically significant, but the former are more important than the latter, and while they both affect the maturation processes of new exporters, neither matters as much as search frictions in shaping aggregate export dynamics.
 \end{abstract}
 
 %\date{This draft: April 2020}
@@ -1158,84 +1154,26 @@ yield consistent estimates. We use a block-diagonal version of $var(\bar{m}%
 -m(\Lambda )),$ with each block corresponding to the moments from a
 particular regression.
 
-The regressions themselves are reported in Tables \ref{tab:haz_reg}, \ref%
-{tab:client_dist} and \ref{tab:hf_sales}. In each table, the data-based
-regression estimates are reported, and their standard errors are reported
-below them in parentheses. To facilitate comparisons between the sample and
-the simulated data, and with no loss of information, we have replaced the
-intercept of each regression with the mean value of the dependent variable
-in cases where that was possible.\footnote{%
-Several regressions were done in real pesos within the Colombian national
-statistical agency (DANE). We are not confident that they can be expressed
-in units that are strictly comparable to the real dollar units in which U.S.
-customs records were expressed.\medskip} We now briefly describe these regressions
-and our reasoning in choosing them.
+The regressions themselves are reported in Tables \ref{tab:haz_reg}, \ref{tab:client_dist} and \ref{tab:hf_sales}. In each table, the data-based regression estimates are reported, and their standard errors are reported below them in parentheses. To facilitate comparisons between the sample and the simulated data, and with no loss of information, we have replaced the intercept of each regression with the mean value of the dependent variable in cases where that was possible.\footnote{%
+Several regressions were done in real pesos within the Colombian national statistical agency (DANE). We are not confident that they can be expressed in units that are strictly comparable to the real dollar units in which U.S.
+customs records were expressed.\medskip} We now briefly describe these regressions, our reasoning in choosing them, and the parameters they help most to identify. These observations regarding identification are based partly on our calculation of Andrews et al.'s (2017) sensitivity matrix, which we report in full in Appendix C.
 
-\textbf{Search policy}. The first regression in Table \ref{tab:haz_reg}
-summarizes the effects of firms' market experiences on their search
-intensity ($s$). Roughly speaking, this equation can be viewed as a second
-order approximation to the foreign market policy function (\ref%
-{FOC_MS_learning}). Because this is a central object in our model, there is no simple mapping from its coefficients to particular elements of $\Lambda$. Nonetheless, as we discuss below, the sensitivity matrix developed in Andrews et al. (2017) suggests that this equation is most helpful in identifying the fixed costs of maintaining a relationship, $F^{h}$ and $F^{f}$, the parameters of the $\theta$ distribution, $\alpha$ and $\beta$, and the network/congestion parameter, $\gamma$. 
+\textbf{Search policy}. The first regression in Table \ref{tab:haz_reg} summarizes the effects of firms' market experiences on their search intensity ($s$). Roughly speaking, this equation can be viewed as a second order approximation to the foreign market policy function (\ref{FOC_MS_learning}).There is no simple mapping from its coefficients to particular elements of $\Lambda$. Nonetheless, our sensitivity matrix suggests that this equation is most helpful in identifying the fixed costs of maintaining a relationship, $F^{h}$ and $F^{f}$, the parameters of the success rate ($\theta$) distribution, $\alpha$ and $\beta$, and the network/congestion parameter, $\gamma$. 
 
 The dependent variable in equation ($i$) is a proxy for a firm's foreign market search intensity after $n$ successful
-matches, namely, the inverse of the time interval between firm $j$'s $n^{th}$
-and $n+1^{st}$ match. And the right-hand side is a second-order translog
-function of this firm's cumulative number of successes ($a$) and cumuluative
-success rate ($\frac{a}{n}$)$.$ To deal with firms that have had no
-successes, we add 1 to $a$ and to $\frac{a}{n}$ before taking logs.
+matches, namely, the inverse of the time interval between firm $j$'s $n^{th}$ and $n+1^{st}$ match. And the right-hand side is a second-order translog function of this firm's cumulative number of successes ($a$) and cumuluative success rate ($\frac{a}{n}$)$.$ To deal with firms that have had no successes, we add 1 to $a$ and to $\frac{a}{n}$ before taking logs.
 
-The unit of observation here is an exporter-specific new match, and we
-define a new match to occur whenever an exporter makes a shipment to a buyer
-it has not dealt with before. We view this first shipment as a sample of the
-exporter's merchandise, so we only consider this match to be successful if
-it results in at least one additional shipment. This interpetation of the
-data means we can use customs records to directly infer the cumulative
-number of successes for each firm $j$ ($a_{nj}$) after each of its $n\in
-\{1,...,N_{j}\}$ matches, and the associated cumulative success rates $(%
-\frac{a}{n})_{nj}$.
+The unit of observation here is an exporter-specific new match, and we define a new match to occur whenever an exporter makes a shipment to a buyer it has not dealt with before. We view this first shipment as a sample of the exporter's merchandise, so we only consider this match to be successful if it results in at least one additional shipment. This interpetation of the data means we can use customs records to directly infer the cumulative number of successes for each firm $j$ ($a_{nj}$) after each of its $n\in \{1,...,N_{j}\}$ matches, and the associated cumulative success rates $(\frac{a}{n})_{nj}$.
 
-Interpreting the coefficient estimates for this regression is problematic,
-both because it\ includes second order terms and because we have not
-controlled for the highly nonlinear firm effects generated by $\varphi $ and 
-$\theta ^{f}.$\ But evaluation of this equation on a grid of success rates
-and cumulative successes gives us a crude sense for the relationships
-implied by our estimates. The results (available upon request) show that
-search intensity is not very sensitive to success rates, but it strongly increases
-with cumulative successes.
+Interpreting the coefficient estimates for this regression is problematic, both because it\ includes second order terms and because we have not controlled for the highly nonlinear firm effects generated by $\varphi $ and $\theta ^{f}.$  But evaluation of this equation on a grid of success rates and cumulative successes gives us a crude sense for the relationships implied by our estimates. The results (available upon request) show that search intensity is only mildly sensitive to success rates, but it strongly increases with cumulative successes.
 
-\textbf{Separation policy. }Equation ($ii$) captures a second basic feature
-of firms' exporting behavior: match termination policies. Here the unit of
-observation is seller $j$'s $i^{th}$ match in year $t$, and the dependent
-variable, $D^{exit\text{ }match},$ takes a value of unity when this match is
-in its final year.\footnote{%
-Only active matches are included in the sample.\medskip} Our model implies that
-matches are more likely to terminate when the idiosyncratic demand shock $%
-z_{ijt}$ and/or the firm's productivity level $\varphi _{j}$ is low. Neither
-variable is directly observable, so we use several of their correlates as
-explanatory variables: current match sales, $X_{ijt}^{f}$, age of the match, 
-$A_{ijt}$, and export market tenure, $\Delta _{ijt}$. All variables are
-expressed in logs and, given the patterns revealed by Table \ref%
-{tab:sep_rates}, we allow firms in their first year of exporting ($D^{new%
-\text{ }to\text{ }mkt}=1$) to experience particularly high failure rates.%
+\textbf{Separation policy.} Equation ($ii$) captures a second basic feature of firms' exporting behavior: match termination policies. Here the unit of observation is seller $j$'s $i^{th}$ match in year $t$, and the dependent variable, $D^{exit\text{ }match},$ takes a value of unity when this match is in its final year.\footnote{Only active matches are included in the sample.\medskip} Since matches endogenously terminate when $\widehat{\pi }_{\varphi_{j} }(x_{t},y_{ijt})<F^{f}$, the explanatory variables in this regression would ideally be the idiosyncratic demand shock $y_{ijt}$ and/or the firm's productivity level $\varphi _{j}$. But neither variable is directly observable, so we use several of their correlates as predictors: current match sales, $X_{ijt}^{f}$, age of the match, $A_{ijt}$, and export market tenure, $\Delta _{ijt}$. All variables are expressed in logs and, given the patterns revealed by Table \ref{tab:sep_rates}, we allow firms in their first year of exporting ($D^{new \text{ }to\text{ }mkt}=1$) to experience particularly high failure rates.
 \footnote{%
-Note, however, that in Table \ref{tab:client_dist}, matches that die after a
-single shipment are treated as having existed for less than one year, while
-our model-based estimates treat these cases of single shipments as
-unsuccessful meetings that did not lead to business relationships.\medskip}
+Note, however, that in Table \ref{tab:client_dist}, matches that die after a single shipment are treated as having existed for less than one year, while our model-based estimates treat these cases of single shipments as unsuccessful meetings that did not lead to business relationships.\medskip}
 
-Equation ($ii$) helps to identify the fixed costs of maintaining an
-established foreign match, $F^{f}$. That is, conditioning on sales, $%
-X_{ijt}^{f},$ matches are more likely to survive when fixed costs are low.
-Failure rates are also affected by the volatility of $z_{ijt},$ which is
-governed by the jump size, $\Delta_{y}.$
+The sensitivity matrix (Appendix C) implies that equation ($ii$) helps most to identify the fixed costs of maintaining an established foreign match, $F^{f}$. That is, conditioning on sales, $X_{ijt}^{f},$ matches are more likely to survive when fixed costs are low. It also proves to be helpful in identifying the jump size, $\Delta_{y}$, since failure rates are also affected by the volatility of $z_{ijt}$. 
 
-Not surprisingly, estimates of equation ($ii$) reflect the same patterns
-that we noted in connection with Table \ref{tab:sep_rates}. Matches in
-their first year are relatively likely to fail, as are matches that start
-with relatively small sales volumes. The results also show that exporters
-with more experience in foreign markets tend to have longer-lived
-relationships, a feature of the data that our model captures with cross-firm
-variation in productivity levels, $\varphi $.
+Not surprisingly, estimates of equation ($ii$) reflect the same patterns that we noted in connection with Table \ref{tab:sep_rates}. Matches in their first year are relatively likely to fail, as are matches that start with relatively small sales volumes. The results also show that exporters with more experience in foreign markets tend to have longer-lived relationships, a feature of the data that our model captures with cross-firm variation in productivity levels, $\varphi $.
 
 \textbf{Match success rates} The remaining regressions in Table \ref%
 {tab:haz_reg} concern the distribution of success rates, $\theta $.
@@ -2162,11 +2100,7 @@ For a back-of-the-envelope calculation of the total (pre-shock) value of Colombi
 \subsubsection{Margins of adjustment}
 \label{sec:margins}
 How do these changes in value translate into aggregate export dynamics? We conclude our counterfactual analysis by simulating the aggregate export trajectories associated with the exchange rate shocks described above.\footnote{%
-Since we are using a single-agent model, we caution that these simulations
-miss interactions between exporters in the foreign market. However, they may
-be a reasonable approximation to the aggregate exports responses of a small
-country shipping to a large one, where its products constitute a small
-fraction of total supply.\medskip}
+Since we are using a single-agent model, we caution that these simulations miss interactions between exporters in the foreign market. However, they may be a reasonable approximation to the aggregate exports responses of a small country shipping to a large one, where its products constitute a small fraction of total supply.\medskip}
 Figure \ref{fig:export_dynamics_macro} summarizes the results. The panels in the left-hand column correspond to a permanent 20 percent peso devaluation and the panels in the right-hand column correspond to a 20 percent peso appreciation, each occurring at the end of the $50^{th}$ year (period 0). Each panel breaks down the total value of a particular export aggregate---sales, matches, or exporters---into contributions from matches that existed in period 0 (yellow area; hereafter "incumbent matches"), matches created after period 0 with exporters that existed in period 0 (orange area; hereafter "new matches with incumbent exporters"), and matches formed after period 0 with exporters that entered after period 0 (blue area; hereafter "new matches with new exporters"). Also, each panel includes a set of thin lines that show how the boundaries between the shaded areas would have been different if there had been no permanent shock. These lines are common to panels in the same row.%
 \footnote{% 
 These figures are inspired by similar graphs in Piveteau (forthcoming), but to
@@ -2270,9 +2204,6 @@ In our simulations of the benchmark model, the maximum number of successful matc
 c^{m}(s^{m},a^{m})=\kappa _{0}^{m}\frac{\left[ (1+s^{m})\right] ^{\kappa
 _{1}}-1}{\kappa _{1}\left[ 1+\ln (1+a^{40})\right] ^{\gamma }}.
 \end{equation}.\medskip}
-
-
-
 
 \begin{figure}[tbp]
 \caption{\textbf{Responses to a permanent shock: baseline vs. other specifications}}
