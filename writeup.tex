@@ -1171,65 +1171,23 @@ Interpreting the coefficient estimates for this regression is problematic, both 
 \footnote{%
 Note, however, that in Table \ref{tab:client_dist}, matches that die after a single shipment are treated as having existed for less than one year, while our model-based estimates treat these cases of single shipments as unsuccessful meetings that did not lead to business relationships.\medskip}
 
-The sensitivity matrix (Appendix C) implies that equation ($ii$) helps most to identify the fixed costs of maintaining an established foreign match, $F^{f}$. That is, conditioning on sales, $X_{ijt}^{f},$ matches are more likely to survive when fixed costs are low. It also proves to be helpful in identifying the jump size, $\Delta_{y}$, since failure rates are also affected by the volatility of $z_{ijt}$. 
+The sensitivity matrix (Appendix C) implies that equation ($ii$) helps most to identify the fixed costs of maintaining an established match, $F^{h}$ and $F^{f}$ . That is, conditioning on sales, $X_{ijt}^{f},$ matches are more likely to survive when fixed costs are low. The regression also proves helpful in identifying the jump size, $\Delta_{y}$, which affects the option value of keeping a match active.
 
 Not surprisingly, estimates of equation ($ii$) reflect the same patterns that we noted in connection with Table \ref{tab:sep_rates}. Matches in their first year are relatively likely to fail, as are matches that start with relatively small sales volumes. The results also show that exporters with more experience in foreign markets tend to have longer-lived relationships, a feature of the data that our model captures with cross-firm variation in productivity levels, $\varphi $.
 
-\textbf{Match success rates} The remaining regressions in Table \ref%
-{tab:haz_reg} concern the distribution of success rates, $\theta $.
-Equation ($iii$) summarizes the average success rate among active exporters
-and its relation to the cumulative number of meetings an exporter has had ($%
-n $). Accordingly it is informative about $\alpha /(\alpha +\beta )$ and
-selection due to learning. Equation $(iv)$ describes dispersion in success
-rates--i.e., the squared residuals from equation ($iii$)--among exporters
-with different experience ($n$) levels. Both regressions suggest that
-selection takes place as firms acquire market tenure, since success rates
-are higher among experienced (high-$n$) firms, and the dispersion in success
-rates among such firms is lower.
+\textbf{Match success rates} The remaining regressions in Table \ref{tab:haz_reg} concern the distribution of success rates, $\theta$. Equation ($iii$) summarizes the average success rate among active exporters and its relation to the cumulative number of meetings an exporter has had ($n$). Equation $(iv)$ describes dispersion in success rates--i.e., the squared residuals from equation ($iii$)--among exporters with different experience ($n$) levels. Both regressions are informative about $\alpha$ and $\beta$, as well as selection due to learning. The unconditional mean and variance in success rates are about 0.41 (equation $iii$) and 0.09 (equation $iv$), respectively. Further among experienced (high-$n$) firms, the mean is signficantly higher and the variance is significantly lower, suggesting learning is potentially important.  
 
-\textbf{Client distributions and shipment frequencies}. The next set of
-regressions appears in Table \ref{tab:client_dist}. Equation ($v$)
-summarizes the information on client distributions in Table \ref%
-{tab:erg_cli_dist}. Specifically, letting $\Phi (\ell )$ be the fraction of
-exporters with no more than $\ell $ active clients, column ($v$) reports the
-regression of $\ln (1-\Phi (\ell ))$ on $\ln \ell $ and $\left( \ln \ell
-\right) ^{2}.$\footnote{%
-By construction, the intercept of the (non-parametric version of) this
-regression line must be zero.\medskip} We choose this functional form because
-earlier studies have found that exporters' foreign client distributions are
-approximately Pareto, implying that the relationship between $\ln (1-\Phi
-(\ell ))$ and $\ln \ell $ is approximately linear. Note that our data
-confirm a nearly-Pareto client distribution, as the coefficient on the
-quadratic term is quite small (-0.055).
+\textbf{Client distributions and shipment frequencies}. The next set of regressions appears in Table \ref{tab:client_dist}. Equation ($v$) summarizes the information on client distributions in Table \ref{tab:erg_cli_dist}. Specifically, letting $\Phi (\ell )$ be the fraction of exporters with no more than $\ell $ active clients, column ($v$) reports the regression of $\ln (1-\Phi (\ell ))$ on $\ln \ell $ and $\left( \ln \ell\right) ^{2}.$\footnote{%
+By construction, the intercept of the (non-parametric version of) this regression line must be zero.\medskip} We choose this functional form because earlier studies have found that exporters' foreign client distributions are approximately Pareto, implying that the relationship between $\ln (1-\Phi(\ell ))$ and $\ln \ell $ is approximately linear. Note that our data confirm a nearly-Pareto client distribution, as the coefficient on the quadratic term is quite small (-0.055).
 
-Equation $(v)$ helps to identify the cost function parameters ($\kappa
-_{0}^{h},\kappa _{0}^{f},\gamma $) because the client distribution largely
-reflects firms' search intensities. In particular, the network effects
-captured by the parameter $\gamma $ determine how much of a search cost
-discount large (big $a$) firms enjoy, and thus the "fatness" of the
-right-hand tail of the client distribution $\Phi (\cdot ).$
-
-Equation ($vi$), the other regression in Table \ref{tab:client_dist}, simply
-establishes the mean log number of shipments per year per continuing match.
-It serves as a target for the shipment arrival hazard and obviously helps to
-identify $\lambda _{b}.$
+Equation $(v)$ helps to identify the parameters of the theta distribution ($\alpha$ and $\beta$) as well as the network/congestion effect parameter $\gamma $. These are key determinants of the relative prevalence of large versus small firms.
+Equation ($vi$), the other regression in Table \ref{tab:client_dist}, simply establishes the mean log number of shipments per year per continuing match. It serves as a target for the shipment arrival hazard and obviously helps to identify $\lambda _{b}.$
 
 \FloatBarrier
 
-\textbf{Match- and firm-level sales} Regressions that characterize the time
-series properties of firms' exports, cross-firm dispersion in exports, and
-patterns of correlation between exports and domestic sales are collected in
-Table \ref{tab:hf_sales}. These equations are particularly informative about
-the parameters $\left( {\small \Pi }^{h},{\small \Pi }^{f.},F^{h},F^{f},%
-\sigma _{\varphi },\Delta _{y}\right) .$ Equation ($vii$) is an AR1 in log
-match revenues, conditioned on match age and a dummy to control for
-first-year effects. By the logic reviewed in section 5.1 above, the root
-(0.826) and root mean square error (1.208) in this AR1 identify the jump
-size, $\Delta _{y}$ and the cross-firm variance in productivity, $\sigma
-_{\varphi },$ up to selection effects. Also, together with equation ($ii$),
-the mean log annual revenue per match (10.67) essentially pins down the
-profit function scalar and the fixed cost of maintaining a foreign match ($%
-\Pi _{f},F^{f})$.
+\textbf{Match- and firm-level sales} Regressions that characterize the time series properties of firms' exports, cross-firm dispersion in exports, and patterns of correlation between exports and domestic sales are collected in Table \ref{tab:hf_sales}. These equations are particularly informative about the parameters $\left( {\small \Pi }^{h},{\small \Pi }^{f.},F^{h},F^{f},%
+\sigma _{\varphi },\Delta _{y}\right) .$ Equation ($vii$) is an AR1 in log match revenues, conditioned on match age and a dummy to control for first-year effects. By the logic reviewed in section 5.1 above, the root (0.826) and root mean square error (1.208) in this AR1 identify the jump size, $\Delta _{y}$ and the cross-firm variance in productivity, $\sigma_{\varphi },$ up to selection effects. Also, together with equation ($ii$), the mean log annual revenue per match (10.67) essentially pins down the
+profit function scalar and the fixed cost of maintaining a foreign match ($\Pi _{f},F^{f})$.
 
 The last four equations in Table \ref{tab:hf_sales} involve domestic sales.
 Since we don't observe firms' individual matches in the domestic market,
